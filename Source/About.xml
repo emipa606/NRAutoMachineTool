@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>NR_AutoMachineTool</name>
+  <author>nullre</author>
+  <url>https://github.com/nullre/rw_mods/tree/master/NR_AutoMachineTool</url>
+  <packageId>Nullre.NRAutoMachineTool</packageId>
+  <supportedVersions>
+    <li>1.3</li>
+  </supportedVersions>
+  <description><![CDATA[Add machines for automation.
+
+I'm Japanese. I can't understand English, sorry...
+***** machine translation *****
+
+Add machines for automation.
+AutoMachineTool, BeltConveyor, Item Puller, Planter, Harvester, Slaughterhouse, AnimalResourceGatherer, AutoMiner, AutoCleaner, WallLight, AutoRepairer, Stunner, ShieldGenerator, Material Converter, PowerfulPowerPlant
+
+[url=https://github.com/nullre/rw_mods/blob/rw_1.3/NR_AutoMachineTool/README_en.md]Usage (machine translation)[/url]
+Because it is under development, specifications may change frequently.
+Also, it may be a buggy.
+[list]
+  [*]This MOD is made with reference to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=932193652] S.A.L.: Auto-crafters 2.0[/url].
+  [*]This MOD is made with reference to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=940984361]S.A.L.: Extra Crafters[/url].
+  [*]This MOD is made with reference to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=784327493]Industrial Rollers[/url].
+  [*]This MOD is made with reference to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1206316724]Project RimFactory[/url].
+[/list]
+Thanks to the producers of these mods.
+
+---
+
+自動化するための機械を追加します。
+自動工作機, ベルトコンベア, アイテム引き出し機, 種蒔き機, 収穫機, 屠畜機, 動物世話機, 自動採掘機, 自動清掃機, 壁埋め込みライト, 自動修理機, 電撃放射機,  シールド発生器, 物質変換器, 強力発電機
+
+[url=https://github.com/nullre/rw_mods/blob/rw_1.3/NR_AutoMachineTool/README.md]使い方[/url]
+開発中のため、仕様が頻繁に変わる可能性があります。
+あと、バギーかもしれません。
+[list]
+  [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=932193652] S.A.L.: Auto-crafters 2.0 [/url] を参考に作られています。
+  [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=940984361] S.A.L.: Extra Crafters[/url] を参考に作られています。
+  [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=784327493] Industrial Rollers [/url] を参考に作られています。
+  [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1206316724] Project RimFactory[/url] を参考に作られています。
+[/list]
+これらのMODの製作者様に感謝します。
+
+]]></description>
+</ModMetaData>

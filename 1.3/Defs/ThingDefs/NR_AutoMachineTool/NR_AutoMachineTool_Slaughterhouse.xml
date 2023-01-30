@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- base -->
+  <ThingDef Name="Building_NR_AutoMachineTool_Slaughterhouse_Base" Parent="BuildingBase" Abstract="True">
+    <defName>Building_NR_AutoMachineTool_Slaughterhouse_Base</defName>
+    <thingClass>NR_AutoMachineTool.Building_Slaughterhouse</thingClass>
+    <description>Place the Slaughterhouse near animals passing through or staying.
+Select the Slaughterhouse and set slaughter from the setting tab.
+Slaughterhouse starts slaughter animals within range.</description>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <fillPercent>1</fillPercent>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>0</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <pathCost>0</pathCost>
+    <designationCategory>NR_AutoMachineTool_DesignationCategory</designationCategory>
+    <rotatable>true</rotatable>
+    <placeWorkers>
+      <li>NR_AutoMachineTool.PlaceWorker_TargetCellsHilight</li>
+      <li>NR_AutoMachineTool.PlaceWorker_OutputCellsHilight</li>
+    </placeWorkers>
+    <category>Building</category>
+    <tickerType>Never</tickerType>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <coversFloor>true</coversFloor>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <building>
+      <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+    <repairEffect>Repair</repairEffect>
+    <constructEffect>ConstructMetal</constructEffect>
+    <size>(1,1)</size>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <selectable>True</selectable>
+    <inspectorTabs>
+      <li>NR_AutoMachineTool.ITab_RangePowerSupply</li>
+      <li>NR_AutoMachineTool.ITab_Slaughterhouse</li>
+    </inspectorTabs>
+    <modExtensions>
+      <li Class="NR_AutoMachineTool.ModExtension_AutoMachineTool">
+        <targetCellResolverType>NR_AutoMachineTool.Building_SlaughterhouseTargetCellResolver</targetCellResolverType>
+        <outputCellResolverType>NR_AutoMachineTool.OutputCellResolver</outputCellResolverType>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="Building_NR_AutoMachineTool_Slaughterhouse_Base">
+    <defName>Building_NR_AutoMachineTool_Slaughterhouse</defName>
+    <label>Slaughterhouse</label>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <graphicData>
+      <texPath>NR_AutoMachineTool/Buildings/Slaughterhouse</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>100</Steel>
+      <Plasteel>50</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <researchPrerequisites>
+      <li>ResearchProject_NR_AutoMachineTool_AutoAnimalCaretaker</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>
