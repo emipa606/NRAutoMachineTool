@@ -6,12 +6,12 @@
 これらのMODの製作者様に感謝します。
 
 I'm Japanese. I can't understand English, sorry...  
-[English (machine translation)](/NR_AutoMachineTool/README_en.md)
+[English (machine translation)](/Source/README_en.md)
 
 ---
 ## 自動工作機械
 
-![自動工作機械](/NR_AutoMachineTool/About/Desc_AutoMachineTool.png)
+![自動工作機械](/Source/Desc_AutoMachineTool.png)
 
 ### 使い方
 - 自動工作機械の研究をします。
@@ -36,8 +36,8 @@ I'm Japanese. I can't understand English, sorry...
 ---
 ## ベルトコンベア
 
-![ベルトコンベア](/NR_AutoMachineTool/About/Desc_BeltConveyor1.png)  
-![地下コンベア](/NR_AutoMachineTool/About/Desc_BeltConveyor2.png)
+![ベルトコンベア](/Source/Desc_BeltConveyor1.png)  
+![地下コンベア](/Source/Desc_BeltConveyor2.png)
 
 ### 使い方
 - ベルトコンベアの研究をします。
@@ -62,7 +62,7 @@ I'm Japanese. I can't understand English, sorry...
 ---
 ## アイテム引き出し機
 
-![アイテム引き出し機](/NR_AutoMachineTool/About/Desc_ItemPuller.png)
+![アイテム引き出し機](/Source/Desc_ItemPuller.png)
 
 ### 使い方
 - ベルトコンベアの研究をします。
@@ -84,7 +84,7 @@ I'm Japanese. I can't understand English, sorry...
 ---
 ## 種蒔き機
 
-![種蒔き機](/NR_AutoMachineTool/About/Desc_Planter.png)
+![種蒔き機](/Source/Desc_Planter.png)
 
 ### 使い方
 - 自動農業の研究をします。
@@ -106,7 +106,7 @@ I'm Japanese. I can't understand English, sorry...
 ---
 ## 収穫機
 
-![収穫機](/NR_AutoMachineTool/About/Desc_Harvester.png)
+![収穫機](/Source/Desc_Harvester.png)
 
 ### 使い方
 - 自動農業の研究をします。
@@ -132,7 +132,7 @@ I'm Japanese. I can't understand English, sorry...
 ---
 ## 動物世話機
 
-![動物世話機](/NR_AutoMachineTool/About/Desc_AnimalResourceGatherer.png)
+![動物世話機](/Source/Desc_AnimalResourceGatherer.png)
 
 ### 使い方
 - 自動動物飼育の研究をします。
@@ -155,7 +155,7 @@ I'm Japanese. I can't understand English, sorry...
 ---
 ## 屠畜機
 
-![屠畜機](/NR_AutoMachineTool/About/Desc_Slaughterhouse.png)
+![屠畜機](/Source/Desc_Slaughterhouse.png)
 
 ### 使い方
 - 自動動物飼育の研究をします。
@@ -179,7 +179,7 @@ I'm Japanese. I can't understand English, sorry...
 ---
 ## 自動採掘機
 
-![自動採掘機](/NR_AutoMachineTool/About/Desc_Miner.png)
+![自動採掘機](/Source/Desc_Miner.png)
 
 ### 使い方
 - 自動採掘の研究をします。
@@ -199,7 +199,7 @@ I'm Japanese. I can't understand English, sorry...
 ---
 ## 自動清掃機
 
-![自動清掃機](/NR_AutoMachineTool/About/Desc_Cleaner.png)
+![自動清掃機](/Source/Desc_Cleaner.png)
 
 ### 使い方
 - 自動清掃の研究をします。
@@ -217,7 +217,7 @@ I'm Japanese. I can't understand English, sorry...
 ---
 ## 壁埋込みライト
 
-![壁埋め込みライト](/NR_AutoMachineTool/About/Desc_WallLight.png)
+![壁埋め込みライト](/Source/Desc_WallLight.png)
 
 ### 使い方
 - 壁の上に設置します。
@@ -230,7 +230,7 @@ I'm Japanese. I can't understand English, sorry...
 ---
 ## 自動修理機
 
-![自動修理機](/NR_AutoMachineTool/About/Desc_Repairer.png)
+![自動修理機](/Source/Desc_Repairer.png)
 
 ### 使い方
 - 自動修理の研究をします。
@@ -250,7 +250,7 @@ I'm Japanese. I can't understand English, sorry...
 ---
 ## 電撃放射機
 
-![電撃放射機](/NR_AutoMachineTool/About/Desc_Stunner.png)
+![電撃放射機](/Source/Desc_Stunner.png)
 
 ### 使い方
 - 電撃放射の研究をします。
@@ -272,7 +272,7 @@ I'm Japanese. I can't understand English, sorry...
 ---
 ## 物質変換器
 
-![物質変換器](/NR_AutoMachineTool/About/Desc_MaterialMachine.png)
+![物質変換器](/Source/Desc_MaterialMachine.png)
 
 ### 使い方
 - 物質エネルギー の研究をします。
@@ -301,7 +301,7 @@ I'm Japanese. I can't understand English, sorry...
 ---
 ## シールド発生器
 
-![シールド発生器](/NR_AutoMachineTool/About/Desc_Shield.png)
+![シールド発生器](/Source/Desc_Shield.png)
 
 ### 使い方
 - シールド の研究をします。
@@ -319,7 +319,7 @@ I'm Japanese. I can't understand English, sorry...
 ---
 ## 強力発電機
 
-![強力発電機](/NR_AutoMachineTool/About/Desc_Generator.png)
+![強力発電機](/Source/Desc_Generator.png)
 
 ### 使い方
 - 強力な電気 の研究をします。

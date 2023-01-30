@@ -11,7 +11,7 @@ Thanks to the producers of these mods.
 ---
 ## AutoMachineTool
 
-![AutoMachineTool](/NR_AutoMachineTool/About/Desc_AutoMachineTool.png)
+![AutoMachineTool](/Source/Desc_AutoMachineTool.png)
 
 ### Usage
 - Research on automatic machine tool.
@@ -36,8 +36,8 @@ Thanks to the producers of these mods.
 ---
 ## BeltConveyor
 
-![BeltConveyor](/NR_AutoMachineTool/About/Desc_BeltConveyor1.png)  
-![Underground conveyor](/NR_AutoMachineTool/About/Desc_BeltConveyor2.png)
+![BeltConveyor](/Source/Desc_BeltConveyor1.png)  
+![Underground conveyor](/Source/Desc_BeltConveyor2.png)
 
 ### Usage
 - Research on belt conveyor.
@@ -62,7 +62,7 @@ Thanks to the producers of these mods.
 ---
 ## Item Puller
 
-![ItemPuller](/NR_AutoMachineTool/About/Desc_ItemPuller.png)
+![ItemPuller](/Source/Desc_ItemPuller.png)
 
 ### Usage
 - Research on belt conveyor.
@@ -84,7 +84,7 @@ Thanks to the producers of these mods.
 ---
 ## Planter
 
-![Planter](/NR_AutoMachineTool/About/Desc_Planter.png)
+![Planter](/Source/Desc_Planter.png)
 
 ### Usage
 - Research on Automatic Agriculture.
@@ -106,7 +106,7 @@ Thanks to the producers of these mods.
 ---
 ## Harvester
 
-![Harvester](/NR_AutoMachineTool/About/Desc_Harvester.png)
+![Harvester](/Source/Desc_Harvester.png)
 
 ### Usage
 - Research on Automatic Agriculture.
@@ -132,7 +132,7 @@ Thanks to the producers of these mods.
 ---
 ## AnimalResourceGatherer
 
-![AnimalResourceGatherer](/NR_AutoMachineTool/About/Desc_AnimalResourceGatherer.png)
+![AnimalResourceGatherer](/Source/Desc_AnimalResourceGatherer.png)
 
 ### Usage
 - Research on Automatic animal caretaker.
@@ -155,7 +155,7 @@ Thanks to the producers of these mods.
 ---
 ## Slaughterhouse
 
-![Slaughterhouse](/NR_AutoMachineTool/About/Desc_Slaughterhouse.png)
+![Slaughterhouse](/Source/Desc_Slaughterhouse.png)
 
 ### Usage
 - Research on Automatic animal caretaker.
@@ -179,7 +179,7 @@ Thanks to the producers of these mods.
 ---
 ## AutoMiner
 
-![AutoMiner](/NR_AutoMachineTool/About/Desc_Miner.png)
+![AutoMiner](/Source/Desc_Miner.png)
 
 ### Usage
 - Research on Automatic mining.
@@ -199,7 +199,7 @@ Thanks to the producers of these mods.
 ---
 ## AutoCleaner
 
-![AutoCleaner](/NR_AutoMachineTool/About/Desc_Cleaner.png)
+![AutoCleaner](/Source/Desc_Cleaner.png)
 
 ### Usage
 - Research on Automatic cleaning.
@@ -217,7 +217,7 @@ Thanks to the producers of these mods.
 ---
 ## WallLight
 
-![WallLight](/NR_AutoMachineTool/About/Desc_WallLight.png)
+![WallLight](/Source/Desc_WallLight.png)
 
 ### Usage
 - Install on the wall.
@@ -230,7 +230,7 @@ Thanks to the producers of these mods.
 ---
 ## AutoRepairer
 
-![AutoRepairer](/NR_AutoMachineTool/About/Desc_Repairer.png)
+![AutoRepairer](/Source/Desc_Repairer.png)
 
 ### Usage
 - Research on Automatic repairing.
@@ -250,7 +250,7 @@ Thanks to the producers of these mods.
 ---
 ## Stunner
 
-![Stunner](/NR_AutoMachineTool/About/Desc_Stunner.png)
+![Stunner](/Source/Desc_Stunner.png)
 
 ### Usage
 - Research on Automatic stunner.
@@ -272,7 +272,7 @@ Thanks to the producers of these mods.
 ---
 ## Material Converter
 
-![material converter](/NR_AutoMachineTool/About/Desc_MaterialMachine.png)
+![material converter](/Source/Desc_MaterialMachine.png)
 
 ### Usage
 - Research on material energy.
@@ -301,7 +301,7 @@ Thanks to the producers of these mods.
 ---
 ## Shield Generator
 
-![Shield Generator](/NR_AutoMachineTool/About/Desc_Shield.png)
+![Shield Generator](/Source/Desc_Shield.png)
 
 ### Usage
 - Research on Shield generator.
@@ -319,7 +319,7 @@ Thanks to the producers of these mods.
 ---
 ## PowerfulPowerPlant
 
-![PowerfulPowerPlant](/NR_AutoMachineTool/About/Desc_Generator.png)
+![PowerfulPowerPlant](/Source/Desc_Generator.png)
 
 ### Usage
 - Research on Powerful power.
