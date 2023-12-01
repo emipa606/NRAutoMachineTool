@@ -124,8 +124,8 @@ public class Building_Miner : Building_BaseMachine<Building_Miner>, IBillGiver, 
 
     protected override bool FinishWorking(Building_Miner working, out List<Thing> products)
     {
-        products = GenRecipe2.MakeRecipeProducts(workingBill.recipe, this, new List<Thing>(), null, this).ToList();
-        workingBill.Notify_IterationCompleted(null, new List<Thing>());
+        products = GenRecipe2.MakeRecipeProducts(workingBill.recipe, this, [], null, this).ToList();
+        workingBill.Notify_IterationCompleted(null, []);
         workingBill = null;
         return true;
     }

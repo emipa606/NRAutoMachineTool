@@ -7,7 +7,7 @@ namespace NR_AutoMachineTool;
 
 public class Building_ItemPullerCellResolver : IOutputCellResolver, IInputCellResolver
 {
-    private static readonly List<IntVec3> EmptyList = new List<IntVec3>();
+    private static readonly List<IntVec3> EmptyList = [];
 
     public Option<IntVec3> InputCell(IntVec3 cell, Map map, Rot4 rot)
     {

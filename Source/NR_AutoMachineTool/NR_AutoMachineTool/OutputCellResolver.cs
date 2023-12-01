@@ -7,7 +7,7 @@ namespace NR_AutoMachineTool;
 
 public class OutputCellResolver : IOutputCellResolver
 {
-    private static readonly List<IntVec3> EmptyList = new List<IntVec3>();
+    private static readonly List<IntVec3> EmptyList = [];
 
     public ModExtension_AutoMachineTool Parent { get; set; }
 

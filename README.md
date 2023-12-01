@@ -21,7 +21,7 @@ I'm Japanese. I can't understand English, sorry...
 Add machines for automation.
 AutoMachineTool, BeltConveyor, Item Puller, Planter, Harvester, Slaughterhouse, AnimalResourceGatherer, AutoMiner, AutoCleaner, WallLight, AutoRepairer, Stunner, ShieldGenerator, Material Converter, PowerfulPowerPlant
 
-https://github.com/nullre/rw_mods/blob/rw_1.3/NR_AutoMachineTool/README_en.md]Usage (machine translation)
+https://github.com/emipa606/NRAutoMachineTool/blob/main/Source/README_en.md]Usage (machine translation)
 Because it is under development, specifications may change frequently.
 Also, it may be a buggy.
 
@@ -42,7 +42,7 @@ Zymex
 自動化するための機械を追加します。
 自動工作機, ベルトコンベア, アイテム引き出し機, 種蒔き機, 収穫機, 屠畜機, 動物世話機, 自動採掘機, 自動清掃機, 壁埋め込みライト, 自動修理機, 電撃放射機,  シールド発生器, 物質変換器, 強力発電機
 
-https://github.com/nullre/rw_mods/blob/rw_1.3/NR_AutoMachineTool/README.md]使い方
+https://github.com/emipa606/NRAutoMachineTool/blob/main/Source/README_jp.md]使い方
 開発中のため、仕様が頻繁に変わる可能性があります。
 あと、バギーかもしれません。
 
@@ -64,9 +64,13 @@ Zymex
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib and command Ctrl+F12
+-  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib or the standalone https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+-  Use https://github.com/RimSort/RimSort/releases/latest]RimSort to sort your mods
 
+
+
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2926104031]![Image](https://img.shields.io/github/v/release/emipa606/NRAutoMachineTool?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
 

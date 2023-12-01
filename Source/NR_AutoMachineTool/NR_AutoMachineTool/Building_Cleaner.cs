@@ -48,7 +48,7 @@ public class Building_Cleaner : Building_BaseRange<Filth>
 
     protected override bool FinishWorking(Filth working, out List<Thing> products)
     {
-        products = new List<Thing>();
+        products = [];
         working.Destroy();
         return true;
     }

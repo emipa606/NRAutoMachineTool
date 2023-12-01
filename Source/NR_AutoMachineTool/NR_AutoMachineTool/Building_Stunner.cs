@@ -75,7 +75,7 @@ public class Building_Stunner : Building_BaseRange<Pawn>
             working.health.AddHediff(hediff);
         }
 
-        products = new List<Thing>();
+        products = [];
         lightningCount = 15;
         target = working;
         lightning = DefDatabase<EffecterDef>.GetNamed("NR_AutoMachineTool_Effect_Lightning").Spawn();

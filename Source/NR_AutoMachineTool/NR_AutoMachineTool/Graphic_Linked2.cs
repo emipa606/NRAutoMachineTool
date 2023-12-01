@@ -39,7 +39,8 @@ public abstract class Graphic_Linked2 : Graphic
         for (var i = 0; i < 16; i++)
         {
             var x = i % 4f * 0.25f;
-            var y = i / 4f * 0.25f;
+            // ReSharper disable once PossibleLossOfFraction
+            var y = i / 4 * 0.25f;
             var mainTextureOffset = new Vector2(x, y);
             var material = new Material(subGraphic.MatSingle)
             {

@@ -66,7 +66,7 @@ public class Building_Planter : Building_BaseRange<Thing>
     protected override bool FinishWorking(Thing working, out List<Thing> products)
     {
         Ops.Option(working as Plant).ForEach(delegate(Plant x) { x.sown = true; });
-        products = new List<Thing>();
+        products = [];
         return true;
     }
 

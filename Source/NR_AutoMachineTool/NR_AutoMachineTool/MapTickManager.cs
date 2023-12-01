@@ -9,7 +9,7 @@ namespace NR_AutoMachineTool;
 
 public class MapTickManager : MapComponent
 {
-    private readonly HashSet<Func<bool>> eachTickActions = new HashSet<Func<bool>>();
+    private readonly HashSet<Func<bool>> eachTickActions = [];
 
     private readonly Dictionary<int, HashSet<Action>> tickActionsDict = new Dictionary<int, HashSet<Action>>();
 
@@ -83,7 +83,7 @@ public class MapTickManager : MapComponent
 
         if (!tickActionsDict.TryGetValue(Find.TickManager.TicksGame + ticks, out var value))
         {
-            value = new HashSet<Action>();
+            value = [];
             tickActionsDict[Find.TickManager.TicksGame + ticks] = value;
         }
 

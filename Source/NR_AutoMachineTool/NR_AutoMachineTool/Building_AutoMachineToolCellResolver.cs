@@ -7,7 +7,7 @@ namespace NR_AutoMachineTool;
 
 public class Building_AutoMachineToolCellResolver : BaseTargetCellResolver, IOutputCellResolver
 {
-    private static readonly List<IntVec3> EmptyList = new List<IntVec3>();
+    private static readonly List<IntVec3> EmptyList = [];
 
     public override int MinPowerForRange => Setting.AutoMachineToolTier(Parent.tier).minSupplyPowerForRange;
 

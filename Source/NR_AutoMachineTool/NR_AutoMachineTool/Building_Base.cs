@@ -9,13 +9,13 @@ namespace NR_AutoMachineTool;
 
 public abstract class Building_Base<T> : Building, IProductOutput where T : Thing
 {
-    private static readonly HashSet<T> workingSet = new HashSet<T>();
+    private static readonly HashSet<T> workingSet = [];
 
     protected bool forcePlace = true;
 
     [Unsaved] protected bool placeFirstAbsorb;
 
-    protected List<Thing> products = new List<Thing>();
+    protected List<Thing> products = [];
 
     [Unsaved] private Effecter progressBar;
 
@@ -107,7 +107,7 @@ public abstract class Building_Base<T> : Building, IProductOutput where T : Thin
         base.PostMapInit();
         if (products == null)
         {
-            products = new List<Thing>();
+            products = [];
         }
 
         if (working == null && State == WorkingState.Working)
@@ -377,7 +377,7 @@ public abstract class Building_Base<T> : Building, IProductOutput where T : Thin
 
     protected virtual bool PlaceProduct(ref List<Thing> products)
     {
-        products = products.Aggregate(new List<Thing>(), delegate(List<Thing> total, Thing target)
+        products = products.Aggregate([], delegate(List<Thing> total, Thing target)
         {
             var option = (from b in (from t in OutputCell().GetThingList(Map)
                     where t.def.category == ThingCategory.Building

@@ -9,7 +9,7 @@ namespace NR_AutoMachineTool;
 
 public class Building_Shield : Building_BaseRange<Thing>
 {
-    private static readonly HashSet<Thing> workingSet = new HashSet<Thing>();
+    private static readonly HashSet<Thing> workingSet = [];
     private static float angle;
 
     public Building_Shield()
@@ -110,7 +110,7 @@ public class Building_Shield : Building_BaseRange<Thing>
 
     protected override bool FinishWorking(Thing working, out List<Thing> products)
     {
-        products = new List<Thing>();
+        products = [];
         return false;
     }
 }

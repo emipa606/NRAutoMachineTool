@@ -433,7 +433,7 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
 
             if (!(num <= 0f))
             {
-                return new List<ThingAmount>();
+                return [];
             }
 
             var grouped1 = grouped;
@@ -448,7 +448,7 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
             grouped = Grouping(grouped.SelectMany(x => x.consumable).ToList());
             return list;
         }).ToList();
-        return source.All(x => x.Count > 0) ? source.SelectMany(c => c).ToList() : new List<ThingAmount>();
+        return source.All(x => x.Count > 0) ? source.SelectMany(c => c).ToList() : [];
     }
 
     private Thing DominantIngredient(List<Thing> ingredients)

@@ -200,7 +200,7 @@ public class Building_Repairer : Building_BaseRange<Building_Repairer>
 
     protected override bool FinishWorking(Building_Repairer working, out List<Thing> products)
     {
-        products = new List<Thing>();
+        products = [];
         return true;
     }
 }

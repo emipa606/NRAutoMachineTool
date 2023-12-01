@@ -15,8 +15,11 @@ public class Building_MaterialMahcine : Building_WorkTable, IBillNotificationRec
 
     private const string ScanMaterialDefName = "NR_AutoMachineTool.ScanMaterial";
 
-    private static readonly HashSet<string> ToEnergyDefNames = new HashSet<string>(new[]
-        { "NR_AutoMachineTool.ToEnergy10", "NR_AutoMachineTool.ToEnergy100" });
+    private static readonly HashSet<string> ToEnergyDefNames =
+    [
+        ..new[]
+            { "NR_AutoMachineTool.ToEnergy10", "NR_AutoMachineTool.ToEnergy100" }
+    ];
 
     private static ThingDef energyThingDef;
 
@@ -24,9 +27,9 @@ public class Building_MaterialMahcine : Building_WorkTable, IBillNotificationRec
 
     private static RecipeDef scanMaterialRecipe;
 
-    [Unsaved] private readonly List<RecipeDef> allRecipes = new List<RecipeDef>();
+    [Unsaved] private readonly List<RecipeDef> allRecipes = [];
 
-    private List<MaterializeRecipeDefData> materializeRecipeData = new List<MaterializeRecipeDefData>();
+    private List<MaterializeRecipeDefData> materializeRecipeData = [];
 
     private float Loss => 0.3f;
 
@@ -102,15 +105,16 @@ public class Building_MaterialMahcine : Building_WorkTable, IBillNotificationRec
                 where t.category == ThingCategory.Item
                 where Ops.GetEnergyAmount(t) > 0.1f
                 select t);
-            toEnergyRecipes = new List<RecipeDef>
-            {
+            toEnergyRecipes =
+            [
                 CreateToEnergyRecipeDef("NR_AutoMachineTool.ToEnergy10",
                     "NR_AutoMachineTool.MaterialMachine.RecipeToEnergyLabel".Translate(10),
                     "NR_AutoMachineTool.MaterialMachine.RecipeToEnergyJobName".Translate(10), 300f, 10, toEnergyDefs),
+
                 CreateToEnergyRecipeDef("NR_AutoMachineTool.ToEnergy100",
                     "NR_AutoMachineTool.MaterialMachine.RecipeToEnergyLabel".Translate(100),
                     "NR_AutoMachineTool.MaterialMachine.RecipeToEnergyJobName".Translate(100), 1000f, 100, toEnergyDefs)
-            };
+            ];
             toEnergyRecipes.ForEach(delegate(RecipeDef r)
             {
                 r.ingredientValueGetterClass = typeof(IngredientValueGetter_Energy);
@@ -140,7 +144,7 @@ public class Building_MaterialMahcine : Building_WorkTable, IBillNotificationRec
         Scribe_Collections.Look(ref materializeRecipeData, "materializeRecipeData", LookMode.Deep);
         if (materializeRecipeData == null)
         {
-            materializeRecipeData = new List<MaterializeRecipeDefData>();
+            materializeRecipeData = [];
         }
 
         materializeRecipeData.ForEach(delegate(MaterializeRecipeDefData d) { d.Register(Loss); });

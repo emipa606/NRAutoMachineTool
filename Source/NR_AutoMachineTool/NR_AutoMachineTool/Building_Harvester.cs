@@ -58,7 +58,7 @@ public class Building_Harvester : Building_BaseRange<Plant>
 
     protected override bool FinishWorking(Plant working, out List<Thing> products)
     {
-        products = new List<Thing>();
+        products = [];
         working.def.plant.soundHarvestFinish.PlayOneShot(this);
         if (!working.Blighted)
         {

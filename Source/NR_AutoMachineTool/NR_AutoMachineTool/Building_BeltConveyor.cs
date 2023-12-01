@@ -15,7 +15,7 @@ internal class Building_BeltConveyor : Building_BaseMachine<Thing>, IBeltConbeyo
 
     private Dictionary<Rot4, ThingFilter> filters = new Dictionary<Rot4, ThingFilter>();
 
-    [Unsaved] private List<Rot4> outputRot = new List<Rot4>();
+    [Unsaved] private List<Rot4> outputRot = [];
 
     private Dictionary<Rot4, DirectionPriority> priorities = new[]
     {

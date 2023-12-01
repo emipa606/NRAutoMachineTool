@@ -110,8 +110,8 @@ public class ModSetting_AutoMachineTool : ModSettings
 
     private static List<RangeSkillMachineSetting> CreateAutoMachineToolDefault()
     {
-        return new List<RangeSkillMachineSetting>
-        {
+        return
+        [
             new RangeSkillMachineSetting
             {
                 minSupplyPowerForRange = 0,
@@ -121,6 +121,7 @@ public class ModSetting_AutoMachineTool : ModSettings
                 skillLevel = 5,
                 speedFactor = 1f
             },
+
             new RangeSkillMachineSetting
             {
                 minSupplyPowerForRange = 0,
@@ -130,6 +131,7 @@ public class ModSetting_AutoMachineTool : ModSettings
                 skillLevel = 10,
                 speedFactor = 1.5f
             },
+
             new RangeSkillMachineSetting
             {
                 minSupplyPowerForRange = 0,
@@ -139,13 +141,13 @@ public class ModSetting_AutoMachineTool : ModSettings
                 skillLevel = 20,
                 speedFactor = 2f
             }
-        };
+        ];
     }
 
     private static List<RangeSkillMachineSetting> CreatePlanterDefault()
     {
-        return new List<RangeSkillMachineSetting>
-        {
+        return
+        [
             new RangeSkillMachineSetting
             {
                 minSupplyPowerForRange = 0,
@@ -155,6 +157,7 @@ public class ModSetting_AutoMachineTool : ModSettings
                 skillLevel = 5,
                 speedFactor = 1f
             },
+
             new RangeSkillMachineSetting
             {
                 minSupplyPowerForRange = 0,
@@ -164,6 +167,7 @@ public class ModSetting_AutoMachineTool : ModSettings
                 skillLevel = 10,
                 speedFactor = 1.5f
             },
+
             new RangeSkillMachineSetting
             {
                 minSupplyPowerForRange = 0,
@@ -173,13 +177,13 @@ public class ModSetting_AutoMachineTool : ModSettings
                 skillLevel = 20,
                 speedFactor = 2f
             }
-        };
+        ];
     }
 
     private static List<RangeMachineSetting> CreateHarvesterDefault()
     {
-        return new List<RangeMachineSetting>
-        {
+        return
+        [
             new RangeMachineSetting
             {
                 minSupplyPowerForRange = 0,
@@ -188,6 +192,7 @@ public class ModSetting_AutoMachineTool : ModSettings
                 maxSupplyPowerForSpeed = 1000,
                 speedFactor = 1f
             },
+
             new RangeMachineSetting
             {
                 minSupplyPowerForRange = 0,
@@ -196,6 +201,7 @@ public class ModSetting_AutoMachineTool : ModSettings
                 maxSupplyPowerForSpeed = 5000,
                 speedFactor = 1.5f
             },
+
             new RangeMachineSetting
             {
                 minSupplyPowerForRange = 0,
@@ -204,7 +210,7 @@ public class ModSetting_AutoMachineTool : ModSettings
                 maxSupplyPowerForSpeed = 10000,
                 speedFactor = 2f
             }
-        };
+        ];
     }
 
     public void RestoreDefault()

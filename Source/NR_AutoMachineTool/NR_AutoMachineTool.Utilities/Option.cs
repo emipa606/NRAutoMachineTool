@@ -54,7 +54,7 @@ public class Option<T>
 
     public List<T> ToList()
     {
-        return !HasValue ? new List<T>() : new List<T>(new[] { Value });
+        return !HasValue ? [] : [..new[] { Value }];
     }
 
     public T GetOrDefault(T defaultValue)
