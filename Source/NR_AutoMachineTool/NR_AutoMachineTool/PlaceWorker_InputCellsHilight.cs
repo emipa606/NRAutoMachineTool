@@ -12,7 +12,7 @@ internal class PlaceWorker_InputCellsHilight : PlaceWorker
     {
         var map = Find.CurrentMap;
         var ext = def.GetModExtension<ModExtension_AutoMachineTool>();
-        if (ext == null || ext.InputCellResolver == null)
+        if (ext?.InputCellResolver == null)
         {
             Debug.LogWarning("inputCellResolver not found.");
             return;

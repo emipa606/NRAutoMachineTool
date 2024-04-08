@@ -8,13 +8,14 @@ public class MoteProgressBar2 : MoteProgressBar
 {
     public Func<float> progressGetter;
 
-    public override void Draw()
+
+    public override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
         if (progressGetter != null)
         {
             progress = Mathf.Clamp01(progressGetter());
         }
 
-        base.Draw();
+        base.DrawAt(drawLoc, flip);
     }
 }

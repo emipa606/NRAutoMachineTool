@@ -179,25 +179,6 @@ public static class Ops
 
     public static bool PlaceItem(Thing t, IntVec3 cell, bool forbid, Map map, bool firstAbsorbStack = false)
     {
-        void Effect(Thing item)
-        {
-            item.def.soundDrop.PlayOneShot(item);
-            FleckMaker.ThrowDustPuff(item.Position, map, 0.5f);
-        }
-
-        bool Func()
-        {
-            (from i in cell.SlotGroupCells(map).SelectMany(c => c.GetThingList(map)) where i.def == t.def select i)
-                .ForEach(delegate(Thing i) { i.TryAbsorbStack(t, true); });
-            if (t.stackCount != 0)
-            {
-                return false;
-            }
-
-            Effect(t);
-            return true;
-        }
-
         if (firstAbsorbStack && Func())
         {
             return true;
@@ -226,7 +207,7 @@ public static class Ops
             where c.IsValidStorageFor(map, t)
             where (from b in c.GetThingList(map)
                 where b.def.category == ThingCategory.Building
-                select b).All(b => !(b is Building_BeltConveyor))
+                select b).All(b => b is not Building_BeltConveyor)
             select c).FirstOption();
         if (!option.HasValue)
         {
@@ -241,6 +222,25 @@ public static class Ops
 
         Effect(t);
         return true;
+
+        void Effect(Thing item)
+        {
+            item.def.soundDrop.PlayOneShot(item);
+            FleckMaker.ThrowDustPuff(item.Position, map, 0.5f);
+        }
+
+        bool Func()
+        {
+            (from i in cell.SlotGroupCells(map).SelectMany(c => c.GetThingList(map)) where i.def == t.def select i)
+                .ForEach(delegate(Thing i) { i.TryAbsorbStack(t, true); });
+            if (t.stackCount != 0)
+            {
+                return false;
+            }
+
+            Effect(t);
+            return true;
+        }
     }
 
     public static void Noop()
@@ -260,7 +260,7 @@ public static class Ops
         copy.deleted = bill.deleted;
         copy.hpRange = bill.hpRange;
         copy.includeEquipped = bill.includeEquipped;
-        copy.includeFromZone = bill.includeFromZone;
+        copy.includeGroup = bill.includeGroup;
         copy.includeTainted = bill.includeTainted;
         copy.ingredientFilter = bill.ingredientFilter;
         copy.ingredientSearchRadius = bill.ingredientSearchRadius;

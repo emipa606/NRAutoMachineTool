@@ -1,5 +1,8 @@
 # Changelog for NRAutoMachineTool
 
+1.5.0 - Updated for 1.5
+
+
 1.4.2 - Fixed graphics issue introduced in 1.4, thanks EMirror!
 
 

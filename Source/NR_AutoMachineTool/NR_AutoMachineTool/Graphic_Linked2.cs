@@ -6,9 +6,8 @@ namespace NR_AutoMachineTool;
 
 public abstract class Graphic_Linked2 : Graphic
 {
+    protected readonly Material[] subMats = new Material[16];
     public Graphic subGraphic;
-
-    protected Material[] subMats = new Material[16];
 
     public Graphic_Linked2()
     {

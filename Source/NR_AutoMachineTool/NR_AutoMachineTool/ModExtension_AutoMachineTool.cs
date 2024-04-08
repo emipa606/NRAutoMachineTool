@@ -5,6 +5,7 @@ namespace NR_AutoMachineTool;
 
 public class ModExtension_AutoMachineTool : DefModExtension
 {
+    public readonly int tier = 1;
     private IInputCellResolver inputCellResolver;
 
     public Type inputCellResolverType;
@@ -16,7 +17,6 @@ public class ModExtension_AutoMachineTool : DefModExtension
     private ITargetCellResolver targetCellResolver;
 
     public Type targetCellResolverType;
-    public int tier = 1;
 
     public bool toUnderground;
 

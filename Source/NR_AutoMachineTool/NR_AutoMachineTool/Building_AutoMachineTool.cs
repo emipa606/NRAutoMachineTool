@@ -12,7 +12,7 @@ namespace NR_AutoMachineTool;
 public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineTool>, IRecipeProductWorker
 {
     private readonly IntVec3[] adjacent =
-    {
+    [
         new IntVec3(0, 0, 1),
         new IntVec3(1, 0, 1),
         new IntVec3(1, 0, 0),
@@ -21,9 +21,9 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
         new IntVec3(-1, 0, -1),
         new IntVec3(-1, 0, 0),
         new IntVec3(-1, 0, 1)
-    };
+    ];
 
-    private readonly string[] adjacentName = { "N", "NE", "E", "SE", "S", "SW", "W", "NW" };
+    private readonly string[] adjacentName = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"];
 
     private Bill bill;
 
@@ -168,7 +168,7 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
 
     private void ForbidBills(Building_WorkTable worktable)
     {
-        if (!worktable.BillStack.Bills.Any(b => !(b is IBill_PawnForbidded)))
+        if (!worktable.BillStack.Bills.Any(b => b is not IBill_PawnForbidded))
         {
             return;
         }
@@ -296,7 +296,7 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
                 return new
                 {
                     Result = true,
-                    WorkAmount = bill.recipe.WorkAmountTotal(!bill.recipe.UsesUnfinishedThing ? null : dominant?.def)
+                    WorkAmount = bill.recipe.WorkAmountForStuff(!bill.recipe.UsesUnfinishedThing ? null : dominant?.def)
                 };
             }
 
@@ -309,7 +309,7 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
             return new
             {
                 Result = true,
-                WorkAmount = bill.recipe.WorkAmountTotal(!bill.recipe.UsesUnfinishedThing ? null : dominant?.def)
+                WorkAmount = bill.recipe.WorkAmountForStuff(!bill.recipe.UsesUnfinishedThing ? null : dominant?.def)
             };
         }).GetOrDefault(new
         {
@@ -367,25 +367,6 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
     private List<ThingAmount> Ingredients(Bill bill, List<Thing> consumable)
     {
         var arg = consumable.Select(x => new ThingAmount(x, x.stackCount)).ToList();
-
-        List<ThingDefGroup> Grouping(List<ThingAmount> consumableAmounts)
-        {
-            return (from c in consumableAmounts
-                    group c by c.thing.def
-                    into c
-                    select new { Def = c.Key, Count = c.Sum(t => t.count), Amounts = c.Select(t => t) }
-                    into g
-                    orderby g.Def.IsStuff descending, g.Count * bill.recipe.IngredientValueGetter.ValuePerUnitOf(g.Def)
-                        descending
-                    select g).Select(g =>
-                {
-                    var result = default(ThingDefGroup);
-                    result.def = g.Def;
-                    result.consumable = g.Amounts.ToList();
-                    return result;
-                })
-                .ToList();
-        }
 
         var grouped = Grouping(arg);
         var source = bill.recipe.ingredients.Select(delegate(IngredientCount i)
@@ -449,6 +430,25 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
             return list;
         }).ToList();
         return source.All(x => x.Count > 0) ? source.SelectMany(c => c).ToList() : [];
+
+        List<ThingDefGroup> Grouping(List<ThingAmount> consumableAmounts)
+        {
+            return (from c in consumableAmounts
+                    group c by c.thing.def
+                    into c
+                    select new { Def = c.Key, Count = c.Sum(t => t.count), Amounts = c.Select(t => t) }
+                    into g
+                    orderby g.Def.IsStuff descending, g.Count * bill.recipe.IngredientValueGetter.ValuePerUnitOf(g.Def)
+                        descending
+                    select g).Select(g =>
+                {
+                    var result = default(ThingDefGroup);
+                    result.def = g.Def;
+                    result.consumable = g.Amounts.ToList();
+                    return result;
+                })
+                .ToList();
+        }
     }
 
     private Thing DominantIngredient(List<Thing> ingredients)
@@ -663,15 +663,9 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
         public List<ThingAmount> consumable;
     }
 
-    private class ThingAmount
+    private class ThingAmount(Thing thing, int count)
     {
-        public readonly Thing thing;
-        public int count;
-
-        public ThingAmount(Thing thing, int count)
-        {
-            this.thing = thing;
-            this.count = count;
-        }
+        public readonly Thing thing = thing;
+        public int count = count;
     }
 }

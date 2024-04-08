@@ -43,7 +43,7 @@ public abstract class BaseMachineSetting : IMachineSetting
     {
         var rect = list.GetRect(30f);
         Widgets.Label(rect.LeftHalf(), "NR_AutoMachineTool.SettingSpeedFactor".Translate(factor.ToString("F1")));
-        factor = Widgets.HorizontalSlider_NewTemp(rect.RightHalf(), factor, 0.1f, 10f, true,
+        factor = Widgets.HorizontalSlider(rect.RightHalf(), factor, 0.1f, 10f, true,
             "NR_AutoMachineTool.SettingSpeedFactor".Translate(factor.ToString("F1")), 0.1f.ToString("F1"),
             10f.ToString("F1"), 0.1f);
     }
@@ -52,7 +52,7 @@ public abstract class BaseMachineSetting : IMachineSetting
     {
         var rect = list.GetRect(30f);
         Widgets.Label(rect.LeftHalf(), "NR_AutoMachineTool.SettingSkillLevel".Translate(skillLevel));
-        skillLevel = (int)Widgets.HorizontalSlider_NewTemp(rect.RightHalf(), skillLevel, 1f, 20f, true,
+        skillLevel = (int)Widgets.HorizontalSlider(rect.RightHalf(), skillLevel, 1f, 20f, true,
             "NR_AutoMachineTool.SettingSkillLevel".Translate(skillLevel), 1.ToString(), 20.ToString(), 1f);
     }
 }

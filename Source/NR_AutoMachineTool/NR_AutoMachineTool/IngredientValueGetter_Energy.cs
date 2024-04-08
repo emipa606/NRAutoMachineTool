@@ -1,4 +1,5 @@
 using NR_AutoMachineTool.Utilities;
+using RimWorld;
 using Verse;
 
 namespace NR_AutoMachineTool;

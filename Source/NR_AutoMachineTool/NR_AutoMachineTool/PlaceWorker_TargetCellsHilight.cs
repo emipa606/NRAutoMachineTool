@@ -11,7 +11,7 @@ internal class PlaceWorker_TargetCellsHilight : PlaceWorker
     {
         var map = Find.CurrentMap;
         var ext = def.GetModExtension<ModExtension_AutoMachineTool>();
-        if (ext == null || ext.TargetCellResolver == null)
+        if (ext?.TargetCellResolver == null)
         {
             Debug.LogWarning("targetCellResolver not found.");
             return;

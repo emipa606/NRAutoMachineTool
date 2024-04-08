@@ -70,11 +70,6 @@ internal class Building_BeltConveyorUGConnecter : Building_BaseMachine<Thing>, I
             return false;
         }
 
-        bool Func(Thing t)
-        {
-            return t.CanStackWith(thing) && t.stackCount < t.def.stackLimit;
-        }
-
         return State switch
         {
             WorkingState.Ready => true,
@@ -82,6 +77,11 @@ internal class Building_BeltConveyorUGConnecter : Building_BaseMachine<Thing>, I
             WorkingState.Placing => Func(products[0]),
             _ => false
         };
+
+        bool Func(Thing t)
+        {
+            return t.CanStackWith(thing) && t.stackCount < t.def.stackLimit;
+        }
     }
 
     [SpecialName] Rot4 IBeltConbeyorLinkable.Rotation => base.Rotation;
@@ -126,18 +126,18 @@ internal class Building_BeltConveyorUGConnecter : Building_BaseMachine<Thing>, I
             GenMapUI.DefaultThingLabelColor);
     }
 
-    public override void Draw()
+
+    public override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
-        base.Draw();
+        base.DrawAt(drawLoc, flip);
         if (State == 0)
         {
             return;
         }
 
-        var drawLoc = CarryPosition();
         if (!ToUnderground || WorkLeft > 0.7f)
         {
-            CarryingThing().DrawAt(drawLoc);
+            CarryingThing().DrawAt(CarryPosition());
         }
     }
 

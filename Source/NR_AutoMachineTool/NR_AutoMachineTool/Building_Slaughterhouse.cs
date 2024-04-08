@@ -43,34 +43,6 @@ public class Building_Slaughterhouse : Building_BaseRange<Pawn>, ISlaughterhouse
         {
             var pawns = mapPawns.Where(p => p.def == s.def);
 
-            bool Where(Pawn p)
-            {
-                var stillValid = true;
-                if (!s.hasBonds)
-                {
-                    stillValid = p.relations.GetFirstDirectRelationPawn(PawnRelationDefOf.Bond) == null;
-                }
-
-                if (stillValid && !s.pregnancy)
-                {
-                    stillValid = p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Pregnant, true) == null;
-                }
-
-                if (stillValid && !s.trained)
-                {
-                    stillValid = !p.training.HasLearned(TrainableDefOf.Obedience);
-                }
-
-                return stillValid;
-            }
-
-            IOrderedEnumerable<Pawn> OrderBy(IEnumerable<Pawn> e, bool adult)
-            {
-                return adult
-                    ? e.OrderByDescending(p => p.ageTracker.AgeChronologicalTicks)
-                    : e.OrderBy(p => p.ageTracker.AgeChronologicalTicks);
-            }
-
             return (from a in new[]
                 {
                     new
@@ -109,6 +81,34 @@ public class Building_Slaughterhouse : Building_BaseRange<Pawn>, ISlaughterhouse
                 into g
                 where g.SlaughterCount > 0
                 select g).SelectMany(g => OrderBy(g.Pawns.Where(Where), g.Group.Adult).Take(g.SlaughterCount));
+
+            bool Where(Pawn p)
+            {
+                var stillValid = true;
+                if (!s.hasBonds)
+                {
+                    stillValid = p.relations.GetFirstDirectRelationPawn(PawnRelationDefOf.Bond) == null;
+                }
+
+                if (stillValid && !s.pregnancy)
+                {
+                    stillValid = p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Pregnant, true) == null;
+                }
+
+                if (stillValid && !s.trained)
+                {
+                    stillValid = !p.training.HasLearned(TrainableDefOf.Obedience);
+                }
+
+                return stillValid;
+            }
+
+            IOrderedEnumerable<Pawn> OrderBy(IEnumerable<Pawn> e, bool adult)
+            {
+                return adult
+                    ? e.OrderByDescending(p => p.ageTracker.AgeChronologicalTicks)
+                    : e.OrderBy(p => p.ageTracker.AgeChronologicalTicks);
+            }
         }));
     }
 

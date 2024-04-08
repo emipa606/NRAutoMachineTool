@@ -5,13 +5,8 @@ using Verse;
 
 namespace NR_AutoMachineTool;
 
-public class Bill_ProductionNotifyComplete : Bill_Production
+public class Bill_ProductionNotifyComplete(RecipeDef recipe) : Bill_Production(recipe)
 {
-    public Bill_ProductionNotifyComplete(RecipeDef recipe)
-        : base(recipe)
-    {
-    }
-
     public override void Notify_IterationCompleted(Pawn billDoer, List<Thing> ingredients)
     {
         base.Notify_IterationCompleted(billDoer, ingredients);

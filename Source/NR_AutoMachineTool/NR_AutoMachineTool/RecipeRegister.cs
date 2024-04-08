@@ -13,7 +13,7 @@ public static class RecipeRegister
     static RecipeRegister()
     {
         var list = (from d in DefDatabase<ThingDef>.AllDefs
-            where d.mineable && d.building is { mineableThing: { }, mineableYield: > 0 }
+            where d.mineable && d.building is { mineableThing: not null, mineableYield: > 0 }
             where d.building.isResourceRock || d.building.isNaturalRock
             select new ThingDefCountClass(d.building.mineableThing, d.building.mineableYield)).ToList();
         var mineablesSet = Ops.ToHashSet(list.Select(d => d.thingDef));

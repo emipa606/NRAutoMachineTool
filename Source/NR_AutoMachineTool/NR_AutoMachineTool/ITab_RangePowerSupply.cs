@@ -40,7 +40,7 @@ internal class ITab_RangePowerSupply : ITab
         {
             Widgets.Label(listing_Standard.GetRect(50f), descriptionForSpeed);
             listing_Standard.Gap();
-            var num = (int)Widgets.HorizontalSlider_NewTemp(listing_Standard.GetRect(50f), Machine.SupplyPowerForSpeed,
+            var num = (int)Widgets.HorizontalSlider(listing_Standard.GetRect(50f), Machine.SupplyPowerForSpeed,
                 minPowerForSpeed, maxPowerForSpeed, true, label, minPowerForSpeed.ToString(),
                 maxPowerForSpeed.ToString(), 100f);
             Machine.SupplyPowerForSpeed = num;
@@ -57,7 +57,7 @@ internal class ITab_RangePowerSupply : ITab
 
         Widgets.Label(listing_Standard.GetRect(50f), descriptionForRange);
         listing_Standard.Gap();
-        var num2 = (int)Widgets.HorizontalSlider_NewTemp(listing_Standard.GetRect(50f), Machine.SupplyPowerForRange,
+        var num2 = (int)Widgets.HorizontalSlider(listing_Standard.GetRect(50f), Machine.SupplyPowerForRange,
             minPowerForRange, maxPowerForRange, true, label2, minPowerForRange.ToString(), maxPowerForRange.ToString(),
             500f);
         Machine.SupplyPowerForRange = num2;

@@ -12,7 +12,7 @@ internal class PlaceWorker_OutputCellsHilight : PlaceWorker
     {
         var map = Find.CurrentMap;
         var ext = def.GetModExtension<ModExtension_AutoMachineTool>();
-        if (ext == null || ext.OutputCellResolver == null)
+        if (ext?.OutputCellResolver == null)
         {
             Debug.LogWarning("outputCellResolver not found.");
             return;

@@ -35,7 +35,7 @@ internal class ITab_PowerSupply : ITab
         listing_Standard.Gap();
         Widgets.Label(listing_Standard.GetRect(50f), description);
         listing_Standard.Gap();
-        var num2 = (int)Widgets.HorizontalSlider_NewTemp(listing_Standard.GetRect(50f), Machine.SupplyPowerForSpeed,
+        var num2 = (int)Widgets.HorizontalSlider(listing_Standard.GetRect(50f), Machine.SupplyPowerForSpeed,
             Machine.MinPowerForSpeed, Machine.MaxPowerForSpeed, true, label, Machine.MinPowerForSpeed.ToString(),
             Machine.MaxPowerForSpeed.ToString(), num);
         Machine.SupplyPowerForSpeed = num2;

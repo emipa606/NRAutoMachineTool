@@ -10,7 +10,7 @@ namespace NR_AutoMachineTool;
 
 public class Mod_AutoMachineTool : Mod
 {
-    public Option<HopmMod> Hopm;
+    public readonly Option<HopmMod> Hopm;
 
     public Mod_AutoMachineTool(ModContentPack content)
         : base(content)
@@ -80,13 +80,12 @@ public class Mod_AutoMachineTool : Mod
                     settingHandlerType = hugsAsm.GetType("HugsLib.Settings.SettingHandle`1"),
                     recipeInfoType = hopmAsm.GetType("Autopsy.RecipeInfo")
                 };
-                var methodInfo = hopmMod.traverseBody = hopmAsm.GetType("Autopsy.NewMedicalRecipesUtility").GetMethod(
-                    "TraverseBody", new[]
-                    {
+                hopmMod.traverseBody = hopmAsm.GetType("Autopsy.NewMedicalRecipesUtility").GetMethod(
+                    "TraverseBody", [
                         hopmMod.recipeInfoType,
                         typeof(Corpse),
                         typeof(float)
-                    });
+                    ]);
                 hopmMod.autopsyRecipeDefsType = hopmAsm.GetType("Autopsy.Util.AutopsyRecipeDefs");
                 return Ops.Just(hopmMod);
             }
@@ -147,7 +146,7 @@ public class Mod_AutoMachineTool : Mod
             }
 
             var value = fields[fieldName].GetValue(null);
-            return fieldValueProps[fieldName].GetValue(value, Array.Empty<object>());
+            return fieldValueProps[fieldName].GetValue(value, []);
         }
 
         public void Postfix_MakeRecipeProducts(ref IEnumerable<Thing> __result, RecipeDef recipeDef, float skillChance,
@@ -189,7 +188,7 @@ public class Mod_AutoMachineTool : Mod
                 foreach (var item in ingredients.OfType<Corpse>())
                 {
                     list.AddRange(
-                        (IEnumerable<Thing>)traverseBody.Invoke(null, new[] { obj3, item, skillChance }));
+                        (IEnumerable<Thing>)traverseBody.Invoke(null, [obj3, item, skillChance]));
                 }
 
                 __result = list;

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using LudeonTK;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -75,6 +76,9 @@ public class ITab_Bills2 : ITab
 
         var rect2 = new Rect(0f, 0f, WinSize.x, WinSize.y).ContractedBy(10f);
 
+        mouseoverBill = SelTable.billStack.DoListing(rect2, RecipeOptionsMaker, ref scrollPosition, ref viewHeight);
+        return;
+
         List<FloatMenuOption> RecipeOptionsMaker()
         {
             var list = new List<FloatMenuOption>();
@@ -124,8 +128,6 @@ public class ITab_Bills2 : ITab
 
             return list;
         }
-
-        mouseoverBill = SelTable.billStack.DoListing(rect2, RecipeOptionsMaker, ref scrollPosition, ref viewHeight);
     }
 
     public override void TabUpdate()

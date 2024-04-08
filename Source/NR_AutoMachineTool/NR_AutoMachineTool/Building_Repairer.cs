@@ -65,7 +65,7 @@ public class Building_Repairer : Building_BaseRange<Building_Repairer>
                 where cells.Contains(t.Position)
                 select t
                 into p
-                where p.equipment is { AllEquipmentListForReading: { } }
+                where p.equipment is { AllEquipmentListForReading: not null }
                 where p.equipment.AllEquipmentListForReading.Cast<Thing>().ToList()
                     .Append(p.apparel.WornApparel.Cast<Thing>().ToList())
                     .Any(t => t.HitPoints < t.MaxHitPoints)

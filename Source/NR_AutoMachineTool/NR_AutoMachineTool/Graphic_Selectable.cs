@@ -22,9 +22,9 @@ internal class Graphic_Selectable : Graphic_Collection
             return subGraphics[0];
         }
 
-        if (pathDic.ContainsKey(path))
+        if (pathDic.TryGetValue(path, out var value))
         {
-            return pathDic[path];
+            return value;
         }
 
         pathDic[path] = subGraphics.First(x => x.path == path);

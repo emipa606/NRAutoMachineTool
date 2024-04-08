@@ -7,7 +7,7 @@ public class SpecialThingFilterWorker_Fresh : SpecialThingFilterWorker
 {
     public override bool Matches(Thing t)
     {
-        if (!(t is ThingWithComps thingWithComps))
+        if (t is not ThingWithComps thingWithComps)
         {
             return false;
         }

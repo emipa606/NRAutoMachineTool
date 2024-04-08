@@ -26,9 +26,10 @@ public class MoteLightning : MoteDualAttached
         }
     }
 
-    public override void Draw()
+
+    public override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
-        base.Draw();
+        base.DrawAt(drawLoc, flip);
         var material = LightningMaterials[Find.TickManager.TicksAbs / 4 % 4];
         var num = (3 - (Find.TickManager.TicksAbs % 4)) / 3f * 0.5f;
         if (!(material != null))

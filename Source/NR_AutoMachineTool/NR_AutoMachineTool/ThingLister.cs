@@ -6,16 +6,9 @@ using Verse;
 
 namespace NR_AutoMachineTool;
 
-public class ThingLister
+public class ThingLister(Map map)
 {
-    private readonly Map map;
-
     private readonly Dictionary<Type, List<ThingDef>> typeDic = new Dictionary<Type, List<ThingDef>>();
-
-    public ThingLister(Map map)
-    {
-        this.map = map;
-    }
 
     public IEnumerable<T> ForAssignableFrom<T>() where T : Thing
     {

@@ -83,11 +83,6 @@ internal class Building_BeltConveyor : Building_BaseMachine<Thing>, IBeltConbeyo
             return false;
         }
 
-        bool Func(Thing t)
-        {
-            return t.CanStackWith(thing) && t.stackCount < t.def.stackLimit;
-        }
-
         return State switch
         {
             WorkingState.Ready => true,
@@ -95,6 +90,11 @@ internal class Building_BeltConveyor : Building_BaseMachine<Thing>, IBeltConbeyo
             WorkingState.Placing => Func(products[0]),
             _ => false
         };
+
+        bool Func(Thing t)
+        {
+            return t.CanStackWith(thing) && t.stackCount < t.def.stackLimit;
+        }
     }
 
     [SpecialName] Rot4 IBeltConbeyorLinkable.Rotation => Rotation;
@@ -184,21 +184,20 @@ internal class Building_BeltConveyor : Building_BaseMachine<Thing>, IBeltConbeyo
             GenMapUI.DefaultThingLabelColor);
     }
 
-    public override void Draw()
+    public override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
         if (IsUnderground && !OverlayDrawHandler_UGConveyor.ShouldDraw)
         {
             return;
         }
 
-        base.Draw();
+        base.DrawAt(drawLoc, flip);
         if (State == 0)
         {
             return;
         }
 
-        var drawLoc = CarryPosition();
-        CarryingThing().DrawAt(drawLoc);
+        CarryingThing().DrawAt(CarryPosition());
     }
 
     private Thing CarryingThing()
@@ -344,13 +343,6 @@ internal class Building_BeltConveyor : Building_BaseMachine<Thing>, IBeltConbeyo
 
     private void FilterSetting()
     {
-        ThingFilter CreateNew()
-        {
-            var thingFilter = new ThingFilter();
-            thingFilter.SetAllowAll(null);
-            return thingFilter;
-        }
-
         var output = OutputBeltConveyor();
         filters = (from x in Enumerable.Range(0, 4)
             select new Rot4(x)
@@ -362,13 +354,21 @@ internal class Building_BeltConveyor : Building_BaseMachine<Thing>, IBeltConbeyo
             }
             into x
             where output.Any(l => l.Position == x.Pos) || Rotation == x.Rot
-            select x).ToDictionary(r => r.Rot, r => !filters.ContainsKey(r.Rot) ? CreateNew() : filters[r.Rot]);
+            select x).ToDictionary(r => r.Rot, r => !filters.TryGetValue(r.Rot, out var filter) ? CreateNew() : filter);
         if (filters.Count <= 1)
         {
             filters.ForEach(delegate(KeyValuePair<Rot4, ThingFilter> x) { x.Value.SetAllowAll(null); });
         }
 
         outputRot = filters.Select(x => x.Key).ToList();
+        return;
+
+        ThingFilter CreateNew()
+        {
+            var thingFilter = new ThingFilter();
+            thingFilter.SetAllowAll(null);
+            return thingFilter;
+        }
     }
 
     private List<IBeltConbeyorLinkable> LinkTargetConveyor()

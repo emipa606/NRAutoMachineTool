@@ -32,9 +32,10 @@ public class Building_Shield : Building_BaseRange<Thing>
         return !working.Spawned;
     }
 
-    public override void Draw()
+
+    public override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
-        base.Draw();
+        base.DrawAt(drawLoc, flip);
         if (!IsActive())
         {
             return;
@@ -51,7 +52,7 @@ public class Building_Shield : Building_BaseRange<Thing>
         }
 
         var range = GetRange() * 2;
-        var vector = DrawPos;
+        var vector = drawLoc;
         vector.y = AltitudeLayer.MoteOverhead.AltitudeFor();
         var s = new Vector3(range, 1f, range);
         var matrix = default(Matrix4x4);

@@ -9,7 +9,7 @@ public class SectionLayer_UGConveyor : SectionLayer_Things
         : base(section)
     {
         requireAddToMapMesh = false;
-        relevantChangeTypes = MapMeshFlag.Buildings;
+        relevantChangeTypes = MapMeshFlagDefOf.Buildings;
     }
 
     public override void DrawLayer()
