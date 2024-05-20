@@ -89,4 +89,7 @@ Auch wenn das Ausgabeziel in der Bevorratungszone liegt, kann das Fertigerzeugni
   <NR_AutoMachineTool.MaterialMachine.RecipeEnergyDescription>Muss {0} Energie haben</NR_AutoMachineTool.MaterialMachine.RecipeEnergyDescription>
   <NR_AutoMachineTool.MaterialMachine.RecipeScanMaterialLabel>Rezept für Scan- und Registerumwandlung</NR_AutoMachineTool.MaterialMachine.RecipeScanMaterialLabel>
   <NR_AutoMachineTool.MaterialMachine.RecipeScanMaterialJobName>Material scannen</NR_AutoMachineTool.MaterialMachine.RecipeScanMaterialJobName>
+  <NR_AutoMachineTool.SupplyPowerValueLabelNew>Versorgungsspannung ({0} bis {1})</NR_AutoMachineTool.SupplyPowerValueLabelNew>
+  <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>Versorgungsleistung (für Geschwindigkeit) ({0} bis {1})</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
+  <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>Versorgungsleistung (für Bereich) ({0} bis {1})</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
 </LanguageData>

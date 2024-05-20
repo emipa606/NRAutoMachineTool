@@ -45,7 +45,7 @@ public class Building_Miner : Building_BaseMachine<Building_Miner>, IBillGiver, 
 
     public BillStack BillStack => billStack;
 
-    public IEnumerable<IntVec3> IngredientStackCells => Enumerable.Empty<IntVec3>();
+    public IEnumerable<IntVec3> IngredientStackCells => [];
 
     public bool CurrentlyUsableForBills()
     {

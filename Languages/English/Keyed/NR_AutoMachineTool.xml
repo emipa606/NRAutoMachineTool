@@ -7,6 +7,7 @@ Even if the output destination is in the stockpiling zone, the finished product 
   <NR_AutoMachineTool.SupplyPowerTab>Power</NR_AutoMachineTool.SupplyPowerTab>
   <NR_AutoMachineTool.SupplyPowerText>Set the power to be supplied. If the power supply amount is large, it takes less time to work.</NR_AutoMachineTool.SupplyPowerText>
   <NR_AutoMachineTool.SupplyPowerValueLabel>Supply power</NR_AutoMachineTool.SupplyPowerValueLabel>
+  <NR_AutoMachineTool.SupplyPowerValueLabelNew>Supply power ({0} to {1})</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.ForbidOutputItemLabel>Forbid output items</NR_AutoMachineTool.ForbidOutputItemLabel>
   <NR_AutoMachineTool.ForbidOutputItemDesc>Machine tools forbid items that are output as finished goods, so that colonists are not involved.</NR_AutoMachineTool.ForbidOutputItemDesc>
   <NR_AutoMachineTool.StatWorking>working. [{0} / {1} ({2} %)]</NR_AutoMachineTool.StatWorking>
@@ -50,7 +51,8 @@ Even if the output destination is in the stockpiling zone, the finished product 
   <NR_AutoMachineTool_Puller.FilterCopyFrom>Select copy from</NR_AutoMachineTool_Puller.FilterCopyFrom>
   <!-- Planter & Harvester -->
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabel>Supply power(for speed)</NR_AutoMachineTool.SupplyPowerForSpeedValueLabel>
-  <NR_AutoMachineTool.SupplyPowerForRangeValueLabel>Supply power(for range)</NR_AutoMachineTool.SupplyPowerForRangeValueLabel>
+  <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>Supply power(for speed) ({0} to {1})</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
+  <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>Supply power(for range) ({0} to {1})</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedText>Set the power to be supplied. If the power supply amount is large, it takes less time to work.</NR_AutoMachineTool.SupplyPowerForSpeedText>
   <NR_AutoMachineTool.SupplyPowerForRangeText>Set the power to be supplied. If the power supply amount is large, the range of work can be widened.</NR_AutoMachineTool.SupplyPowerForRangeText>
   <NR_AutoMachineTool.SupplyPowerSunLampText>Sun Lamp(power:2000)</NR_AutoMachineTool.SupplyPowerSunLampText>

@@ -28,10 +28,12 @@ internal class ITab_RangePowerSupply : ITab
         var maxPowerForSpeed = Machine.MaxPowerForSpeed;
         var minPowerForRange = Machine.MinPowerForRange;
         var maxPowerForRange = Machine.MaxPowerForRange;
-        var label = string.Concat("NR_AutoMachineTool.SupplyPowerForSpeedValueLabel".Translate() + " (",
-            minPowerForSpeed.ToString(), " to ", maxPowerForSpeed.ToString(), ") ");
-        var label2 = string.Concat("NR_AutoMachineTool.SupplyPowerForRangeValueLabel".Translate() + " (",
-            minPowerForRange.ToString(), " to ", maxPowerForRange.ToString(), ") ");
+        var label = string.Concat(
+            "NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew".Translate(minPowerForSpeed.ToString(),
+                maxPowerForSpeed.ToString()));
+        var label2 =
+            string.Concat("NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew".Translate(minPowerForRange.ToString(),
+                maxPowerForRange.ToString()));
         var listing_Standard = new Listing_Standard();
         var rect = new Rect(0f, 0f, WinSize.x, WinSize.y).ContractedBy(10f);
         listing_Standard.Begin(rect);

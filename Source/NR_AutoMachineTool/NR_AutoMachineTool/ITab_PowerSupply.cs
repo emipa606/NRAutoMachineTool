@@ -27,8 +27,9 @@ internal class ITab_PowerSupply : ITab
             num = 1;
         }
 
-        var label = string.Concat("NR_AutoMachineTool.SupplyPowerValueLabel".Translate() + " (",
-            Machine.MinPowerForSpeed.ToString(), " to ", Machine.MaxPowerForSpeed.ToString(), ") ");
+        var label = string.Concat(
+            "NR_AutoMachineTool.SupplyPowerValueLabelNew".Translate(Machine.MinPowerForSpeed.ToString(),
+                Machine.MaxPowerForSpeed.ToString()));
         var listing_Standard = new Listing_Standard();
         var rect = new Rect(0f, 0f, WinSize.x, WinSize.y).ContractedBy(10f);
         listing_Standard.Begin(rect);

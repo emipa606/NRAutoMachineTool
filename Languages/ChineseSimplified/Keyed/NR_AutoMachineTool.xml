@@ -89,4 +89,7 @@
   <NR_AutoMachineTool.MaterialMachine.RecipeEnergyDescription>必须有{0}能量</NR_AutoMachineTool.MaterialMachine.RecipeEnergyDescription>
   <NR_AutoMachineTool.MaterialMachine.RecipeScanMaterialLabel>扫描和登记转换配方</NR_AutoMachineTool.MaterialMachine.RecipeScanMaterialLabel>
   <NR_AutoMachineTool.MaterialMachine.RecipeScanMaterialJobName>扫描材料</NR_AutoMachineTool.MaterialMachine.RecipeScanMaterialJobName>
+  <NR_AutoMachineTool.SupplyPowerValueLabelNew>供电电源（{0}至{1）</NR_AutoMachineTool.SupplyPowerValueLabelNew>
+  <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>电源（用于速度）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
+  <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>电源（量程）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
 </LanguageData>

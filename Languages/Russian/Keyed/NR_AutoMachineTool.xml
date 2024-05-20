@@ -89,4 +89,7 @@
   <NR_AutoMachineTool.MaterialMachine.RecipeEnergyDescription>Должен обладать {0} Энергией</NR_AutoMachineTool.MaterialMachine.RecipeEnergyDescription>
   <NR_AutoMachineTool.MaterialMachine.RecipeScanMaterialLabel>Рецепт преобразования сканирования и регистрации</NR_AutoMachineTool.MaterialMachine.RecipeScanMaterialLabel>
   <NR_AutoMachineTool.MaterialMachine.RecipeScanMaterialJobName>Сканирование материала</NR_AutoMachineTool.MaterialMachine.RecipeScanMaterialJobName>
+  <NR_AutoMachineTool.SupplyPowerValueLabelNew>Питание ({0} - {1})</NR_AutoMachineTool.SupplyPowerValueLabelNew>
+  <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>Питание (для скорости) ({0} - {1})</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
+  <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>Мощность питания (для диапазона) ({0} - {1})</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
 </LanguageData>
