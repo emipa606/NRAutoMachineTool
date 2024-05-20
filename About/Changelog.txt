@@ -1,5 +1,8 @@
 # Changelog for NRAutoMachineTool
 
+1.5.2 - Fixed typo
+
+
 1.5.1 - Added missing translation key
 Used DeepL to update translations for ChineseSimplified, French, German, Japanese, Russian
 
