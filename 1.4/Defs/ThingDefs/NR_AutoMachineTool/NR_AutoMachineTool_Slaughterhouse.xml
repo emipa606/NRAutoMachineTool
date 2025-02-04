@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- base -->
   <ThingDef Name="Building_NR_AutoMachineTool_Slaughterhouse_Base" Parent="BuildingBase" Abstract="True">

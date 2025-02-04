@@ -289,7 +289,8 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
         var orDefault = WorkableBill(consumable).Select(delegate(Utilities.Tuple<Bill, List<ThingAmount>> tuple)
         {
             bill = tuple.Value1;
-            ingredients = tuple.Value2.Select(t => t.thing.SplitOff(t.count)).ToList();
+            ingredients = tuple.Value2.Where(amount => amount.count > 0).Select(t => t.thing.SplitOff(t.count))
+                .ToList();
             dominant = DominantIngredient(ingredients);
             if (!bill.recipe.UsesUnfinishedThing)
             {
@@ -566,7 +567,7 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
         {
             base.ExposeData();
             Scribe_Deep.Look(ref original, "original");
-            if (Scribe.mode == LoadSaveMode.PostLoadInit)
+            if (Scribe.mode == LoadSaveMode.PostLoadInit && original != null)
             {
                 original.billStack = billStack;
             }
@@ -625,7 +626,7 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
         {
             base.ExposeData();
             Scribe_Deep.Look(ref original, "original");
-            if (Scribe.mode == LoadSaveMode.PostLoadInit)
+            if (Scribe.mode == LoadSaveMode.PostLoadInit && original != null)
             {
                 original.billStack = billStack;
             }

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <NR_AutoMachineTool_MaterialMachine.label>物質変換機</NR_AutoMachineTool_MaterialMachine.label>
   <NR_AutoMachineTool_MaterialMachine.description>物質からエネルギー、エネルギーから物質に変換します。エネルギーに変換した物は、エネルギーから生成できるようになります。</NR_AutoMachineTool_MaterialMachine.description>

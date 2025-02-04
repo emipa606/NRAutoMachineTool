@@ -1,5 +1,8 @@
 # Changelog for NRAutoMachineTool
 
+1.5.3 - Fixed crafting bills getting stuck and bugging out when loading a save
+
+
 1.5.2 - Fixed typo
 
 

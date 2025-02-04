@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef Name="Building_NR_AutoMachineTool_Puller_Base" Parent="BuildingBase" Abstract="true">
     <defName>Building_NR_AutoMachineTool_Puller_Base</defName>
