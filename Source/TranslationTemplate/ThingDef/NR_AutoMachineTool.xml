@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: AutoMachineTool Tier1 -->
+  <Building_NR_AutoMachineTool_TierOne.label>AutoMachineTool Tier1</Building_NR_AutoMachineTool_TierOne.label>
+  <!-- EN: Place the AutoMachineTool facing the work table.\nSet the output destination of the finished product.\nThe AutoMachineTool executes a requested craft that can be created with the material in the surrounding squares from the work table creation request.\nBy default, Tier 1 is Skill Level 5, Tier 2 is Skill Level 10, and Tier 3 is Skill Level 20.(Skill level can be changed by MOD setting) -->
+  <Building_NR_AutoMachineTool_TierOne.description>Place the AutoMachineTool facing the work table.
+Set the output destination of the finished product.
+The AutoMachineTool executes a requested craft that can be created with the material in the surrounding squares from the work table creation request.
+By default, Tier 1 is Skill Level 5, Tier 2 is Skill Level 10, and Tier 3 is Skill Level 20.(Skill level can be changed by MOD setting)</Building_NR_AutoMachineTool_TierOne.description>
+  <!-- EN: AutoMachineTool Tier3 -->
+  <Building_NR_AutoMachineTool_TierThree.label>AutoMachineTool Tier3</Building_NR_AutoMachineTool_TierThree.label>
+  <!-- EN: Place the AutoMachineTool facing the work table.\nSet the output destination of the finished product.\nThe AutoMachineTool executes a requested craft that can be created with the material in the surrounding squares from the work table creation request.\nBy default, Tier 1 is Skill Level 5, Tier 2 is Skill Level 10, and Tier 3 is Skill Level 20.(Skill level can be changed by MOD setting) -->
+  <Building_NR_AutoMachineTool_TierThree.description>Place the AutoMachineTool facing the work table.
+Set the output destination of the finished product.
+The AutoMachineTool executes a requested craft that can be created with the material in the surrounding squares from the work table creation request.
+By default, Tier 1 is Skill Level 5, Tier 2 is Skill Level 10, and Tier 3 is Skill Level 20.(Skill level can be changed by MOD setting)</Building_NR_AutoMachineTool_TierThree.description>
+  <!-- EN: AutoMachineTool Tier2 -->
+  <Building_NR_AutoMachineTool_TierTwo.label>AutoMachineTool Tier2</Building_NR_AutoMachineTool_TierTwo.label>
+  <!-- EN: Place the AutoMachineTool facing the work table.\nSet the output destination of the finished product.\nThe AutoMachineTool executes a requested craft that can be created with the material in the surrounding squares from the work table creation request.\nBy default, Tier 1 is Skill Level 5, Tier 2 is Skill Level 10, and Tier 3 is Skill Level 20.(Skill level can be changed by MOD setting) -->
+  <Building_NR_AutoMachineTool_TierTwo.description>Place the AutoMachineTool facing the work table.
+Set the output destination of the finished product.
+The AutoMachineTool executes a requested craft that can be created with the material in the surrounding squares from the work table creation request.
+By default, Tier 1 is Skill Level 5, Tier 2 is Skill Level 10, and Tier 3 is Skill Level 20.(Skill level can be changed by MOD setting)</Building_NR_AutoMachineTool_TierTwo.description>
+</LanguageData>

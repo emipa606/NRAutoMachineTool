@@ -6,7 +6,7 @@ namespace NR_AutoMachineTool;
 
 internal class ITab_PowerSupply : ITab
 {
-    private static readonly Vector2 WinSize = new Vector2(600f, 250f);
+    private static readonly Vector2 WinSize = new(600f, 250f);
 
     private readonly string description;
 
@@ -17,7 +17,7 @@ internal class ITab_PowerSupply : ITab
         description = "NR_AutoMachineTool.SupplyPowerForSpeedText".Translate();
     }
 
-    public IPowerSupplyMachine Machine => (IPowerSupplyMachine)SelThing;
+    private IPowerSupplyMachine Machine => (IPowerSupplyMachine)SelThing;
 
     public override void FillTab()
     {

@@ -1,0 +1,59 @@
+ManifestFileVersion: 0
+CRC: 577135523
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 21fdd27c1b4ae0e619f975e7c7fab36e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 21fdd27c1b4ae0e619f975e7c7fab36e
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/UI/OutputDirection.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/Planter2.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/Harvester2.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/Stunner.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/UI/ArchitectIcons/Default/Auto machine.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/Shield.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/Planter3.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/BeltConveyor.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/Cleaner.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/Puller/Puller1.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/AutoMachineTool.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/Repairer.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/MaterialMachine_east.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/AutoMachineTool3.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/UI/Forbid.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/AutoMachineTool1.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/WallLightIcon.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Items/Energy.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/BeltConveyorUGIcon.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/ConveyorToUnderground.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/Harvester3.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/MaterialMachine_south.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/UI/Play.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/BeltConveyor_arrow00.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/AnimalResourceGatherer.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/Harvester1.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/Puller/Puller0.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/BeltConveyorIcon.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/BeltConveyor_arrow01.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Things/Mote/Lightning.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/Planter1.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/Generator.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/Miner.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/MaterialMachine_north.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/AutoMachineTool2.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/Slaughterhouse.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/BeltConveyorUG.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/WallLight.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/MaterialMachine_west.png
+- Assets/Data/Mlie.NRAutoMachineTool/Textures/NR_AutoMachineTool/Buildings/ConveyorToFloor.png
+Dependencies: []

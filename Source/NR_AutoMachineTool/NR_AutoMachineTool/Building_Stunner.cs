@@ -84,7 +84,7 @@ public class Building_Stunner : Building_BaseRange<Pawn>
         return true;
     }
 
-    protected bool Lightning()
+    private bool Lightning()
     {
         lightningCount--;
         var num = lightningCount <= 0;

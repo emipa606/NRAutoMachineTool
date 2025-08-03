@@ -28,7 +28,9 @@ Even if the output destination is in the stockpiling zone, the finished product 
   <NR_AutoMachineTool.SettingTier>Tier [{0}]</NR_AutoMachineTool.SettingTier>
   <NR_AutoMachineTool.SettingSkillLevel>Skill level({0})</NR_AutoMachineTool.SettingSkillLevel>
   <NR_AutoMachineTool.SettingMaxSupplyPower>Settable max supply power({0} to {1})</NR_AutoMachineTool.SettingMaxSupplyPower>
+  <NR_AutoMachineTool.SettingMaxSupplyPowerNew>Settable max supply power for {0} ({1} to {2})</NR_AutoMachineTool.SettingMaxSupplyPowerNew>
   <NR_AutoMachineTool.SettingMinSupplyPower>Settable min supply power({0} to {1})</NR_AutoMachineTool.SettingMinSupplyPower>
+  <NR_AutoMachineTool.SettingMinSupplyPowerNew>Settable min supply power for {0} ({1} to {2})</NR_AutoMachineTool.SettingMinSupplyPowerNew>
   <NR_AutoMachineTool.SettingSpeedFactor>Speed factor({0})</NR_AutoMachineTool.SettingSpeedFactor>
   <NR_AutoMachineTool.SettingReset>Restore default</NR_AutoMachineTool.SettingReset>
   <NR_AutoMachineTool.SettingCarrySpeedFactor>BeltConveyor speed factor({0})</NR_AutoMachineTool.SettingCarrySpeedFactor>

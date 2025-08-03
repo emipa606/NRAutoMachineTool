@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Building_NR_AutoMachineTool_Repairer</defName>
+    <label>AutoRepairer</label>
+    <thingClass>NR_AutoMachineTool.Building_Repairer</thingClass>
+    <description>Automatically repair building and pawn's equipment in the range.</description>
+    <graphicData>
+      <texPath>NR_AutoMachineTool/Buildings/Repairer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <constructEffect>ConstructMetal</constructEffect>
+    <costList>
+      <Steel>200</Steel>
+      <Plasteel>100</Plasteel>
+      <Uranium>10</Uranium>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+    <designationCategory>NR_AutoMachineTool_DesignationCategory</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>false</hasInteractionCell>
+    <surfaceType>Item</surfaceType>
+    <rotatable>false</rotatable>
+    <recipes>
+    </recipes>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>0</basePowerConsumption>
+        <alwaysDisplayAsUsingPower>true</alwaysDisplayAsUsingPower>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <researchPrerequisites>
+      <li>ResearchProject_NR_AutoMachineTool_AutoRepair</li>
+    </researchPrerequisites>
+    <inspectorTabs>
+      <li>NR_AutoMachineTool.ITab_RangePowerSupply</li>
+    </inspectorTabs>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <placeWorkers>
+      <li>NR_AutoMachineTool.PlaceWorker_TargetCellsHilight</li>
+    </placeWorkers>
+    <modExtensions>
+      <li Class="NR_AutoMachineTool.ModExtension_AutoMachineTool">
+        <targetCellResolverType>NR_AutoMachineTool.Building_RepairerTargetCellResolver</targetCellResolverType>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

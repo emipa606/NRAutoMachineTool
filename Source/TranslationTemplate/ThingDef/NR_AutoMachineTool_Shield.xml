@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Shield Generator -->
+  <Building_NR_AutoMachineTool_Shield.label>Shield Generator</Building_NR_AutoMachineTool_Shield.label>
+  <!-- EN: Protect within range, from bullets, hostile faction DropPod, crashed ship part. -->
+  <Building_NR_AutoMachineTool_Shield.description>Protect within range, from bullets, hostile faction DropPod, crashed ship part.</Building_NR_AutoMachineTool_Shield.description>
+</LanguageData>

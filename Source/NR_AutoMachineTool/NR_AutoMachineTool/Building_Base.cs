@@ -35,7 +35,7 @@ public abstract class Building_Base<T> : Building, IProductOutput where T : Thin
 
     protected ModSetting_AutoMachineTool Setting => ModSetting;
 
-    protected static ModSetting_AutoMachineTool ModSetting => LoadedModManager.GetMod<Mod_AutoMachineTool>().Setting;
+    private static ModSetting_AutoMachineTool ModSetting => LoadedModManager.GetMod<Mod_AutoMachineTool>().Setting;
 
     protected WorkingState State
     {
@@ -56,7 +56,7 @@ public abstract class Building_Base<T> : Building, IProductOutput where T : Thin
 
     protected MapTickManager MapManager { get; private set; }
 
-    protected float CurrentWorkAmount => (Find.TickManager.TicksAbs - workStartTick) * WorkAmountPerTick;
+    private float CurrentWorkAmount => (Find.TickManager.TicksAbs - workStartTick) * WorkAmountPerTick;
 
     protected float WorkLeft => totalWorkAmount - CurrentWorkAmount;
 
@@ -105,10 +105,7 @@ public abstract class Building_Base<T> : Building, IProductOutput where T : Thin
     public override void PostMapInit()
     {
         base.PostMapInit();
-        if (products == null)
-        {
-            products = [];
-        }
+        products ??= [];
 
         if (working == null && State == WorkingState.Working)
         {
@@ -136,17 +133,20 @@ public abstract class Building_Base<T> : Building, IProductOutput where T : Thin
             Reset();
             MapManager.AfterAction(Rand.Range(0, startCheckIntervalTicks), Ready);
         }
-        else if (State == WorkingState.Ready)
+        else
         {
-            MapManager.AfterAction(Rand.Range(0, startCheckIntervalTicks), Ready);
-        }
-        else if (State == WorkingState.Working)
-        {
-            MapManager.NextAction(StartWork);
-        }
-        else if (State == WorkingState.Placing)
-        {
-            MapManager.NextAction(Placing);
+            switch (State)
+            {
+                case WorkingState.Ready:
+                    MapManager.AfterAction(Rand.Range(0, startCheckIntervalTicks), Ready);
+                    break;
+                case WorkingState.Working:
+                    MapManager.NextAction(StartWork);
+                    break;
+                case WorkingState.Placing:
+                    MapManager.NextAction(Placing);
+                    break;
+            }
         }
     }
 
@@ -289,11 +289,7 @@ public abstract class Building_Base<T> : Building, IProductOutput where T : Thin
             return;
         }
 
-        if (!IsActive())
-        {
-            ForceReady();
-        }
-        else if (WorkInterruption(working))
+        if (!IsActive() || WorkInterruption(working))
         {
             ForceReady();
         }
@@ -426,18 +422,18 @@ public abstract class Building_Base<T> : Building, IProductOutput where T : Thin
             case WorkingState.Working:
                 if (float.IsInfinity(totalWorkAmount))
                 {
-                    return inspectString + "NR_AutoMachineTool.StatWorkingNotParam".Translate();
+                    return (inspectString + "NR_AutoMachineTool.StatWorkingNotParam".Translate()).Trim();
                 }
 
-                return inspectString + "NR_AutoMachineTool.StatWorking".Translate(
+                return (inspectString + "NR_AutoMachineTool.StatWorking".Translate(
                     Mathf.RoundToInt(Math.Min(CurrentWorkAmount, totalWorkAmount)), Mathf.RoundToInt(totalWorkAmount),
-                    Mathf.RoundToInt(Mathf.Clamp01(CurrentWorkAmount / totalWorkAmount)) * 100);
+                    Mathf.RoundToInt(Mathf.Clamp01(CurrentWorkAmount / totalWorkAmount)) * 100)).Trim();
             case WorkingState.Ready:
-                return inspectString + "NR_AutoMachineTool.StatReady".Translate();
+                return (inspectString + "NR_AutoMachineTool.StatReady".Translate()).Trim();
             case WorkingState.Placing:
-                return inspectString + "NR_AutoMachineTool.StatPlacing".Translate(products.Count);
+                return (inspectString + "NR_AutoMachineTool.StatPlacing".Translate(products.Count)).Trim();
             default:
-                return inspectString + State;
+                return (inspectString + State).Trim();
         }
     }
 

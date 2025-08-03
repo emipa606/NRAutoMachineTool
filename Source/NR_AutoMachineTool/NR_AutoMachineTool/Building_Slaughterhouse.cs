@@ -10,7 +10,7 @@ namespace NR_AutoMachineTool;
 
 public class Building_Slaughterhouse : Building_BaseRange<Pawn>, ISlaughterhouse
 {
-    private Dictionary<ThingDef, SlaughterSettings> slaughterSettings = new Dictionary<ThingDef, SlaughterSettings>();
+    private Dictionary<ThingDef, SlaughterSettings> slaughterSettings = new();
 
     protected override float SpeedFactor => Setting.slaughterSetting.speedFactor;
 

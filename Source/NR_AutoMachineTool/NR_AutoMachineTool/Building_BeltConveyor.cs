@@ -13,7 +13,7 @@ internal class Building_BeltConveyor : Building_BaseMachine<Thing>, IBeltConbeyo
     public static float supplyPower = 10f;
     private Rot4 dest;
 
-    private Dictionary<Rot4, ThingFilter> filters = new Dictionary<Rot4, ThingFilter>();
+    private Dictionary<Rot4, ThingFilter> filters = new();
 
     [Unsaved] private List<Rot4> outputRot = [];
 
@@ -105,22 +105,16 @@ internal class Building_BeltConveyor : Building_BaseMachine<Thing>, IBeltConbeyo
         Scribe_Values.Look(ref supplyPower, "supplyPower", 10f);
         Scribe_Values.Look(ref dest, "dest");
         Scribe_Collections.Look(ref filters, "filters", LookMode.Value, LookMode.Deep);
-        if (filters == null)
-        {
-            filters = new Dictionary<Rot4, ThingFilter>();
-        }
+        filters ??= new Dictionary<Rot4, ThingFilter>();
 
         Scribe_Collections.Look(ref priorities, "priorities", LookMode.Value, LookMode.Value);
-        if (priorities == null)
+        priorities ??= new[]
         {
-            priorities = new[]
-            {
-                Rot4.North,
-                Rot4.East,
-                Rot4.South,
-                Rot4.West
-            }.ToDictionary(d => d, _ => DirectionPriority.Normal);
-        }
+            Rot4.North,
+            Rot4.East,
+            Rot4.South,
+            Rot4.West
+        }.ToDictionary(d => d, _ => DirectionPriority.Normal);
     }
 
     public override void PostMapInit()

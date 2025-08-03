@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: BeltConveyor -->
+  <Building_NR_AutoMachineTool_BeltConveyor.label>BeltConveyor</Building_NR_AutoMachineTool_BeltConveyor.label>
+  <!-- EN: Place it in the direction you want to carry.\nPlace the item on top. (Item Puller and AutoMachineTool can be used.)\nThe belt conveyors are connected by vertically adjoining the orientation. -->
+  <Building_NR_AutoMachineTool_BeltConveyor.description>Place it in the direction you want to carry.
+Place the item on top. (Item Puller and AutoMachineTool can be used.)
+The belt conveyors are connected by vertically adjoining the orientation.</Building_NR_AutoMachineTool_BeltConveyor.description>
+  <!-- EN: Underground conveyor exit -->
+  <Building_NR_AutoMachineTool_BeltConveyor_ToFloor.label>Underground conveyor exit</Building_NR_AutoMachineTool_BeltConveyor_ToFloor.label>
+  <!-- EN: Connect the ground belt conveyor and underground conveyor.\nIt is an exit to the underground conveyor. -->
+  <Building_NR_AutoMachineTool_BeltConveyor_ToFloor.description>Connect the ground belt conveyor and underground conveyor.
+It is an exit to the underground conveyor.</Building_NR_AutoMachineTool_BeltConveyor_ToFloor.description>
+  <!-- EN: Underground conveyor entrance -->
+  <Building_NR_AutoMachineTool_BeltConveyor_ToUnderground.label>Underground conveyor entrance</Building_NR_AutoMachineTool_BeltConveyor_ToUnderground.label>
+  <!-- EN: Connect the ground belt conveyor and underground conveyor.\nIt is the entrance to the underground conveyor. -->
+  <Building_NR_AutoMachineTool_BeltConveyor_ToUnderground.description>Connect the ground belt conveyor and underground conveyor.
+It is the entrance to the underground conveyor.</Building_NR_AutoMachineTool_BeltConveyor_ToUnderground.description>
+  <!-- EN: Underground BeltConveyor -->
+  <Building_NR_AutoMachineTool_BeltConveyor_Underground.label>Underground BeltConveyor</Building_NR_AutoMachineTool_BeltConveyor_Underground.label>
+  <!-- EN: Underground BeltConveyor carries items in the basement.\nUnderground BeltConveyor can not move items on the ground as it is.\nConnect to the underground conveyor entrance and exit and use. -->
+  <Building_NR_AutoMachineTool_BeltConveyor_Underground.description>Underground BeltConveyor carries items in the basement.
+Underground BeltConveyor can not move items on the ground as it is.
+Connect to the underground conveyor entrance and exit and use.</Building_NR_AutoMachineTool_BeltConveyor_Underground.description>
+  <!-- EN: Wall embedding BeltConveyor -->
+  <Building_NR_AutoMachineTool_BeltConveyor_Wall.label>Wall embedding BeltConveyor</Building_NR_AutoMachineTool_BeltConveyor_Wall.label>
+  <!-- EN: Place it in the direction you want to carry.(In the wall)\nPlace the item on top. (Item Puller and AutoMachineTool can be used.)\nThe belt conveyors are connected by vertically adjoining the orientation. -->
+  <Building_NR_AutoMachineTool_BeltConveyor_Wall.description>Place it in the direction you want to carry.(In the wall)
+Place the item on top. (Item Puller and AutoMachineTool can be used.)
+The belt conveyors are connected by vertically adjoining the orientation.</Building_NR_AutoMachineTool_BeltConveyor_Wall.description>
+</LanguageData>

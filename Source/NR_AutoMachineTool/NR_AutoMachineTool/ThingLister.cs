@@ -8,7 +8,7 @@ namespace NR_AutoMachineTool;
 
 public class ThingLister(Map map)
 {
-    private readonly Dictionary<Type, List<ThingDef>> typeDic = new Dictionary<Type, List<ThingDef>>();
+    private readonly Dictionary<Type, List<ThingDef>> typeDic = new();
 
     public IEnumerable<T> ForAssignableFrom<T>() where T : Thing
     {

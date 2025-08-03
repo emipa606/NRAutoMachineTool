@@ -9,36 +9,36 @@ namespace NR_AutoMachineTool;
 
 internal class ITab_Slaughterhouse : ITab
 {
-    private static readonly Vector2 WinSize = new Vector2(800f, 600f);
+    private static readonly Vector2 WinSize = new(800f, 600f);
 
     private static readonly float[] ColumnWidth = [0.2f, 0.05f, 0.05f, 0.05f, 0.05f, 0.15f, 0.15f, 0.15f, 0.15f];
 
     private static readonly TipSignal slaughterTip =
-        new TipSignal("NR_AutoMachineTool.SlaughterhouseSetting.DoSlaughterTip".Translate());
+        new("NR_AutoMachineTool.SlaughterhouseSetting.DoSlaughterTip".Translate());
 
-    private static readonly TipSignal hasBondsTip =
-        new TipSignal("NR_AutoMachineTool.SlaughterhouseSetting.BondsTip".Translate());
+    private static readonly TipSignal
+        hasBondsTip = new("NR_AutoMachineTool.SlaughterhouseSetting.BondsTip".Translate());
 
     private static readonly TipSignal pregnancyTip =
-        new TipSignal("NR_AutoMachineTool.SlaughterhouseSetting.PregnancyTip".Translate());
+        new("NR_AutoMachineTool.SlaughterhouseSetting.PregnancyTip".Translate());
 
     private static readonly TipSignal trainedTip =
-        new TipSignal("NR_AutoMachineTool.SlaughterhouseSetting.TrainedTip".Translate());
+        new("NR_AutoMachineTool.SlaughterhouseSetting.TrainedTip".Translate());
 
     private static readonly TipSignal keepMaleChildCountTip =
-        new TipSignal("NR_AutoMachineTool.SlaughterhouseSetting.KeepCountTip".Translate(
+        new("NR_AutoMachineTool.SlaughterhouseSetting.KeepCountTip".Translate(
             "NR_AutoMachineTool.Male".Translate(), "NR_AutoMachineTool.Young".Translate()));
 
     private static readonly TipSignal keepFemaleChildCountTip =
-        new TipSignal("NR_AutoMachineTool.SlaughterhouseSetting.KeepCountTip".Translate(
+        new("NR_AutoMachineTool.SlaughterhouseSetting.KeepCountTip".Translate(
             "NR_AutoMachineTool.Female".Translate(), "NR_AutoMachineTool.Young".Translate()));
 
     private static readonly TipSignal keepMaleAdultCountTip =
-        new TipSignal("NR_AutoMachineTool.SlaughterhouseSetting.KeepCountTip".Translate(
+        new("NR_AutoMachineTool.SlaughterhouseSetting.KeepCountTip".Translate(
             "NR_AutoMachineTool.Male".Translate(), "NR_AutoMachineTool.Adult".Translate()));
 
     private static readonly TipSignal keepFemaleAdultCountTip =
-        new TipSignal("NR_AutoMachineTool.SlaughterhouseSetting.KeepCountTip".Translate(
+        new("NR_AutoMachineTool.SlaughterhouseSetting.KeepCountTip".Translate(
             "NR_AutoMachineTool.Female".Translate(), "NR_AutoMachineTool.Adult".Translate()));
 
     private List<ThingDef> defs;
@@ -53,7 +53,7 @@ internal class ITab_Slaughterhouse : ITab
         labelKey = "NR_AutoMachineTool.SlaughterhouseSetting.TabName";
     }
 
-    public ISlaughterhouse Machine => (ISlaughterhouse)SelThing;
+    private ISlaughterhouse Machine => (ISlaughterhouse)SelThing;
 
     public override void OnOpen()
     {
@@ -63,7 +63,7 @@ internal class ITab_Slaughterhouse : ITab
             select p.def).Distinct().ToList();
     }
 
-    private Func<float, Rect> CutLeftFunc(Rect rect)
+    private static Func<float, Rect> CutLeftFunc(Rect rect)
     {
         var curX = 0f;
         return delegate(float pct)

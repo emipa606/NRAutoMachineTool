@@ -6,7 +6,7 @@ namespace NR_AutoMachineTool;
 
 internal class ITab_RangePowerSupply : ITab
 {
-    private static readonly Vector2 WinSize = new Vector2(600f, 380f);
+    private static readonly Vector2 WinSize = new(600f, 380f);
 
     private readonly string descriptionForRange;
 

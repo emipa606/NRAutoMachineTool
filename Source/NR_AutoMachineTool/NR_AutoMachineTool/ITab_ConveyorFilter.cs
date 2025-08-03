@@ -9,9 +9,9 @@ namespace NR_AutoMachineTool;
 
 internal class ITab_ConveyorFilter : ITab
 {
-    private static readonly Vector2 WinSize = new Vector2(300f, 500f);
+    private static readonly Vector2 WinSize = new(300f, 500f);
 
-    private static readonly Dictionary<Rot4, string> RotStrings = new Dictionary<Rot4, string>
+    private static readonly Dictionary<Rot4, string> RotStrings = new()
     {
         {
             Rot4.North,
@@ -33,10 +33,9 @@ internal class ITab_ConveyorFilter : ITab
 
     private readonly string description;
 
-    private readonly Dictionary<Building_BeltConveyor, Dictionary<Rot4, bool>> rotSelectedDic =
-        new Dictionary<Building_BeltConveyor, Dictionary<Rot4, bool>>();
+    private readonly Dictionary<Building_BeltConveyor, Dictionary<Rot4, bool>> rotSelectedDic = new();
 
-    private readonly ThingFilterUI.UIState uistate = new ThingFilterUI.UIState();
+    private readonly ThingFilterUI.UIState uistate = new();
 
     private List<SlotGroup> groups;
 

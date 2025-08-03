@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Material Energy -->
+  <NR_AutoMachineTool_MaterialEnergy.label>Material Energy</NR_AutoMachineTool_MaterialEnergy.label>
+  <!-- EN: It can be converted into a material with a Material Converter. -->
+  <NR_AutoMachineTool_MaterialEnergy.description>It can be converted into a material with a Material Converter.</NR_AutoMachineTool_MaterialEnergy.description>
+  <!-- EN: Material Converter -->
+  <NR_AutoMachineTool_MaterialMachine.label>Material Converter</NR_AutoMachineTool_MaterialMachine.label>
+  <!-- EN: It converts from material to energy, energy to material. Those converted into energy can be generated from energy. -->
+  <NR_AutoMachineTool_MaterialMachine.description>It converts from material to energy, energy to material. Those converted into energy can be generated from energy.</NR_AutoMachineTool_MaterialMachine.description>
+</LanguageData>

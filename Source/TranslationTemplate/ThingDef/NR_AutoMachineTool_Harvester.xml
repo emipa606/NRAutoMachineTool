@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Harvester Tier1 -->
+  <Building_NR_AutoMachineTool_Harvester_TierOne.label>Harvester Tier1</Building_NR_AutoMachineTool_Harvester_TierOne.label>
+  <!-- EN: Place the Harvester inside or near the agricultural zone.\nHarvester starts harvesting plants in the agricultural zone within range. -->
+  <Building_NR_AutoMachineTool_Harvester_TierOne.description>Place the Harvester inside or near the agricultural zone.
+Harvester starts harvesting plants in the agricultural zone within range.</Building_NR_AutoMachineTool_Harvester_TierOne.description>
+  <!-- EN: Harvester Tier3 -->
+  <Building_NR_AutoMachineTool_Harvester_TierThree.label>Harvester Tier3</Building_NR_AutoMachineTool_Harvester_TierThree.label>
+  <!-- EN: Place the Harvester inside or near the agricultural zone.\nHarvester starts harvesting plants in the agricultural zone within range. -->
+  <Building_NR_AutoMachineTool_Harvester_TierThree.description>Place the Harvester inside or near the agricultural zone.
+Harvester starts harvesting plants in the agricultural zone within range.</Building_NR_AutoMachineTool_Harvester_TierThree.description>
+  <!-- EN: Harvester Tier2 -->
+  <Building_NR_AutoMachineTool_Harvester_TierTwo.label>Harvester Tier2</Building_NR_AutoMachineTool_Harvester_TierTwo.label>
+  <!-- EN: Place the Harvester inside or near the agricultural zone.\nHarvester starts harvesting plants in the agricultural zone within range. -->
+  <Building_NR_AutoMachineTool_Harvester_TierTwo.description>Place the Harvester inside or near the agricultural zone.
+Harvester starts harvesting plants in the agricultural zone within range.</Building_NR_AutoMachineTool_Harvester_TierTwo.description>
+</LanguageData>

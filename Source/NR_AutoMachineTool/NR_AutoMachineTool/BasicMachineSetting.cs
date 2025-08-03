@@ -22,12 +22,12 @@ public class BasicMachineSetting : BaseMachineSetting
     {
         yield return delegate(Listing list)
         {
-            DrawPower(list, "NR_AutoMachineTool.SettingMinSupplyPower", "NR_AutoMachineTool.Speed",
+            DrawPower(list, "NR_AutoMachineTool.SettingMinSupplyPowerNew", "NR_AutoMachineTool.Speed",
                 ref minSupplyPowerForSpeed, 0f, 100000f);
         };
         yield return delegate(Listing list)
         {
-            DrawPower(list, "NR_AutoMachineTool.SettingMaxSupplyPower", "NR_AutoMachineTool.Speed",
+            DrawPower(list, "NR_AutoMachineTool.SettingMaxSupplyPowerNew", "NR_AutoMachineTool.Speed",
                 ref maxSupplyPowerForSpeed, 0f, 10000000f);
         };
         yield return delegate(Listing list) { DrawSpeedFactor(list, ref speedFactor); };

@@ -10,18 +10,18 @@ public class Building_Miner : Building_BaseMachine<Building_Miner>, IBillGiver, 
 {
     private readonly IntVec3[] adjacent =
     [
-        new IntVec3(0, 0, 1),
-        new IntVec3(1, 0, 1),
-        new IntVec3(1, 0, 0),
-        new IntVec3(1, 0, -1),
-        new IntVec3(0, 0, -1),
-        new IntVec3(-1, 0, -1),
-        new IntVec3(-1, 0, 0),
-        new IntVec3(-1, 0, 1)
+        new(0, 0, 1),
+        new(1, 0, 1),
+        new(1, 0, 0),
+        new(1, 0, -1),
+        new(0, 0, -1),
+        new(-1, 0, -1),
+        new(-1, 0, 0),
+        new(-1, 0, 1)
     ];
 
     private string[] adjacentName = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"];
-    public BillStack billStack;
+    private BillStack billStack;
 
     private int outputIndex;
 
@@ -146,7 +146,7 @@ public class Building_Miner : Building_BaseMachine<Building_Miner>, IBillGiver, 
         MapManager.EachTickAction(EffectTick);
     }
 
-    protected bool EffectTick()
+    private bool EffectTick()
     {
         workingEffect.ForEach(delegate(Effecter e) { e.EffectTick(new TargetInfo(this), new TargetInfo(this)); });
         return !workingEffect.HasValue;

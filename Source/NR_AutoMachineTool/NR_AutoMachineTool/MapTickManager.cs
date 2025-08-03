@@ -11,9 +11,9 @@ public class MapTickManager(Map map) : MapComponent(map)
 {
     private readonly HashSet<Func<bool>> eachTickActions = [];
 
-    private readonly Dictionary<int, HashSet<Action>> tickActionsDict = new Dictionary<int, HashSet<Action>>();
+    private readonly Dictionary<int, HashSet<Action>> tickActionsDict = new();
 
-    public ThingLister ThingsList { get; } = new ThingLister(map);
+    public ThingLister ThingsList { get; } = new(map);
 
     public override void MapComponentTick()
     {

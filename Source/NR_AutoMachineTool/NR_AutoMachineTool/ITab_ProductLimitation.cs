@@ -9,7 +9,7 @@ namespace NR_AutoMachineTool;
 
 internal class ITab_ProductLimitation : ITab
 {
-    private static readonly Vector2 WinSize = new Vector2(400f, 240f);
+    private static readonly Vector2 WinSize = new(400f, 240f);
 
     private List<SlotGroup> groups;
 
@@ -19,7 +19,7 @@ internal class ITab_ProductLimitation : ITab
         labelKey = "NR_AutoMachineTool.ProductLimitation.TabName";
     }
 
-    public IProductLimitation Machine => (IProductLimitation)SelThing;
+    private IProductLimitation Machine => (IProductLimitation)SelThing;
 
     public override void OnOpen()
     {

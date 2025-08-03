@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: AutoCleaner -->
+  <Building_NR_AutoMachineTool_Cleaner.label>AutoCleaner</Building_NR_AutoMachineTool_Cleaner.label>
+  <!-- EN: Automatically cleans the dirt in the range. It also removes the dirt of dirty Pawn. -->
+  <Building_NR_AutoMachineTool_Cleaner.description>Automatically cleans the dirt in the range. It also removes the dirt of dirty Pawn.</Building_NR_AutoMachineTool_Cleaner.description>
+</LanguageData>

@@ -6,7 +6,7 @@ namespace NR_AutoMachineTool;
 
 public abstract class BaseTargetCellResolver : ITargetCellResolver
 {
-    protected ModSetting_AutoMachineTool Setting => LoadedModManager.GetMod<Mod_AutoMachineTool>().Setting;
+    protected static ModSetting_AutoMachineTool Setting => LoadedModManager.GetMod<Mod_AutoMachineTool>().Setting;
 
     public abstract int MinPowerForRange { get; }
 

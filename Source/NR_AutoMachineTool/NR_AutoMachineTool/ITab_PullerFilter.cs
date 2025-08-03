@@ -8,11 +8,11 @@ namespace NR_AutoMachineTool;
 
 internal class ITab_PullerFilter : ITab
 {
-    private static readonly Vector2 WinSize = new Vector2(300f, 500f);
+    private static readonly Vector2 WinSize = new(300f, 500f);
 
     private readonly string description;
 
-    private readonly ThingFilterUI.UIState uistate = new ThingFilterUI.UIState();
+    private readonly ThingFilterUI.UIState uistate = new();
 
     private List<SlotGroup> groups;
 

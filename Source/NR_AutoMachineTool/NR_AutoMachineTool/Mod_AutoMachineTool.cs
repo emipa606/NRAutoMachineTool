@@ -42,10 +42,9 @@ public class Mod_AutoMachineTool : Mod
 
     public class HopmMod
     {
-        private static readonly Dictionary<string, FieldInfo> fields = new Dictionary<string, FieldInfo>();
+        private static readonly Dictionary<string, FieldInfo> fields = new();
 
-        private static readonly Dictionary<string, PropertyInfo> fieldValueProps =
-            new Dictionary<string, PropertyInfo>();
+        private static readonly Dictionary<string, PropertyInfo> fieldValueProps = new();
 
         private Type autopsyRecipeDefsType;
 

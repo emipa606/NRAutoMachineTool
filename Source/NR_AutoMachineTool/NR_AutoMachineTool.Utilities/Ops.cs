@@ -342,7 +342,7 @@ public static class Ops
         return ConvertEnergyAmount(StatDefOf.MarketValue.Worker.GetValue(StatRequest.For(def, stuffDef)));
     }
 
-    public static float ConvertEnergyAmount(float marketValue)
+    private static float ConvertEnergyAmount(float marketValue)
     {
         return marketValue * 0.1f;
     }

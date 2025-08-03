@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: AnimalResourceGatherer -->
+  <Building_NR_AutoMachineTool_AnimalResourceGatherer.label>AnimalResourceGatherer</Building_NR_AutoMachineTool_AnimalResourceGatherer.label>
+  <!-- EN: Place the AnimalResourceGatherer near animals passing through or staying.\nAnimalResourceGatherer starts milking and shearing from animals within range. -->
+  <Building_NR_AutoMachineTool_AnimalResourceGatherer.description>Place the AnimalResourceGatherer near animals passing through or staying.
+AnimalResourceGatherer starts milking and shearing from animals within range.</Building_NR_AutoMachineTool_AnimalResourceGatherer.description>
+</LanguageData>

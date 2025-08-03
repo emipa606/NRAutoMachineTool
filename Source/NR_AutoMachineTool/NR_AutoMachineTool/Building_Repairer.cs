@@ -43,12 +43,9 @@ public class Building_Repairer : Building_BaseRange<Building_Repairer>
         repairAmount = 0f;
         target = this;
         var cells = GetAllTargetCells();
-        if (working == null)
-        {
-            working = (from t in Map.listerThings.ThingsInGroup(ThingRequestGroup.Shell)
-                where cells.Contains(t.Position)
-                select t).SelectMany(t => Ops.Option(t as Fire)).FirstOption().GetOrDefault(null);
-        }
+        working ??= (from t in Map.listerThings.ThingsInGroup(ThingRequestGroup.Shell)
+            where cells.Contains(t.Position)
+            select t).SelectMany(t => Ops.Option(t as Fire)).FirstOption().GetOrDefault(null);
 
         if (working == null)
         {
@@ -109,7 +106,7 @@ public class Building_Repairer : Building_BaseRange<Building_Repairer>
         progressBar?.Cleanup();
     }
 
-    protected bool Repair()
+    private bool Repair()
     {
         var num = RepairInt();
         if (!num)
@@ -129,7 +126,7 @@ public class Building_Repairer : Building_BaseRange<Building_Repairer>
         return true;
     }
 
-    protected bool RepairInt()
+    private bool RepairInt()
     {
         if (!IsActive())
         {

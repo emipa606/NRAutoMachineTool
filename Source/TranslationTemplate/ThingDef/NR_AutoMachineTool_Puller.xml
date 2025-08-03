@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Item Puller -->
+  <Building_NR_AutoMachineTool_Puller.label>Item Puller</Building_NR_AutoMachineTool_Puller.label>
+  <!-- EN: Place it next to the pulling zone. Pull out from the opposite side of the installed orientation and output it in the installed orientation.\nSince the drawing machine is in a non-operating state in the post-installation state, it selects the drawing machine and put it in the operating state from the button. -->
+  <Building_NR_AutoMachineTool_Puller.description>Place it next to the pulling zone. Pull out from the opposite side of the installed orientation and output it in the installed orientation.
+Since the drawing machine is in a non-operating state in the post-installation state, it selects the drawing machine and put it in the operating state from the button.</Building_NR_AutoMachineTool_Puller.description>
+  <!-- EN: Wall embedding Item Puller -->
+  <Building_NR_AutoMachineTool_Puller_Wall.label>Wall embedding Item Puller</Building_NR_AutoMachineTool_Puller_Wall.label>
+  <!-- EN: Place it next to the pulling zone. Pull out from the opposite side of the installed orientation and output it in the installed orientation.(In the wall)\nSince the drawing machine is in a non-operating state in the post-installation state, it selects the drawing machine and put it in the operating state from the button. -->
+  <Building_NR_AutoMachineTool_Puller_Wall.description>Place it next to the pulling zone. Pull out from the opposite side of the installed orientation and output it in the installed orientation.(In the wall)
+Since the drawing machine is in a non-operating state in the post-installation state, it selects the drawing machine and put it in the operating state from the button.</Building_NR_AutoMachineTool_Puller_Wall.description>
+</LanguageData>

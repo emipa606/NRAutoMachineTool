@@ -10,7 +10,7 @@ namespace NR_AutoMachineTool;
 public class Building_ItemPuller : Building_BaseLimitation<Thing>
 {
     private bool active;
-    private ThingFilter filter = new ThingFilter();
+    private ThingFilter filter = new();
 
     protected override float SpeedFactor => Setting.pullerSetting.speedFactor;
 
@@ -30,10 +30,7 @@ public class Building_ItemPuller : Building_BaseLimitation<Thing>
         base.ExposeData();
         Scribe_Deep.Look(ref filter, "filter");
         Scribe_Values.Look(ref active, "active");
-        if (filter == null)
-        {
-            filter = new ThingFilter();
-        }
+        filter ??= new ThingFilter();
     }
 
     public override void SpawnSetup(Map map, bool respawningAfterLoad)

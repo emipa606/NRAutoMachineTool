@@ -17,8 +17,7 @@ public class Building_MaterialMahcine : Building_WorkTable, IBillNotificationRec
 
     private static readonly HashSet<string> ToEnergyDefNames =
     [
-        ..new[]
-            { "NR_AutoMachineTool.ToEnergy10", "NR_AutoMachineTool.ToEnergy100" }
+        "NR_AutoMachineTool.ToEnergy10", "NR_AutoMachineTool.ToEnergy100"
     ];
 
     private static ThingDef energyThingDef;
@@ -31,7 +30,7 @@ public class Building_MaterialMahcine : Building_WorkTable, IBillNotificationRec
 
     private List<MaterializeRecipeDefData> materializeRecipeData = [];
 
-    private float Loss => 0.3f;
+    private static float Loss => 0.3f;
 
     public void OnComplete(Bill_Production bill, List<Thing> ingredients)
     {
@@ -94,10 +93,7 @@ public class Building_MaterialMahcine : Building_WorkTable, IBillNotificationRec
 
     private static void RegisterToEnergyRecipes()
     {
-        if (energyThingDef == null)
-        {
-            energyThingDef = ThingDef.Named("NR_AutoMachineTool_MaterialEnergy");
-        }
+        energyThingDef ??= ThingDef.Named("NR_AutoMachineTool_MaterialEnergy");
 
         if (toEnergyRecipes == null)
         {
@@ -142,10 +138,7 @@ public class Building_MaterialMahcine : Building_WorkTable, IBillNotificationRec
     {
         RegisterToEnergyRecipes();
         Scribe_Collections.Look(ref materializeRecipeData, "materializeRecipeData", LookMode.Deep);
-        if (materializeRecipeData == null)
-        {
-            materializeRecipeData = [];
-        }
+        materializeRecipeData ??= [];
 
         materializeRecipeData.ForEach(delegate(MaterializeRecipeDefData d) { d.Register(Loss); });
         base.ExposeData();
@@ -257,7 +250,7 @@ public class Building_MaterialMahcine : Building_WorkTable, IBillNotificationRec
         return recipeDef;
     }
 
-    public class MaterializeRecipeDefData : IExposable
+    private class MaterializeRecipeDefData : IExposable
     {
         public const string MaterializeRecipeDefPrefix = "NR_AutoMachineTool.Materialize_";
         public string defName;

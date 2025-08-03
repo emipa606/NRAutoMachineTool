@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Slaughterhouse -->
+  <Building_NR_AutoMachineTool_Slaughterhouse.label>Slaughterhouse</Building_NR_AutoMachineTool_Slaughterhouse.label>
+  <!-- EN: Place the Slaughterhouse near animals passing through or staying.\nSelect the Slaughterhouse and set slaughter from the setting tab.\nSlaughterhouse starts slaughter animals within range. -->
+  <Building_NR_AutoMachineTool_Slaughterhouse.description>Place the Slaughterhouse near animals passing through or staying.
+Select the Slaughterhouse and set slaughter from the setting tab.
+Slaughterhouse starts slaughter animals within range.</Building_NR_AutoMachineTool_Slaughterhouse.description>
+</LanguageData>

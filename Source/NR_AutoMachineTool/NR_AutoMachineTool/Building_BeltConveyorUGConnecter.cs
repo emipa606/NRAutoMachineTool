@@ -23,7 +23,7 @@ internal class Building_BeltConveyorUGConnecter : Building_BaseMachine<Thing>, I
 
     public override int MaxPowerForSpeed => Setting.beltConveyorSetting.maxSupplyPowerForSpeed;
 
-    public bool ToUnderground => Extension.toUnderground;
+    private bool ToUnderground => Extension.toUnderground;
 
     [field: Unsaved] public bool IsStuck { get; private set; }
 

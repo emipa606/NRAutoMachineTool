@@ -8,12 +8,12 @@ public class Graphic_WallLight : Graphic_Linked2<Graphic_WallLight>
 {
     public override bool ShouldDrawRotated => data == null || data.drawRotated;
 
-    public override bool ShouldLinkWith(IntVec3 c, Thing parent)
+    protected override bool ShouldLinkWith(IntVec3 c, Thing parent)
     {
         return c.InBounds(parent.Map) && IsWall(c, parent.Map);
     }
 
-    private bool IsWall(IntVec3 pos, Map map)
+    private static bool IsWall(IntVec3 pos, Map map)
     {
         return (from t in pos.GetThingList(map)
             where t.def.category == ThingCategory.Building

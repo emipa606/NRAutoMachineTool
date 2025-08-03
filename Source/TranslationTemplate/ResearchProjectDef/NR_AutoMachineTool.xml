@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Automatic Agriculture Tier1 -->
+  <ResearchProject_NR_AutoMachineTool_AutoAgriculture_Tier1.label>Automatic Agriculture Tier1</ResearchProject_NR_AutoMachineTool_AutoAgriculture_Tier1.label>
+  <!-- EN: Planter and Harvester Tier 1 can be created. -->
+  <ResearchProject_NR_AutoMachineTool_AutoAgriculture_Tier1.description>Planter and Harvester Tier 1 can be created.</ResearchProject_NR_AutoMachineTool_AutoAgriculture_Tier1.description>
+  <!-- EN: Automatic Agriculture Tier2 -->
+  <ResearchProject_NR_AutoMachineTool_AutoAgriculture_Tier2.label>Automatic Agriculture Tier2</ResearchProject_NR_AutoMachineTool_AutoAgriculture_Tier2.label>
+  <!-- EN: Planter and Harvester Tier 2 can be created. -->
+  <ResearchProject_NR_AutoMachineTool_AutoAgriculture_Tier2.description>Planter and Harvester Tier 2 can be created.</ResearchProject_NR_AutoMachineTool_AutoAgriculture_Tier2.description>
+  <!-- EN: Automatic Agriculture Tier3 -->
+  <ResearchProject_NR_AutoMachineTool_AutoAgriculture_Tier3.label>Automatic Agriculture Tier3</ResearchProject_NR_AutoMachineTool_AutoAgriculture_Tier3.label>
+  <!-- EN: Planter and Harvester Tier 3 can be created. -->
+  <ResearchProject_NR_AutoMachineTool_AutoAgriculture_Tier3.description>Planter and Harvester Tier 3 can be created.</ResearchProject_NR_AutoMachineTool_AutoAgriculture_Tier3.description>
+  <!-- EN: Automatic animal caretaker. -->
+  <ResearchProject_NR_AutoMachineTool_AutoAnimalCaretaker.label>Automatic animal caretaker.</ResearchProject_NR_AutoMachineTool_AutoAnimalCaretaker.label>
+  <!-- EN: Animal resource gatherer and Slaughterhouse can be created. -->
+  <ResearchProject_NR_AutoMachineTool_AutoAnimalCaretaker.description>Animal resource gatherer and Slaughterhouse can be created.</ResearchProject_NR_AutoMachineTool_AutoAnimalCaretaker.description>
+  <!-- EN: Automatic cleaning. -->
+  <ResearchProject_NR_AutoMachineTool_AutoCleaner.label>Automatic cleaning.</ResearchProject_NR_AutoMachineTool_AutoCleaner.label>
+  <!-- EN: AutoCleaner can be created. -->
+  <ResearchProject_NR_AutoMachineTool_AutoCleaner.description>AutoCleaner can be created.</ResearchProject_NR_AutoMachineTool_AutoCleaner.description>
+  <!-- EN: Automatic mining. -->
+  <ResearchProject_NR_AutoMachineTool_AutoMiner.label>Automatic mining.</ResearchProject_NR_AutoMachineTool_AutoMiner.label>
+  <!-- EN: AutoMiner can be created. -->
+  <ResearchProject_NR_AutoMachineTool_AutoMiner.description>AutoMiner can be created.</ResearchProject_NR_AutoMachineTool_AutoMiner.description>
+  <!-- EN: Automatic repairing. -->
+  <ResearchProject_NR_AutoMachineTool_AutoRepair.label>Automatic repairing.</ResearchProject_NR_AutoMachineTool_AutoRepair.label>
+  <!-- EN: AutoRepairer can be created. -->
+  <ResearchProject_NR_AutoMachineTool_AutoRepair.description>AutoRepairer can be created.</ResearchProject_NR_AutoMachineTool_AutoRepair.description>
+  <!-- EN: Belt Converyor -->
+  <ResearchProject_NR_AutoMachineTool_BeltConveyor.label>Belt Converyor</ResearchProject_NR_AutoMachineTool_BeltConveyor.label>
+  <!-- EN: BeltConveyor can be created. -->
+  <ResearchProject_NR_AutoMachineTool_BeltConveyor.description>BeltConveyor can be created.</ResearchProject_NR_AutoMachineTool_BeltConveyor.description>
+  <!-- EN: Powerful power -->
+  <ResearchProject_NR_AutoMachineTool_Generator.label>Powerful power</ResearchProject_NR_AutoMachineTool_Generator.label>
+  <!-- EN: PowerfulPowerPlant can be created. -->
+  <ResearchProject_NR_AutoMachineTool_Generator.description>PowerfulPowerPlant can be created.</ResearchProject_NR_AutoMachineTool_Generator.description>
+  <!-- EN: Material Energy -->
+  <ResearchProject_NR_AutoMachineTool_MaterialEnergy.label>Material Energy</ResearchProject_NR_AutoMachineTool_MaterialEnergy.label>
+  <!-- EN: Material Converter can be created. -->
+  <ResearchProject_NR_AutoMachineTool_MaterialEnergy.description>Material Converter can be created.</ResearchProject_NR_AutoMachineTool_MaterialEnergy.description>
+  <!-- EN: Shild generator. -->
+  <ResearchProject_NR_AutoMachineTool_Shild.label>Shild generator.</ResearchProject_NR_AutoMachineTool_Shild.label>
+  <!-- EN: ShieldGenerator can be created. -->
+  <ResearchProject_NR_AutoMachineTool_Shild.description>ShieldGenerator can be created.</ResearchProject_NR_AutoMachineTool_Shild.description>
+  <!-- EN: Automatic stunner. -->
+  <ResearchProject_NR_AutoMachineTool_Stun.label>Automatic stunner.</ResearchProject_NR_AutoMachineTool_Stun.label>
+  <!-- EN: Stunner can be created. -->
+  <ResearchProject_NR_AutoMachineTool_Stun.description>Stunner can be created.</ResearchProject_NR_AutoMachineTool_Stun.description>
+  <!-- EN: Automatic machine tool Tier1 -->
+  <ResearchProject_NR_AutoMachineTool_Tier1.label>Automatic machine tool Tier1</ResearchProject_NR_AutoMachineTool_Tier1.label>
+  <!-- EN: AutoMachineTool Tier 1 can be created. -->
+  <ResearchProject_NR_AutoMachineTool_Tier1.description>AutoMachineTool Tier 1 can be created.</ResearchProject_NR_AutoMachineTool_Tier1.description>
+  <!-- EN: Automatic machine tool Tier2 -->
+  <ResearchProject_NR_AutoMachineTool_Tier2.label>Automatic machine tool Tier2</ResearchProject_NR_AutoMachineTool_Tier2.label>
+  <!-- EN: AutoMachineTool Tier 2 can be created. -->
+  <ResearchProject_NR_AutoMachineTool_Tier2.description>AutoMachineTool Tier 2 can be created.</ResearchProject_NR_AutoMachineTool_Tier2.description>
+  <!-- EN: Automatic machine tool Tier3 -->
+  <ResearchProject_NR_AutoMachineTool_Tier3.label>Automatic machine tool Tier3</ResearchProject_NR_AutoMachineTool_Tier3.label>
+  <!-- EN: AutoMachineTool Tier 3 can be created. -->
+  <ResearchProject_NR_AutoMachineTool_Tier3.description>AutoMachineTool Tier 3 can be created.</ResearchProject_NR_AutoMachineTool_Tier3.description>
+</LanguageData>

@@ -18,7 +18,7 @@ internal static class GenRecipe2
         return result;
     }
 
-    public static IEnumerable<Thing> MakeRecipeProductsInt(RecipeDef recipeDef, IRecipeProductWorker worker,
+    private static IEnumerable<Thing> MakeRecipeProductsInt(RecipeDef recipeDef, IRecipeProductWorker worker,
         List<Thing> ingredients, Thing dominantIngredient, IBillGiver billGiver)
     {
         var efficiency = recipeDef.efficiencyStat != null ? worker.GetStatValue(recipeDef.efficiencyStat) : 1f;
@@ -144,7 +144,7 @@ internal static class GenRecipe2
         return thing.ButcherProducts(null, efficiency);
     }
 
-    public static IEnumerable<Thing> ButcherProducts(Corpse corpse, float efficiency, IRecipeProductWorker worker)
+    private static IEnumerable<Thing> ButcherProducts(Corpse corpse, float efficiency, IRecipeProductWorker worker)
     {
         foreach (var item in corpse.InnerPawn.ButcherProducts(null, efficiency))
         {

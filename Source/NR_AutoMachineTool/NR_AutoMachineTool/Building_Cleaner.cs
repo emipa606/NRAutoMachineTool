@@ -68,7 +68,7 @@ public class Building_Cleaner : Building_BaseRange<Filth>
         MapManager.EachTickAction(EffectTick);
     }
 
-    protected bool EffectTick()
+    private bool EffectTick()
     {
         workingEffect.ForEach(delegate(Effecter e) { e.EffectTick(new TargetInfo(Working), TargetInfo.Invalid); });
         return !workingEffect.HasValue;

@@ -9,7 +9,7 @@ namespace NR_AutoMachineTool;
 
 public class ITab_Bills2 : ITab
 {
-    private static readonly Vector2 WinSize = new Vector2(420f, 480f);
+    private static readonly Vector2 WinSize = new(420f, 480f);
 
     [TweakValue("Interface", 0f, 128f)] private static readonly float PasteX = 48f;
 
@@ -29,7 +29,7 @@ public class ITab_Bills2 : ITab
         tutorTag = "Bills";
     }
 
-    protected ITabBillTable SelTable => (ITabBillTable)SelThing;
+    private ITabBillTable SelTable => (ITabBillTable)SelThing;
 
     public override void FillTab()
     {

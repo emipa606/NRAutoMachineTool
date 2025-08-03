@@ -72,7 +72,8 @@ public class Building_Planter : Building_BaseRange<Thing>
 
     private bool CanSow(IntVec3 cell, IPlantToGrowSettable grower)
     {
-        if (!grower.GetPlantDefToGrow().CanEverPlantAt(cell, Map) || !PlantUtility.GrowthSeasonNow(cell, Map) ||
+        if (!grower.GetPlantDefToGrow().CanEverPlantAt(cell, Map) ||
+            !PlantUtility.GrowthSeasonNow(cell, Map, grower.GetPlantDefToGrow()) ||
             !PlantUtility.SnowAllowsPlanting(cell, Map) ||
             !Ops.Option(grower as Zone_Growing).Fold(true)(z => z.allowSow) ||
             !(grower.GetPlantDefToGrow().plant.sowMinSkill <= SkillLevel) ||

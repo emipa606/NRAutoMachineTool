@@ -51,7 +51,7 @@ public abstract class Graphic_Linked2 : Graphic
         }
     }
 
-    protected Material LinkedDrawMatFrom(Thing parent, IntVec3 cell)
+    private Material LinkedDrawMatFrom(Thing parent, IntVec3 cell)
     {
         var num = 0;
         var num2 = 1;
@@ -70,12 +70,12 @@ public abstract class Graphic_Linked2 : Graphic
         return LinkedMaterial(parent, linkSet);
     }
 
-    public virtual Material LinkedMaterial(Thing parent, LinkDirections linkSet)
+    protected virtual Material LinkedMaterial(Thing parent, LinkDirections linkSet)
     {
         return subMats[(uint)linkSet];
     }
 
-    public abstract bool ShouldLinkWith(IntVec3 c, Thing parent);
+    protected abstract bool ShouldLinkWith(IntVec3 c, Thing parent);
 
     public override void Print(SectionLayer layer, Thing thing, float extraRotation)
     {

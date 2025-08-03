@@ -24,12 +24,12 @@ public class RangeMachineSetting : BasicMachineSetting
         yield return actions[1];
         yield return delegate(Listing list)
         {
-            DrawPower(list, "NR_AutoMachineTool.SettingMinSupplyPower", "NR_AutoMachineTool.Range",
+            DrawPower(list, "NR_AutoMachineTool.SettingMinSupplyPowerNew", "NR_AutoMachineTool.Range",
                 ref minSupplyPowerForRange, 0f, 1000f);
         };
         yield return delegate(Listing list)
         {
-            DrawPower(list, "NR_AutoMachineTool.SettingMaxSupplyPower", "NR_AutoMachineTool.Range",
+            DrawPower(list, "NR_AutoMachineTool.SettingMaxSupplyPowerNew", "NR_AutoMachineTool.Range",
                 ref maxSupplyPowerForRange, 0f, 20000f);
         };
         yield return actions[2];

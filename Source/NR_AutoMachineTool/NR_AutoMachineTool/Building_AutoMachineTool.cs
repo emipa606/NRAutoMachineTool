@@ -13,14 +13,14 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
 {
     private readonly IntVec3[] adjacent =
     [
-        new IntVec3(0, 0, 1),
-        new IntVec3(1, 0, 1),
-        new IntVec3(1, 0, 0),
-        new IntVec3(1, 0, -1),
-        new IntVec3(0, 0, -1),
-        new IntVec3(-1, 0, -1),
-        new IntVec3(-1, 0, 0),
-        new IntVec3(-1, 0, 1)
+        new(0, 0, 1),
+        new(1, 0, 1),
+        new(1, 0, 0),
+        new(1, 0, -1),
+        new(0, 0, -1),
+        new(-1, 0, -1),
+        new(-1, 0, 0),
+        new(-1, 0, 1)
     ];
 
     private readonly string[] adjacentName = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"];
@@ -144,7 +144,7 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
         MapManager.EachTickAction(EffectTick);
     }
 
-    protected bool EffectTick()
+    private bool EffectTick()
     {
         workingEffect.ForEach(delegate(Effecter e)
         {
@@ -156,17 +156,17 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
         return !workingEffect.HasValue;
     }
 
-    private void ForbidWorkTable(Building_WorkTable worktable)
+    private static void ForbidWorkTable(Building_WorkTable worktable)
     {
         ForbidBills(worktable);
     }
 
-    private void AllowWorkTable(Building_WorkTable worktable)
+    private static void AllowWorkTable(Building_WorkTable worktable)
     {
         AllowBills(worktable);
     }
 
-    private void ForbidBills(Building_WorkTable worktable)
+    private static void ForbidBills(Building_WorkTable worktable)
     {
         if (!worktable.BillStack.Bills.Any(b => b is not IBill_PawnForbidded))
         {
@@ -204,7 +204,7 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
         }));
     }
 
-    private void AllowBills(Building_WorkTable worktable)
+    private static void AllowBills(Building_WorkTable worktable)
     {
         if (!worktable.BillStack.Bills.Any(b => b is IBill_PawnForbidded))
         {
@@ -365,7 +365,7 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
             select t).FirstOption());
     }
 
-    private List<ThingAmount> Ingredients(Bill bill, List<Thing> consumable)
+    private static List<ThingAmount> Ingredients(Bill bill, List<Thing> consumable)
     {
         var arg = consumable.Select(x => new ThingAmount(x, x.stackCount)).ToList();
 
@@ -508,9 +508,9 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
 
     public override string GetInspectString()
     {
-        return base.GetInspectString() + "\n" +
-               "NR_AutoMachineTool.OutputDirection".Translate(
-                   ("NR_AutoMachineTool.OutputDirection" + adjacentName[outputIndex]).Translate());
+        return (base.GetInspectString() + "\n" +
+                "NR_AutoMachineTool.OutputDirection".Translate(
+                    ("NR_AutoMachineTool.OutputDirection" + adjacentName[outputIndex]).Translate())).Trim();
     }
 
     protected override bool WorkInterruption(Building_AutoMachineTool working)
@@ -534,14 +534,14 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
         return !workTable.Value.CurrentlyUsableForBills();
     }
 
-    public interface IBill_PawnForbidded
+    private interface IBill_PawnForbidded
     {
         Bill Original { get; set; }
     }
 
-    public class Bill_ProductionPawnForbidded : Bill_Production, IBill_PawnForbidded
+    private class Bill_ProductionPawnForbidded : Bill_Production, IBill_PawnForbidded
     {
-        public Bill original;
+        private Bill original;
 
         public Bill_ProductionPawnForbidded()
         {
@@ -598,9 +598,9 @@ public class Building_AutoMachineTool : Building_BaseRange<Building_AutoMachineT
         }
     }
 
-    public class Bill_ProductionWithUftPawnForbidded : Bill_ProductionWithUft, IBill_PawnForbidded
+    private class Bill_ProductionWithUftPawnForbidded : Bill_ProductionWithUft, IBill_PawnForbidded
     {
-        public Bill original;
+        private Bill original;
 
         public Bill_ProductionWithUftPawnForbidded()
         {

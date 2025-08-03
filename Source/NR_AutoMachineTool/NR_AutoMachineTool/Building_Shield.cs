@@ -65,7 +65,7 @@ public class Building_Shield : Building_BaseRange<Thing>
         var cells = GetAllTargetCells();
         (from f in (from Skyfaller f in Map.listerThings.ThingsOfDef(ThingDefOf.DropPodIncoming)
                     where cells.Contains(f.Position)
-                    where f.innerContainer.SelectMany(t => Ops.Option(t as IActiveDropPod))
+                    where f.innerContainer.SelectMany(t => Ops.Option(t as IActiveTransporter))
                         .SelectMany(d => d.Contents.innerContainer).Any(i => Faction.OfPlayer.HostileTo(i.Faction))
                     select f).Concat(Map.listerThings.ThingsOfDef(ThingDefOf.CrashedShipPartIncoming).Cast<Skyfaller>())
                 .Concat(Map.listerThings.ThingsOfDef(ThingDefOf.ShipChunkIncoming).Cast<Skyfaller>())
@@ -87,7 +87,7 @@ public class Building_Shield : Building_BaseRange<Thing>
         return false;
     }
 
-    protected void DestroySkyfaller(Skyfaller faller)
+    private void DestroySkyfaller(Skyfaller faller)
     {
         if (IsActive())
         {
@@ -98,7 +98,7 @@ public class Building_Shield : Building_BaseRange<Thing>
         workingSet.Remove(faller);
     }
 
-    protected void DestroyProjectile(Projectile proj)
+    private void DestroyProjectile(Projectile proj)
     {
         if (!IsActive())
         {

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: dummy -->
+  <NR_AutoMachineTool_DummyRecipe.label>dummy</NR_AutoMachineTool_DummyRecipe.label>
+  <!-- EN: Doing an unknown recipe. -->
+  <NR_AutoMachineTool_DummyRecipe.jobString>Doing an unknown recipe.</NR_AutoMachineTool_DummyRecipe.jobString>
+</LanguageData>

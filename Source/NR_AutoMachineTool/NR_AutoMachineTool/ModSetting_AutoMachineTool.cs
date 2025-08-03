@@ -9,21 +9,21 @@ namespace NR_AutoMachineTool;
 
 public class ModSetting_AutoMachineTool : ModSettings
 {
-    public static readonly Func<BasicMachineSetting> BeltConveyorDefault = () => new BasicMachineSetting
+    private static readonly Func<BasicMachineSetting> BeltConveyorDefault = () => new BasicMachineSetting
     {
         speedFactor = 1f,
         minSupplyPowerForSpeed = 10,
         maxSupplyPowerForSpeed = 100
     };
 
-    public static readonly Func<BasicMachineSetting> PullerDefault = () => new BasicMachineSetting
+    private static readonly Func<BasicMachineSetting> PullerDefault = () => new BasicMachineSetting
     {
         speedFactor = 1f,
         minSupplyPowerForSpeed = 200,
         maxSupplyPowerForSpeed = 10000
     };
 
-    public static readonly Func<RangeMachineSetting> GathererDefault = () => new RangeMachineSetting
+    private static readonly Func<RangeMachineSetting> GathererDefault = () => new RangeMachineSetting
     {
         speedFactor = 1f,
         minSupplyPowerForSpeed = 500,
@@ -32,7 +32,7 @@ public class ModSetting_AutoMachineTool : ModSettings
         maxSupplyPowerForRange = 2000
     };
 
-    public static readonly Func<RangeMachineSetting> SlaughterDefault = () => new RangeMachineSetting
+    private static readonly Func<RangeMachineSetting> SlaughterDefault = () => new RangeMachineSetting
     {
         speedFactor = 1f,
         minSupplyPowerForSpeed = 500,
@@ -41,14 +41,14 @@ public class ModSetting_AutoMachineTool : ModSettings
         maxSupplyPowerForRange = 2000
     };
 
-    public static readonly Func<BasicMachineSetting> MinerDefault = () => new BasicMachineSetting
+    private static readonly Func<BasicMachineSetting> MinerDefault = () => new BasicMachineSetting
     {
         speedFactor = 1f,
         minSupplyPowerForSpeed = 10000,
         maxSupplyPowerForSpeed = 1000000
     };
 
-    public static readonly Func<RangeMachineSetting> CleanerDefault = () => new RangeMachineSetting
+    private static readonly Func<RangeMachineSetting> CleanerDefault = () => new RangeMachineSetting
     {
         speedFactor = 1f,
         minSupplyPowerForSpeed = 500,
@@ -57,7 +57,7 @@ public class ModSetting_AutoMachineTool : ModSettings
         maxSupplyPowerForRange = 3000
     };
 
-    public static readonly Func<RangeMachineSetting> RepairerDefault = () => new RangeMachineSetting
+    private static readonly Func<RangeMachineSetting> RepairerDefault = () => new RangeMachineSetting
     {
         speedFactor = 1f,
         minSupplyPowerForSpeed = 1000,
@@ -66,7 +66,7 @@ public class ModSetting_AutoMachineTool : ModSettings
         maxSupplyPowerForRange = 10000
     };
 
-    public static readonly Func<RangeMachineSetting> StunnerDefault = () => new RangeMachineSetting
+    private static readonly Func<RangeMachineSetting> StunnerDefault = () => new RangeMachineSetting
     {
         speedFactor = 1f,
         minSupplyPowerForSpeed = 1000,
@@ -75,7 +75,7 @@ public class ModSetting_AutoMachineTool : ModSettings
         maxSupplyPowerForRange = 10000
     };
 
-    public static readonly Func<SimpleRangeMachineSetting> ShieldDefault = () => new SimpleRangeMachineSetting
+    private static readonly Func<SimpleRangeMachineSetting> ShieldDefault = () => new SimpleRangeMachineSetting
     {
         minSupplyPowerForRange = 0,
         maxSupplyPowerForRange = 10000
@@ -213,7 +213,7 @@ public class ModSetting_AutoMachineTool : ModSettings
         ];
     }
 
-    public void RestoreDefault()
+    private void RestoreDefault()
     {
         autoMachineToolSetting = CreateAutoMachineToolDefault();
         planterSetting = CreatePlanterDefault();
@@ -378,7 +378,7 @@ public class ModSetting_AutoMachineTool : ModSettings
         Widgets.EndScrollView();
     }
 
-    private void DrawTier(Listing_Standard list, IMachineSetting s, int tier)
+    private static void DrawTier(Listing_Standard list, IMachineSetting s, int tier)
     {
         var rect = list.GetRect(s.GetHeight() + 42f);
         var listing_Standard = new Listing_Standard();
@@ -391,7 +391,7 @@ public class ModSetting_AutoMachineTool : ModSettings
         listing_Standard.End();
     }
 
-    private void DrawSetting(Listing_Standard list, IMachineSetting s)
+    private static void DrawSetting(Listing_Standard list, IMachineSetting s)
     {
         var rect = list.GetRect(s.GetHeight());
         var listing_Standard = new Listing_Standard();
@@ -400,7 +400,7 @@ public class ModSetting_AutoMachineTool : ModSettings
         listing_Standard.End();
     }
 
-    private void DrawMachineName(string name, Listing_Standard list)
+    private static void DrawMachineName(string name, Listing_Standard list)
     {
         var font = Text.Font;
         Text.Font = GameFont.Medium;

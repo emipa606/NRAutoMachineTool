@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Planter Tier1 -->
+  <Building_NR_AutoMachineTool_Planter_TierOne.label>Planter Tier1</Building_NR_AutoMachineTool_Planter_TierOne.label>
+  <!-- EN: Place the Planter inside or near the agricultural zone.\nPlanter starts planting plants in the agricultural zone within range.\nBy default, Tier 1 is Skill Level 5, Tier 2 is Skill Level 10, and Tier 3 is Skill Level 20.(Skill level can be changed by MOD setting) -->
+  <Building_NR_AutoMachineTool_Planter_TierOne.description>Place the Planter inside or near the agricultural zone.
+Planter starts planting plants in the agricultural zone within range.
+By default, Tier 1 is Skill Level 5, Tier 2 is Skill Level 10, and Tier 3 is Skill Level 20.(Skill level can be changed by MOD setting)</Building_NR_AutoMachineTool_Planter_TierOne.description>
+  <!-- EN: Planter Tier3 -->
+  <Building_NR_AutoMachineTool_Planter_TierThree.label>Planter Tier3</Building_NR_AutoMachineTool_Planter_TierThree.label>
+  <!-- EN: Place the Planter inside or near the agricultural zone.\nPlanter starts planting plants in the agricultural zone within range.\nBy default, Tier 1 is Skill Level 5, Tier 2 is Skill Level 10, and Tier 3 is Skill Level 20.(Skill level can be changed by MOD setting) -->
+  <Building_NR_AutoMachineTool_Planter_TierThree.description>Place the Planter inside or near the agricultural zone.
+Planter starts planting plants in the agricultural zone within range.
+By default, Tier 1 is Skill Level 5, Tier 2 is Skill Level 10, and Tier 3 is Skill Level 20.(Skill level can be changed by MOD setting)</Building_NR_AutoMachineTool_Planter_TierThree.description>
+  <!-- EN: Planter Tier2 -->
+  <Building_NR_AutoMachineTool_Planter_TierTwo.label>Planter Tier2</Building_NR_AutoMachineTool_Planter_TierTwo.label>
+  <!-- EN: Place the Planter inside or near the agricultural zone.\nPlanter starts planting plants in the agricultural zone within range.\nBy default, Tier 1 is Skill Level 5, Tier 2 is Skill Level 10, and Tier 3 is Skill Level 20.(Skill level can be changed by MOD setting) -->
+  <Building_NR_AutoMachineTool_Planter_TierTwo.description>Place the Planter inside or near the agricultural zone.
+Planter starts planting plants in the agricultural zone within range.
+By default, Tier 1 is Skill Level 5, Tier 2 is Skill Level 10, and Tier 3 is Skill Level 20.(Skill level can be changed by MOD setting)</Building_NR_AutoMachineTool_Planter_TierTwo.description>
+</LanguageData>

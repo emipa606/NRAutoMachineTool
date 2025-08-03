@@ -8,7 +8,7 @@ namespace NR_AutoMachineTool;
 
 internal class Graphic_Selectable : Graphic_Collection
 {
-    private readonly Dictionary<string, Graphic> pathDic = new Dictionary<string, Graphic>();
+    private readonly Dictionary<string, Graphic> pathDic = new();
 
     public override Material MatSingle => subGraphics[0].MatSingle;
 

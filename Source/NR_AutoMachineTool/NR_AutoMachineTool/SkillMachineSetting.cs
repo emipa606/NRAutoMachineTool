@@ -6,7 +6,7 @@ namespace NR_AutoMachineTool;
 
 public class SkillMachineSetting : BasicMachineSetting
 {
-    public int skillLevel;
+    private int skillLevel;
 
     public override void ExposeData()
     {

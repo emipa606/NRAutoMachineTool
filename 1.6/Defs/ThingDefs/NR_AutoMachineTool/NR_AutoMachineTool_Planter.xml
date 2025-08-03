@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--==================== Dropdown Groups ====================-->
+  <DesignatorDropdownGroupDef>
+    <defName>NRPlanterGroup</defName>
+  </DesignatorDropdownGroupDef>
+  <!-- base -->
+  <ThingDef Name="Building_NR_AutoMachineTool_Planter_Base" Parent="BuildingBase" Abstract="True">
+    <defName>Building_NR_AutoMachineTool_Planter_Base</defName>
+    <thingClass>NR_AutoMachineTool.Building_Planter</thingClass>
+    <description>Place the Planter inside or near the agricultural zone.
+Planter starts planting plants in the agricultural zone within range.
+By default, Tier 1 is Skill Level 5, Tier 2 is Skill Level 10, and Tier 3 is Skill Level 20.(Skill level can be changed by MOD setting)</description>
+    <designatorDropdown>NRPlanterGroup</designatorDropdown>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <fillPercent>1</fillPercent>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>0</basePowerConsumption>
+        <alwaysDisplayAsUsingPower>true</alwaysDisplayAsUsingPower>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Glower">
+        <overlightRadius>0</overlightRadius>
+        <glowRadius>0</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+    </comps>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <pathCost>0</pathCost>
+    <designationCategory>NR_AutoMachineTool_DesignationCategory</designationCategory>
+    <rotatable>false</rotatable>
+    <placeWorkers>
+      <li>NR_AutoMachineTool.PlaceWorker_TargetCellsHilight</li>
+    </placeWorkers>
+    <category>Building</category>
+    <tickerType>Never</tickerType>
+    <repairEffect>Repair</repairEffect>
+    <constructEffect>ConstructMetal</constructEffect>
+    <size>(1,1)</size>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <passability>Standable</passability>
+    <selectable>True</selectable>
+    <inspectorTabs>
+      <li>NR_AutoMachineTool.ITab_RangePowerSupply</li>
+      <li>NR_AutoMachineTool.ITab_ProductLimitation</li>
+    </inspectorTabs>
+  </ThingDef>
+  <!-- tier 1-->
+  <ThingDef ParentName="Building_NR_AutoMachineTool_Planter_Base">
+    <defName>Building_NR_AutoMachineTool_Planter_TierOne</defName>
+    <label>Planter Tier1</label>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <graphicData>
+      <texPath>NR_AutoMachineTool/Buildings/Planter1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>100</Steel>
+      <Plasteel>50</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <researchPrerequisites>
+      <li>ResearchProject_NR_AutoMachineTool_AutoAgriculture_Tier1</li>
+    </researchPrerequisites>
+    <modExtensions>
+      <li Class="NR_AutoMachineTool.ModExtension_AutoMachineTool">
+        <tier>1</tier>
+        <targetCellResolverType>NR_AutoMachineTool.Building_PlanterTargetCellResolver</targetCellResolverType>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!-- tier 2-->
+  <ThingDef ParentName="Building_NR_AutoMachineTool_Planter_Base">
+    <defName>Building_NR_AutoMachineTool_Planter_TierTwo</defName>
+    <label>Planter Tier2</label>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <graphicData>
+      <texPath>NR_AutoMachineTool/Buildings/Planter2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>400</Steel>
+      <Plasteel>250</Plasteel>
+      <Silver>500</Silver>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <researchPrerequisites>
+      <li>ResearchProject_NR_AutoMachineTool_AutoAgriculture_Tier2</li>
+    </researchPrerequisites>
+    <modExtensions>
+      <li Class="NR_AutoMachineTool.ModExtension_AutoMachineTool">
+        <tier>2</tier>
+        <targetCellResolverType>NR_AutoMachineTool.Building_PlanterTargetCellResolver</targetCellResolverType>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!-- tier 3-->
+  <ThingDef ParentName="Building_NR_AutoMachineTool_Planter_Base">
+    <defName>Building_NR_AutoMachineTool_Planter_TierThree</defName>
+    <label>Planter Tier3</label>
+    <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+    <graphicData>
+      <texPath>NR_AutoMachineTool/Buildings/Planter3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>800</Steel>
+      <Plasteel>500</Plasteel>
+      <Silver>1000</Silver>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <researchPrerequisites>
+      <li>ResearchProject_NR_AutoMachineTool_AutoAgriculture_Tier3</li>
+    </researchPrerequisites>
+    <modExtensions>
+      <li Class="NR_AutoMachineTool.ModExtension_AutoMachineTool">
+        <tier>3</tier>
+        <targetCellResolverType>NR_AutoMachineTool.Building_PlanterTargetCellResolver</targetCellResolverType>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

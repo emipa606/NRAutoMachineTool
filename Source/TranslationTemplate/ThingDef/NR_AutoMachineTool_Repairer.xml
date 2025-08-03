@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: AutoRepairer -->
+  <Building_NR_AutoMachineTool_Repairer.label>AutoRepairer</Building_NR_AutoMachineTool_Repairer.label>
+  <!-- EN: Automatically repair building and pawn's equipment in the range. -->
+  <Building_NR_AutoMachineTool_Repairer.description>Automatically repair building and pawn's equipment in the range.</Building_NR_AutoMachineTool_Repairer.description>
+</LanguageData>

@@ -56,7 +56,7 @@ public abstract class Building_BaseLimitation<T> : Building_BaseMachine<T>, IPro
         base.PostMapInit();
     }
 
-    public bool IsLimit(ThingDef def)
+    protected bool IsLimit(ThingDef def)
     {
         if (!ProductLimitation)
         {
@@ -71,7 +71,7 @@ public abstract class Building_BaseLimitation<T> : Building_BaseMachine<T>, IPro
             !s.CellsList.Any(c => c.GetFirstItem(Map) == null || c.GetFirstItem(Map).def == def));
     }
 
-    public bool IsLimit(Thing thing)
+    protected bool IsLimit(Thing thing)
     {
         if (!ProductLimitation)
         {

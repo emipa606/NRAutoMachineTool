@@ -14,7 +14,7 @@ public class Graphic_LinkedConveyor : Graphic_Linked2<Graphic_LinkedConveyor>
 
     public override bool ShouldDrawRotated => data == null || data.drawRotated;
 
-    public override bool ShouldLinkWith(IntVec3 c, Thing parent)
+    protected override bool ShouldLinkWith(IntVec3 c, Thing parent)
     {
         if (!c.InBounds(parent.Map))
         {

@@ -35,7 +35,7 @@ public abstract class BaseMachineSetting : IMachineSetting
     {
         string buffer = null;
         var rect = list.GetRect(30f);
-        Widgets.Label(rect.LeftHalf(), label.Translate(labelParm.Translate()));
+        Widgets.Label(rect.LeftHalf(), label.Translate(labelParm.Translate(), min, max));
         Widgets.TextFieldNumeric(rect.RightHalf(), ref power, ref buffer, min, max);
     }
 
