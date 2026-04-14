@@ -92,13 +92,7 @@
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>供电电源（{0}至{1）</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>电源（用于速度）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>电源（量程）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <!-- EN: Mote -->
+  <NR_AutoMachineTool_Mote_Lightning.label>Mote</NR_AutoMachineTool_Mote_Lightning.label>
+  <NR_AutoMachineTool_Mote_ProgressBar.label>Mote</NR_AutoMachineTool_Mote_ProgressBar.label>
 </LanguageData>
-
-
-
-
-
-
-
-
-

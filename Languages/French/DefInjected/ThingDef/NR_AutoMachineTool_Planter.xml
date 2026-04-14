@@ -92,18 +92,20 @@
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>供电电源（{0}至{1）</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>电源（用于速度）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>电源（量程）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <!-- EN: Planter Tier1 -->
+  <Building_NR_AutoMachineTool_Planter_TierOne.label>Planteuse Tier1</Building_NR_AutoMachineTool_Planter_TierOne.label>
+  <!-- EN: Place the Planter inside or near the agricultural zone.\nPlanter starts planting plants in the agricultural zone within range.\nBy default, Tier 1 is Skill Level 5, Tier 2 is Skill Level 10, and Tier 3 is Skill Level 20.(Skill level can be changed by MOD setting) -->
+  <Building_NR_AutoMachineTool_Planter_TierOne.description>Placez la planteuse à l'intérieur ou à proximité de la zone agricole.
+La planteuse commence à planter des plantes dans la zone agricole à portée.
+Par défaut, le niveau 1 est le niveau de compétence 5, le niveau 2 est le niveau de compétence 10, et le niveau 3 est le niveau de compétence 20 (le niveau de compétence peut être modifié par le MOD).</Building_NR_AutoMachineTool_Planter_TierOne.description>
+  <!-- EN: Planter Tier3 -->
+  <Building_NR_AutoMachineTool_Planter_TierThree.label>Planteur Tier3</Building_NR_AutoMachineTool_Planter_TierThree.label>
+  <Building_NR_AutoMachineTool_Planter_TierThree.description>Placez la planteuse à l'intérieur ou à proximité de la zone agricole.
+La planteuse commence à planter des plantes dans la zone agricole à portée.
+Par défaut, le niveau 1 est le niveau de compétence 5, le niveau 2 est le niveau de compétence 10, et le niveau 3 est le niveau de compétence 20 (le niveau de compétence peut être modifié par le MOD).</Building_NR_AutoMachineTool_Planter_TierThree.description>
+  <!-- EN: Planter Tier2 -->
+  <Building_NR_AutoMachineTool_Planter_TierTwo.label>Jardinière Tier2</Building_NR_AutoMachineTool_Planter_TierTwo.label>
+  <Building_NR_AutoMachineTool_Planter_TierTwo.description>Placez la planteuse à l'intérieur ou à proximité de la zone agricole.
+La planteuse commence à planter des plantes dans la zone agricole à portée.
+Par défaut, le niveau 1 est le niveau de compétence 5, le niveau 2 est le niveau de compétence 10, et le niveau 3 est le niveau de compétence 20 (le niveau de compétence peut être modifié par le MOD).</Building_NR_AutoMachineTool_Planter_TierTwo.description>
 </LanguageData>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

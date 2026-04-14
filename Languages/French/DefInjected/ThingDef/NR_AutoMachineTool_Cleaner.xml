@@ -92,11 +92,8 @@
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>供电电源（{0}至{1）</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>电源（用于速度）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>电源（量程）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <!-- EN: AutoCleaner -->
+  <Building_NR_AutoMachineTool_Cleaner.label>AutoCleaner</Building_NR_AutoMachineTool_Cleaner.label>
+  <!-- EN: Automatically cleans the dirt in the range. It also removes the dirt of dirty Pawn. -->
+  <Building_NR_AutoMachineTool_Cleaner.description>Nettoie automatiquement la saleté dans le champ de tir. Il enlève aussi la saleté des pions sales.</Building_NR_AutoMachineTool_Cleaner.description>
 </LanguageData>
-
-
-
-
-
-
-

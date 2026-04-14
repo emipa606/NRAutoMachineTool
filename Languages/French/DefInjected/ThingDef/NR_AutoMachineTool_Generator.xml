@@ -92,14 +92,8 @@
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>供电电源（{0}至{1）</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>电源（用于速度）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>电源（量程）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <!-- EN: PowerfulPowerPlant -->
+  <Building_NR_AutoMachineTool_Generator.label>PowerfulPowerPlant</Building_NR_AutoMachineTool_Generator.label>
+  <!-- EN: Powerful power plant. -->
+  <Building_NR_AutoMachineTool_Generator.description>Centrale électrique puissante.</Building_NR_AutoMachineTool_Generator.description>
 </LanguageData>
-
-
-
-
-
-
-
-
-
-

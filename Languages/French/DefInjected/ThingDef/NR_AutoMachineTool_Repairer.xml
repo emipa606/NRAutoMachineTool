@@ -92,20 +92,8 @@
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>供电电源（{0}至{1）</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>电源（用于速度）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>电源（量程）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <!-- EN: AutoRepairer -->
+  <Building_NR_AutoMachineTool_Repairer.label>Réparateur automatique</Building_NR_AutoMachineTool_Repairer.label>
+  <!-- EN: Automatically repair building and pawn's equipment in the range. -->
+  <Building_NR_AutoMachineTool_Repairer.description>Répare automatiquement les bâtiments et l'équipement des pions dans la gamme.</Building_NR_AutoMachineTool_Repairer.description>
 </LanguageData>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

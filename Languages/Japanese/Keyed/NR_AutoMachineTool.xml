@@ -101,4 +101,7 @@
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>電源 ({0} ～ {1})</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>供給電力（速度用） ({0}～{1})</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>供給電力（レンジ用） ({0}～{1})</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <NR_AutoMachineTool.SettingMaxSupplyPowerNew>0}の最大供給電力を設定可能（{1}～{2</NR_AutoMachineTool.SettingMaxSupplyPowerNew>
+  <NR_AutoMachineTool.SettingMinSupplyPowerNew>0}の最小供給電力を設定可能（{1}～{2</NR_AutoMachineTool.SettingMinSupplyPowerNew>
+  <!-- common -->
 </LanguageData>

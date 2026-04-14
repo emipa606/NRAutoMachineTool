@@ -92,23 +92,8 @@
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>供电电源（{0}至{1）</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>电源（用于速度）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>电源（量程）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <!-- EN: Stunner -->
+  <Building_NR_AutoMachineTool_Stunner.label>L'assommoir</Building_NR_AutoMachineTool_Stunner.label>
+  <!-- EN: Automatically stun hostile Pawn in the range. -->
+  <Building_NR_AutoMachineTool_Stunner.description>Assomme automatiquement les pions hostiles dans le champ de tir.</Building_NR_AutoMachineTool_Stunner.description>
 </LanguageData>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

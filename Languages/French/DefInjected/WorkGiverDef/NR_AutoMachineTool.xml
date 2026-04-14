@@ -92,26 +92,9 @@
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>供电电源（{0}至{1）</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>电源（用于速度）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>电源（量程）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <!-- EN: Materialize -->
+  <NR_MaterialMachine_DoBillsMaterialMachine.label>Matérialiser</NR_MaterialMachine_DoBillsMaterialMachine.label>
+  <!-- EN: use -->
+  <NR_MaterialMachine_DoBillsMaterialMachine.gerund>utiliser</NR_MaterialMachine_DoBillsMaterialMachine.gerund>
+  <NR_MaterialMachine_DoBillsMaterialMachine.verb>utiliser</NR_MaterialMachine_DoBillsMaterialMachine.verb>
 </LanguageData>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -92,4 +92,14 @@
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>Питание ({0} - {1})</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>Питание (для скорости) ({0} - {1})</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>Мощность питания (для диапазона) ({0} - {1})</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <NR_AutoMachineTool.SettingMaxSupplyPowerNew>Устанавливаемая максимальная мощность питания для {0} (от {1} до {2})</NR_AutoMachineTool.SettingMaxSupplyPowerNew>
+  <NR_AutoMachineTool.SettingMinSupplyPowerNew>Настраиваемая минимальная мощность питания для {0} (от {1} до {2})</NR_AutoMachineTool.SettingMinSupplyPowerNew>
+  <!-- BeltConveyor -->
+  <!-- ItemPuller -->
+  <!-- Planter & Harvester -->
+  <!-- common -->
+  <!-- Slaughterhouse -->
+  <!-- AutomationNet -->
+  <!-- AutoMiner -->
+  <!-- MaterialMachine -->
 </LanguageData>

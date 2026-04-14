@@ -92,21 +92,8 @@
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>供电电源（{0}至{1）</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>电源（用于速度）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>电源（量程）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <!-- EN: Shield Generator -->
+  <Building_NR_AutoMachineTool_Shield.label>Générateur de bouclier</Building_NR_AutoMachineTool_Shield.label>
+  <!-- EN: Protect within range, from bullets, hostile faction DropPod, crashed ship part. -->
+  <Building_NR_AutoMachineTool_Shield.description>Protéger à portée, des balles, des DropPods de factions hostiles, des pièces de vaisseaux accidentés.</Building_NR_AutoMachineTool_Shield.description>
 </LanguageData>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

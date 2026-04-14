@@ -92,10 +92,9 @@
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>供电电源（{0}至{1）</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>电源（用于速度）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>电源（量程）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <!-- EN: AnimalResourceGatherer -->
+  <Building_NR_AutoMachineTool_AnimalResourceGatherer.label>AnimalResourceGatherer</Building_NR_AutoMachineTool_AnimalResourceGatherer.label>
+  <!-- EN: Place the AnimalResourceGatherer near animals passing through or staying.\nAnimalResourceGatherer starts milking and shearing from animals within range. -->
+  <Building_NR_AutoMachineTool_AnimalResourceGatherer.description>Placez l'AnimalResourceGatherer près des animaux qui passent ou qui restent.
+AnimalResourceGatherer commence à traire et à tondre les animaux à sa portée.</Building_NR_AutoMachineTool_AnimalResourceGatherer.description>
 </LanguageData>
-
-
-
-
-
-

@@ -92,15 +92,17 @@
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>供电电源（{0}至{1）</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>电源（用于速度）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>电源（量程）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <!-- EN: Harvester Tier1 -->
+  <Building_NR_AutoMachineTool_Harvester_TierOne.label>Moissonneuse Tier1</Building_NR_AutoMachineTool_Harvester_TierOne.label>
+  <!-- EN: Place the Harvester inside or near the agricultural zone.\nHarvester starts harvesting plants in the agricultural zone within range. -->
+  <Building_NR_AutoMachineTool_Harvester_TierOne.description>Placez la moissonneuse à l'intérieur ou à proximité de la zone agricole.
+La moissonneuse commence à récolter les plantes dans la zone agricole à portée.</Building_NR_AutoMachineTool_Harvester_TierOne.description>
+  <!-- EN: Harvester Tier3 -->
+  <Building_NR_AutoMachineTool_Harvester_TierThree.label>Moissonneuse Tier3</Building_NR_AutoMachineTool_Harvester_TierThree.label>
+  <Building_NR_AutoMachineTool_Harvester_TierThree.description>Placez la moissonneuse à l'intérieur ou à proximité de la zone agricole.
+La moissonneuse commence à récolter les plantes dans la zone agricole à portée.</Building_NR_AutoMachineTool_Harvester_TierThree.description>
+  <!-- EN: Harvester Tier2 -->
+  <Building_NR_AutoMachineTool_Harvester_TierTwo.label>Moissonneuse Tier2</Building_NR_AutoMachineTool_Harvester_TierTwo.label>
+  <Building_NR_AutoMachineTool_Harvester_TierTwo.description>Placez la moissonneuse à l'intérieur ou à proximité de la zone agricole.
+La moissonneuse commence à récolter les plantes dans la zone agricole à portée.</Building_NR_AutoMachineTool_Harvester_TierTwo.description>
 </LanguageData>
-
-
-
-
-
-
-
-
-
-
-

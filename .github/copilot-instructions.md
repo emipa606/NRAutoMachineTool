@@ -1,51 +1,50 @@
-# GitHub Copilot Instructions for NR_AutoMachineTool (Continued) Mod
+# Copilot Instructions for NR_AutoMachineTool
 
 ## Mod Overview and Purpose
 
-The NR_AutoMachineTool mod aims to enhance automation within the RimWorld game by adding various machines that can perform tasks autonomously. This mod is an update and continuation of the original mod created by nullres, and it features improved power-output information and a visible shield bubble for the shield generator. The overall goal is to reduce micromanagement and improve efficiency in the colony with automated systems.
+**NR_AutoMachineTool** is a continuation of the original nullres mod dedicated to enhancing automation within the game RimWorld. This mod introduces a variety of machines designed to streamline your colony's operations, ranging from item handling to cleaning and mining. The primary objective is to reduce the manual workload by employing automated systems.
 
-## Key Features and Systems
+### Key Features and Systems
 
-- **Automated Machines**: Introduce a suite of machines that perform specific tasks, such as AutoMachineTool, BeltConveyor, Item Puller, Planter, Harvester, Slaughterhouse, AnimalResourceGatherer, etc.
-- **Shield Generator**: Provides a visible shield bubble for enhanced defense mechanisms.
-- **Industrial Automation**: Implements system features inspired by mods such as S.A.L.: Auto-crafters, Industrial Rollers, and Project RimFactory to create a seamless automated workflow.
-- **Visual Enhancements**: Includes graphical elements for various machines such as the WallLight and BeltConveyor to improve the in-game experience.
+- **Automation Machines**: Includes AutoMachineTool, BeltConveyor, Item Puller, Planter, Harvester, Slaughterhouse, AnimalResourceGatherer, AutoMiner, AutoCleaner, WallLight, AutoRepairer, Stunner, ShieldGenerator, Material Converter, and PowerfulPowerPlant.
+- **Visual Feedback**: Enhanced user experience with elements like a visible shield bubble for the ShieldGenerator.
+- **Power Management**: Accurate power-output information for better resource planning.
+- **Machine Translation**: Original content is in Japanese with machine translation to English, allowing broader accessibility.
 
-## Coding Patterns and Conventions
+### Coding Patterns and Conventions
 
-- **Class Inheritance**: Utilize C# inheritance with abstract base classes (e.g., `BaseMachineSetting`, `BaseTargetCellResolver`) to allow flexible and extendable machine logic.
-- **Interface Implementation**: Follow a modular design by implementing interfaces (e.g., `IMachineSetting`, `ITargetCellResolver`) that can be shared across multiple classes for uniform behavior across diverse machine types.
-- **Naming Conventions**: Classes and methods follow PascalCase naming conventions while interfaces begin with an 'I' prefix.
+- **Class Structuring**: Classes are designed with clear lines of inheritance, like `Building_BaseMachine<T>` extending to more specific machines.
+- **Interface Implementation**: Interfaces such as `IMachineSetting`, `ITargetCellResolver`, and `IPowerSupplyMachine` are employed to ensure consistent behavior and functionalities across different machine types.
+- **Private Methods**: Encapsulate functionalities that are not required to be exposed, enhancing the modular design.
+- **Consistent Naming**: Classes and methods maintain descriptive and consistent naming conventions for easy understanding and maintenance.
 
-## XML Integration
+### XML Integration
 
-- XML is used primarily for defining mod content such as machine definitions, properties, and recipes.
-- Ensure that the XML files are properly structured and synchronized with C# code to maintain mod balance and performance.
-- Use XML extensions when necessary to add custom properties to Defs.
+- Utilize XML to define machine properties and behaviors within the mod.
+- XML files manage the definitions and settings for each machine type, facilitating ease of configuration changes without modifying the core logic.
+- Ensure XML compatibility with existing game data structures to prevent errors.
 
-## Harmony Patching
+### Harmony Patching
 
-- Utilize Harmony to patch existing game methods for compatibility and new features integration. This allows the mod to inject additional logic without modifying the base game files.
-- Ensure patches are well-documented and tested to avoid conflicts and maintain performance.
-- Use Harmony prefixes and postfixes to execute code before or after original game methods.
+- Harmony is employed to modify existing game logic non-destructively, ensuring compatibility with updates and other mods.
+- Implement Harmony patches to extend or override game behaviors to fit the automation mechanics of NR_AutoMachineTool.
+- Ensure that patches do not conflict with other mods by checking method owners and implementation logic.
 
-## Suggestions for Copilot
+### Suggestions for Copilot
 
-1. **Boilerplate Code**: Assist with generating boilerplate code for new machines, using existing classes as a reference for patterns and interfaces.
+1. **Code Completion**: Assist with completing class methods that interface with RimWorld's engine, particularly focusing on machine logic.
+2. **Pattern Recognition**: Identify repeating structures or logic to suggest refactoring or abstraction opportunities.
+3. **Translation**: Provide native-level translations or corrections for machine-translated components.
+4. **Error Handling**: Suggest robust error handling techniques, particularly around exceptions that could arise during automation processes.
+5. **Performance Optimization**: Advise on optimizing the existing algorithms, especially those running in frequent intervals like ticks.
+6. **Compatibility Suggestions**: Proactively suggest checks or balances to maintain compatibility with future RimWorld updates or community mods.
 
-2. **XML Definitions**: Propose properly structured XML definitions when introducing new machines or updating existing ones to ensure balance and functionality.
+By leveraging these instructions, GitHub Copilot can effectively assist in further developing and refining the NR_AutoMachineTool mod, ensuring it's robust, efficient, and user-friendly.
 
-3. **Harmony Patches**: Provide examples and templates for common Harmony patch patterns to facilitate bug fixing and feature enhancements.
-
-4. **Performance Optimization**: Suggest code optimizations, especially for loops and 3D vector calculations used in machine logic, to enhance game performance.
-
-5. **Documentation**: Generate inline comments and summaries for better code readability, especially when introducing new logic or modifying existing systems.
-
----
-
-For further assistance or questions related to mod development, feel free to reach out via the GitHub Issues section with feature requests or bug reports.
-
-Special thanks to Zymex and the producers of the referenced mods for their inspiration and contributions. Enjoy automating your RimWorld colony!
-
-
-This document is designed to assist developers in understanding the key technical elements of the NR_AutoMachineTool mod, ensuring effective use of GitHub Copilot for quick and efficient mod development.
+## Project Solution Guidelines
+- Relevant mod XML files are included as Solution Items under the solution folder named XML, these can be read and modified from within the solution.
+- Use these in-solution XML files as the primary files for reference and modification.
+- The `.github/copilot-instructions.md` file is included in the solution under the `.github` solution folder, so it should be read/modified from within the solution instead of using paths outside the solution. Update this file once only, as it and the parent-path solution reference point to the same file in this workspace.
+- When making functional changes in this mod, ensure the documented features stay in sync with implementation; use the in-solution `.github` copy as the primary file.
+- In the solution is also a project called Assembly-CSharp, containing a read-only version of the decompiled game source, for reference and debugging purposes.
+- For any new documentation, update this copilot-instructions.md file rather than creating separate documentation files.

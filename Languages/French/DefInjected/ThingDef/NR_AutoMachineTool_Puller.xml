@@ -92,19 +92,14 @@
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>供电电源（{0}至{1）</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>电源（用于速度）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>电源（量程）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <!-- EN: Item Puller -->
+  <Building_NR_AutoMachineTool_Puller.label>Tireur d'objets</Building_NR_AutoMachineTool_Puller.label>
+  <!-- EN: Place it next to the pulling zone. Pull out from the opposite side of the installed orientation and output it in the installed orientation.\nSince the drawing machine is in a non-operating state in the post-installation state, it selects the drawing machine and put it in the operating state from the button. -->
+  <Building_NR_AutoMachineTool_Puller.description>Placez-le à côté de la zone de tirage. Tirez du côté opposé à l'orientation installée et sortez-la dans l'orientation installée.
+Puisque la machine à dessiner est dans un état non opérationnel dans l'état post-installation, il sélectionne la machine à dessiner et la met dans l'état opérationnel à partir du bouton.</Building_NR_AutoMachineTool_Puller.description>
+  <!-- EN: Wall embedding Item Puller -->
+  <Building_NR_AutoMachineTool_Puller_Wall.label>Encastrement dans un mur Item Puller</Building_NR_AutoMachineTool_Puller_Wall.label>
+  <!-- EN: Place it next to the pulling zone. Pull out from the opposite side of the installed orientation and output it in the installed orientation.(In the wall)\nSince the drawing machine is in a non-operating state in the post-installation state, it selects the drawing machine and put it in the operating state from the button. -->
+  <Building_NR_AutoMachineTool_Puller_Wall.description>Placez-le à côté de la zone de tirage. Tirer du côté opposé à l'orientation installée et le sortir dans l'orientation installée (dans le mur).
+Puisque la machine à dessiner est dans un état non opérationnel dans l'état post-installation, il sélectionne la machine à dessiner et la met dans l'état opérationnel à partir du bouton.</Building_NR_AutoMachineTool_Puller_Wall.description>
 </LanguageData>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

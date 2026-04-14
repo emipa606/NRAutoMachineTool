@@ -92,4 +92,14 @@ Même si la destination de sortie se trouve dans la zone de stockage, le produit
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>Alimentation ({0} à {1})</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>Alimentation (pour la vitesse) ({0} à {1})</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>Puissance d'alimentation (pour la gamme) ({0} à {1})</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <NR_AutoMachineTool.SettingMaxSupplyPowerNew>Puissance d'alimentation maximale réglable pour {0} ({1} à {2})</NR_AutoMachineTool.SettingMaxSupplyPowerNew>
+  <NR_AutoMachineTool.SettingMinSupplyPowerNew>Puissance d'alimentation minimale réglable pour {0} ({1} à {2})</NR_AutoMachineTool.SettingMinSupplyPowerNew>
+  <!-- BeltConveyor -->
+  <!-- ItemPuller -->
+  <!-- Planter & Harvester -->
+  <!-- common -->
+  <!-- Slaughterhouse -->
+  <!-- AutomationNet -->
+  <!-- AutoMiner -->
+  <!-- MaterialMachine -->
 </LanguageData>

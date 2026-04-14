@@ -334,12 +334,24 @@ public static class Ops
 
     public static float GetEnergyAmount(ThingDef def)
     {
-        return ConvertEnergyAmount(StatDefOf.MarketValue.Worker.GetValue(StatRequest.For(def, null)));
+        var amount = ConvertEnergyAmount(StatDefOf.MarketValue.Worker.GetValue(StatRequest.For(def, null)));
+        if (amount > 0.1f || def?.thingClass == null || !typeof(Corpse).IsAssignableFrom(def.thingClass))
+        {
+            return amount;
+        }
+
+        return 1f;
     }
 
     public static float GetEnergyAmount(ThingDef def, ThingDef stuffDef)
     {
-        return ConvertEnergyAmount(StatDefOf.MarketValue.Worker.GetValue(StatRequest.For(def, stuffDef)));
+        var amount = ConvertEnergyAmount(StatDefOf.MarketValue.Worker.GetValue(StatRequest.For(def, stuffDef)));
+        if (amount > 0.1f || def?.thingClass == null || !typeof(Corpse).IsAssignableFrom(def.thingClass))
+        {
+            return amount;
+        }
+
+        return 1f;
     }
 
     private static float ConvertEnergyAmount(float marketValue)

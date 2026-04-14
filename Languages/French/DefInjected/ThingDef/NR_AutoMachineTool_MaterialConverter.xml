@@ -92,16 +92,12 @@
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>供电电源（{0}至{1）</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>电源（用于速度）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>电源（量程）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <!-- EN: Material Energy -->
+  <NR_AutoMachineTool_MaterialEnergy.label>Énergie matérielle</NR_AutoMachineTool_MaterialEnergy.label>
+  <!-- EN: It can be converted into a material with a Material Converter. -->
+  <NR_AutoMachineTool_MaterialEnergy.description>Il peut être converti en matériau à l'aide d'un convertisseur de matériau.</NR_AutoMachineTool_MaterialEnergy.description>
+  <!-- EN: Material Converter -->
+  <NR_AutoMachineTool_MaterialMachine.label>Convertisseur de matériaux</NR_AutoMachineTool_MaterialMachine.label>
+  <!-- EN: It converts from material to energy, energy to material. Those converted into energy can be generated from energy. -->
+  <NR_AutoMachineTool_MaterialMachine.description>Il convertit la matière en énergie, l'énergie en matière. Ce qui est converti en énergie peut être généré à partir de l'énergie.</NR_AutoMachineTool_MaterialMachine.description>
 </LanguageData>
-
-
-
-
-
-
-
-
-
-
-
-

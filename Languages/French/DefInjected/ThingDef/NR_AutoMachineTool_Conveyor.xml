@@ -92,12 +92,32 @@
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>供电电源（{0}至{1）</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>电源（用于速度）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>电源（量程）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <!-- EN: BeltConveyor -->
+  <Building_NR_AutoMachineTool_BeltConveyor.label>Convoyeur à bande</Building_NR_AutoMachineTool_BeltConveyor.label>
+  <!-- EN: Place it in the direction you want to carry.\nPlace the item on top. (Item Puller and AutoMachineTool can be used.)\nThe belt conveyors are connected by vertically adjoining the orientation. -->
+  <Building_NR_AutoMachineTool_BeltConveyor.description>Placez-la dans la direction où vous voulez la porter.
+Placez l'objet sur le dessus (Item Puller et AutoMachineTool peuvent être utilisés).
+Les convoyeurs à bande sont reliés par une orientation verticale adjacente.</Building_NR_AutoMachineTool_BeltConveyor.description>
+  <!-- EN: Underground conveyor exit -->
+  <Building_NR_AutoMachineTool_BeltConveyor_ToFloor.label>Sortie du convoyeur souterrain</Building_NR_AutoMachineTool_BeltConveyor_ToFloor.label>
+  <!-- EN: Connect the ground belt conveyor and underground conveyor.\nIt is an exit to the underground conveyor. -->
+  <Building_NR_AutoMachineTool_BeltConveyor_ToFloor.description>Relier le convoyeur à bande au sol et le convoyeur souterrain.
+C'est une sortie vers le convoyeur souterrain.</Building_NR_AutoMachineTool_BeltConveyor_ToFloor.description>
+  <!-- EN: Underground conveyor entrance -->
+  <Building_NR_AutoMachineTool_BeltConveyor_ToUnderground.label>Entrée du convoyeur souterrain</Building_NR_AutoMachineTool_BeltConveyor_ToUnderground.label>
+  <!-- EN: Connect the ground belt conveyor and underground conveyor.\nIt is the entrance to the underground conveyor. -->
+  <Building_NR_AutoMachineTool_BeltConveyor_ToUnderground.description>Relier le convoyeur à bande au sol et le convoyeur souterrain.
+C'est l'entrée du convoyeur souterrain.</Building_NR_AutoMachineTool_BeltConveyor_ToUnderground.description>
+  <!-- EN: Underground BeltConveyor -->
+  <Building_NR_AutoMachineTool_BeltConveyor_Underground.label>Convoyeur à bande souterrain</Building_NR_AutoMachineTool_BeltConveyor_Underground.label>
+  <!-- EN: Underground BeltConveyor carries items in the basement.\nUnderground BeltConveyor can not move items on the ground as it is.\nConnect to the underground conveyor entrance and exit and use. -->
+  <Building_NR_AutoMachineTool_BeltConveyor_Underground.description>Underground BeltConveyor transporte des objets dans le sous-sol.
+Le Underground BeltConveyor ne peut pas déplacer d'objets sur le sol en l'état.
+Se connecter à l'entrée et à la sortie du convoyeur souterrain et l'utiliser.</Building_NR_AutoMachineTool_BeltConveyor_Underground.description>
+  <!-- EN: Wall embedding BeltConveyor -->
+  <Building_NR_AutoMachineTool_BeltConveyor_Wall.label>Encastrement dans un mur BeltConveyor</Building_NR_AutoMachineTool_BeltConveyor_Wall.label>
+  <!-- EN: Place it in the direction you want to carry.(In the wall)\nPlace the item on top. (Item Puller and AutoMachineTool can be used.)\nThe belt conveyors are connected by vertically adjoining the orientation. -->
+  <Building_NR_AutoMachineTool_BeltConveyor_Wall.description>Placez l'objet dans la direction où vous voulez le porter (dans le mur).
+Placez l'objet sur le dessus (Item Puller et AutoMachineTool peuvent être utilisés).
+Les convoyeurs à bande sont reliés par une orientation verticale adjacente.</Building_NR_AutoMachineTool_BeltConveyor_Wall.description>
 </LanguageData>
-
-
-
-
-
-
-
-

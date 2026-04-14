@@ -92,7 +92,8 @@
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>供电电源（{0}至{1）</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>电源（用于速度）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>电源（量程）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <!-- EN: dummy -->
+  <NR_AutoMachineTool_DummyRecipe.label>mannequin</NR_AutoMachineTool_DummyRecipe.label>
+  <!-- EN: Doing an unknown recipe. -->
+  <NR_AutoMachineTool_DummyRecipe.jobString>Faire une recette inconnue.</NR_AutoMachineTool_DummyRecipe.jobString>
 </LanguageData>
-
-
-

@@ -92,4 +92,14 @@ Auch wenn das Ausgabeziel in der Bevorratungszone liegt, kann das Fertigerzeugni
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>Versorgungsspannung ({0} bis {1})</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>Versorgungsleistung (für Geschwindigkeit) ({0} bis {1})</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>Versorgungsleistung (für Bereich) ({0} bis {1})</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <NR_AutoMachineTool.SettingMaxSupplyPowerNew>Einstellbare maximale Versorgungsleistung für {0} ({1} bis {2})</NR_AutoMachineTool.SettingMaxSupplyPowerNew>
+  <NR_AutoMachineTool.SettingMinSupplyPowerNew>Einstellbare Mindestversorgungsleistung für {0} ({1} bis {2})</NR_AutoMachineTool.SettingMinSupplyPowerNew>
+  <!-- BeltConveyor -->
+  <!-- ItemPuller -->
+  <!-- Planter & Harvester -->
+  <!-- common -->
+  <!-- Slaughterhouse -->
+  <!-- AutomationNet -->
+  <!-- AutoMiner -->
+  <!-- MaterialMachine -->
 </LanguageData>

@@ -92,4 +92,14 @@
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>供电电源（{0}至{1）</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>电源（用于速度）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>电源（量程）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <NR_AutoMachineTool.SettingMaxSupplyPowerNew>可设置 {0} 的最大供电功率（{1} 至 {2）</NR_AutoMachineTool.SettingMaxSupplyPowerNew>
+  <NR_AutoMachineTool.SettingMinSupplyPowerNew>可设置 {0} 的最小供电功率（{1}至{2）</NR_AutoMachineTool.SettingMinSupplyPowerNew>
+  <!-- BeltConveyor -->
+  <!-- ItemPuller -->
+  <!-- Planter & Harvester -->
+  <!-- common -->
+  <!-- Slaughterhouse -->
+  <!-- AutomationNet -->
+  <!-- AutoMiner -->
+  <!-- MaterialMachine -->
 </LanguageData>

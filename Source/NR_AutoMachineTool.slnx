@@ -6,4 +6,45 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="NR_AutoMachineTool/NR_AutoMachineTool.csproj" />
+  <Folder Name="/XML/1.6/Defs/ThingDefs/NR_AutoMachineTool/">
+    <File Path="../1.6/Defs/ThingDefs/NR_AutoMachineTool/NR_AutoMachineTool_AnimalResourceGatherer.xml" />
+    <File Path="../1.6/Defs/ThingDefs/NR_AutoMachineTool/NR_AutoMachineTool_Cleaner.xml" />
+    <File Path="../1.6/Defs/ThingDefs/NR_AutoMachineTool/NR_AutoMachineTool_Conveyor.xml" />
+    <File Path="../1.6/Defs/ThingDefs/NR_AutoMachineTool/NR_AutoMachineTool_Generator.xml" />
+    <File Path="../1.6/Defs/ThingDefs/NR_AutoMachineTool/NR_AutoMachineTool_Harvester.xml" />
+    <File Path="../1.6/Defs/ThingDefs/NR_AutoMachineTool/NR_AutoMachineTool_MaterialConverter.xml" />
+    <File Path="../1.6/Defs/ThingDefs/NR_AutoMachineTool/NR_AutoMachineTool_Miner.xml" />
+    <File Path="../1.6/Defs/ThingDefs/NR_AutoMachineTool/NR_AutoMachineTool_Planter.xml" />
+    <File Path="../1.6/Defs/ThingDefs/NR_AutoMachineTool/NR_AutoMachineTool_Puller.xml" />
+    <File Path="../1.6/Defs/ThingDefs/NR_AutoMachineTool/NR_AutoMachineTool_Repairer.xml" />
+    <File Path="../1.6/Defs/ThingDefs/NR_AutoMachineTool/NR_AutoMachineTool_Shield.xml" />
+    <File Path="../1.6/Defs/ThingDefs/NR_AutoMachineTool/NR_AutoMachineTool_Slaughterhouse.xml" />
+    <File Path="../1.6/Defs/ThingDefs/NR_AutoMachineTool/NR_AutoMachineTool_Stunner.xml" />
+    <File Path="../1.6/Defs/ThingDefs/NR_AutoMachineTool/NR_AutoMachineTool_WallLight.xml" />
+    <File Path="../1.6/Defs/ThingDefs/NR_AutoMachineTool/NR_AutoMachineTool.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/Effects/">
+    <File Path="../1.6/Defs/Effects/NR_AutoMachineTool_Effects.xml" />
+  </Folder>
+  <Folder Name="/XML/Languages/English/Keyed/">
+    <File Path="../Languages/English/Keyed/NR_AutoMachineTool.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/WorkGiverDef/">
+    <File Path="../1.6/Defs/WorkGiverDef/NR_AutoMachineTool.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/DesignationCategoryDef/">
+    <File Path="../1.6/Defs/DesignationCategoryDef/NR_AutoMachineTool.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ResearchProjectDefs/">
+    <File Path="../1.6/Defs/ResearchProjectDefs/NR_AutoMachineTool.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/Misc/">
+    <File Path="../1.6/Defs/Misc/NR_AutoMachineTool_SpecialThingFilters.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/HediffDefs/">
+    <File Path="../1.6/Defs/HediffDefs/NR_AutoMachineTool_Hediffs.xml" />
+  </Folder>
 </Solution>

@@ -92,25 +92,23 @@
   <NR_AutoMachineTool.SupplyPowerValueLabelNew>供电电源（{0}至{1）</NR_AutoMachineTool.SupplyPowerValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>电源（用于速度）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForSpeedValueLabelNew>
   <NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>电源（量程）（{0}至{1）</NR_AutoMachineTool.SupplyPowerForRangeValueLabelNew>
+  <!-- EN: AutoMachineTool Tier1 -->
+  <Building_NR_AutoMachineTool_TierOne.label>AutoMachineTool Tier1</Building_NR_AutoMachineTool_TierOne.label>
+  <!-- EN: Place the AutoMachineTool facing the work table.\nSet the output destination of the finished product.\nThe AutoMachineTool executes a requested craft that can be created with the material in the surrounding squares from the work table creation request.\nBy default, Tier 1 is Skill Level 5, Tier 2 is Skill Level 10, and Tier 3 is Skill Level 20.(Skill level can be changed by MOD setting) -->
+  <Building_NR_AutoMachineTool_TierOne.description>Placez l'AutoMachineTool face à la table de travail.
+Définir la destination de sortie du produit fini.
+L'AutoMachineTool exécute un métier demandé qui peut être créé avec le matériau dans les cases environnantes de la demande de création de la table de travail.
+Par défaut, le niveau 1 est le niveau de compétence 5, le niveau 2 est le niveau de compétence 10 et le niveau 3 est le niveau de compétence 20 (le niveau de compétence peut être modifié par le paramètre MOD).</Building_NR_AutoMachineTool_TierOne.description>
+  <!-- EN: AutoMachineTool Tier3 -->
+  <Building_NR_AutoMachineTool_TierThree.label>AutoMachineTool Tier3</Building_NR_AutoMachineTool_TierThree.label>
+  <Building_NR_AutoMachineTool_TierThree.description>Placez l'AutoMachineTool face à la table de travail.
+Définir la destination de sortie du produit fini.
+L'AutoMachineTool exécute un métier demandé qui peut être créé avec le matériau dans les cases environnantes de la demande de création de la table de travail.
+Par défaut, le niveau 1 est le niveau de compétence 5, le niveau 2 est le niveau de compétence 10 et le niveau 3 est le niveau de compétence 20 (le niveau de compétence peut être modifié par le paramètre MOD).</Building_NR_AutoMachineTool_TierThree.description>
+  <!-- EN: AutoMachineTool Tier2 -->
+  <Building_NR_AutoMachineTool_TierTwo.label>AutoMachineTool Tier2</Building_NR_AutoMachineTool_TierTwo.label>
+  <Building_NR_AutoMachineTool_TierTwo.description>Placez l'AutoMachineTool face à la table de travail.
+Définir la destination de sortie du produit fini.
+L'AutoMachineTool exécute un métier demandé qui peut être créé avec le matériau dans les cases environnantes de la demande de création de la table de travail.
+Par défaut, le niveau 1 est le niveau de compétence 5, le niveau 2 est le niveau de compétence 10 et le niveau 3 est le niveau de compétence 20 (le niveau de compétence peut être modifié par le paramètre MOD).</Building_NR_AutoMachineTool_TierTwo.description>
 </LanguageData>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

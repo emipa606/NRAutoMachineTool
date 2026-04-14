@@ -32,6 +32,11 @@ public class Building_MaterialMahcine : Building_WorkTable, IBillNotificationRec
 
     private static float Loss => 0.3f;
 
+    private static bool IsCorpseThingDef(ThingDef def)
+    {
+        return def?.thingClass != null && typeof(Corpse).IsAssignableFrom(def.thingClass);
+    }
+
     public void OnComplete(Bill_Production bill, List<Thing> ingredients)
     {
         if ("NR_AutoMachineTool.ScanMaterial" != bill.recipe.defName)
@@ -41,6 +46,11 @@ public class Building_MaterialMahcine : Building_WorkTable, IBillNotificationRec
 
         ingredients.ForEach(delegate(Thing i)
         {
+            if (IsCorpseThingDef(i.def))
+            {
+                return;
+            }
+
             var defName = MaterializeRecipeDefData.GetDefName(i.def, i.Stuff, 1);
             if (materializeRecipeData.Any(r => r.defName == defName))
             {
@@ -126,6 +136,7 @@ public class Building_MaterialMahcine : Building_WorkTable, IBillNotificationRec
 
         var toEnergyDefs2 = new HashSet<ThingDef>(from t in DefDatabase<ThingDef>.AllDefs
             where t.category == ThingCategory.Item
+            where !IsCorpseThingDef(t)
             where Ops.GetEnergyAmount(t) > 0.1f
             select t);
         scanMaterialRecipe = CreateScanMaterialRecipeDef("NR_AutoMachineTool.ScanMaterial",
