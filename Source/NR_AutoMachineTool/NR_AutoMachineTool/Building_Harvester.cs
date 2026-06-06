@@ -55,9 +55,14 @@ public class Building_Harvester : Building_BaseRange<Plant>
             return true;
         }
 
+        if (p.LifeStage == PlantLifeStage.Mature && p.def.plant.harvestedThingDef == null)
+        {
+            return true;
+        }
+
         if (p.HarvestableNow && p.LifeStage == PlantLifeStage.Mature)
         {
-            return p.def.plant.harvestedThingDef == null || !IsLimit(p.def.plant.harvestedThingDef);
+            return !IsLimit(p.def.plant.harvestedThingDef);
         }
 
         return false;
@@ -78,7 +83,26 @@ public class Building_Harvester : Building_BaseRange<Plant>
             products = CreateThings(working.def.plant.harvestedThingDef, working.YieldNow());
         }
 
-        working.PlantCollected(null, PlantDestructionMode.Cut);
+        var by = Map.mapPawns.FreeColonistsSpawned.FirstOrDefault() ??
+                 Map.mapPawns.SpawnedPawnsInFaction(Faction.OfPlayer).FirstOrDefault();
+
+        if (by != null)
+        {
+            working.PlantCollected(by, PlantDestructionMode.Cut);
+            return true;
+        }
+
+        if (working.def.plant.HarvestDestroys)
+        {
+            working.TrySpawnStump(PlantDestructionMode.Cut);
+            working.Destroy(DestroyMode.KillFinalizeLeavingsOnly);
+        }
+        else
+        {
+            working.Growth = working.def.plant.harvestAfterGrowth;
+            working.Map.mapDrawer.MapMeshDirty(working.Position, MapMeshFlagDefOf.Things);
+        }
+
         return true;
     }
 }

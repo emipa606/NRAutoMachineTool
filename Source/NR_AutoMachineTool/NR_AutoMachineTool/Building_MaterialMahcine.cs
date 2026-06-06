@@ -109,6 +109,7 @@ public class Building_MaterialMahcine : Building_WorkTable, IBillNotificationRec
         {
             var toEnergyDefs = new HashSet<ThingDef>(from t in DefDatabase<ThingDef>.AllDefs
                 where t.category == ThingCategory.Item
+                where !IsCorpseThingDef(t)
                 where Ops.GetEnergyAmount(t) > 0.1f
                 select t);
             toEnergyRecipes =

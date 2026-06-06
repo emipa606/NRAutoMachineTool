@@ -1,45 +1,36 @@
-# Copilot Instructions for NR_AutoMachineTool
+# Copilot Instruction File for NR_AutoMachineTool (Continued)
 
 ## Mod Overview and Purpose
+NR_AutoMachineTool (Continued) is a RimWorld mod focused on introducing advanced machinery to automate various tasks within the game. It is an update of the original mod by nullres, featuring enhanced functionalities and bug fixes. The mod aims to streamline in-game activities like crafting, farming, mining, and resource management, allowing players to automate these processes and focus on other strategic aspects of the game.
 
-**NR_AutoMachineTool** is a continuation of the original nullres mod dedicated to enhancing automation within the game RimWorld. This mod introduces a variety of machines designed to streamline your colony's operations, ranging from item handling to cleaning and mining. The primary objective is to reduce the manual workload by employing automated systems.
+## Key Features and Systems
+- **Automation Machines**: Introduces multiple new machines for automation, including AutoMachineTool, BeltConveyor, Item Puller, Planter, Harvester, Slaughterhouse, AnimalResourceGatherer, AutoMiner, AutoCleaner, WallLight, AutoRepairer, Stunner, ShieldGenerator, Material Converter, and PowerfulPowerPlant.
+- **Shield Building**: Adds a visible shield bubble to the shield generator to provide a clear indication of protected areas.
+- **Power Management**: Corrects and updates the power-output information for better resource management.
 
-### Key Features and Systems
+## Coding Patterns and Conventions
+- **Naming Conventions**: Consistent use of PascalCase for type names and method names. Public properties and fields also follow PascalCase, while private fields use camelCase prefixed with an underscore (_).
+- **File Organization**: C# source files are organized by functionality, with one major type per file.
+- **Defining Methods**: Methods such as `DrawModSetting`, `DrawPower`, and `ExposeData` provide customization and data serialization for machines.
 
-- **Automation Machines**: Includes AutoMachineTool, BeltConveyor, Item Puller, Planter, Harvester, Slaughterhouse, AnimalResourceGatherer, AutoMiner, AutoCleaner, WallLight, AutoRepairer, Stunner, ShieldGenerator, Material Converter, and PowerfulPowerPlant.
-- **Visual Feedback**: Enhanced user experience with elements like a visible shield bubble for the ShieldGenerator.
-- **Power Management**: Accurate power-output information for better resource planning.
-- **Machine Translation**: Original content is in Japanese with machine translation to English, allowing broader accessibility.
+## XML Integration
+- XML files are used extensively for defining new game elements and attributes specific to the mod.
+- Various XML definitions include `DesignationCategoryDef`, `EffecterDef`, `HediffDef`, and `ResearchProjectDef` to integrate new machinery, effects, health conditions, special filters, and research projects into the game.
+- Ensure correct XML syntax and structure for seamless integration with RimWorld’s game engine.
 
-### Coding Patterns and Conventions
+## Harmony Patching
+- Harmony is used for runtime patching to modify existing game methods and behaviors.
+- Carefully crafted prefix, postfix, and transpiler methods must be created to ensure compatibility with base game mechanics and other mods.
+- Use appropriate attributes and method signatures to target necessary game functions for patching.
 
-- **Class Structuring**: Classes are designed with clear lines of inheritance, like `Building_BaseMachine<T>` extending to more specific machines.
-- **Interface Implementation**: Interfaces such as `IMachineSetting`, `ITargetCellResolver`, and `IPowerSupplyMachine` are employed to ensure consistent behavior and functionalities across different machine types.
-- **Private Methods**: Encapsulate functionalities that are not required to be exposed, enhancing the modular design.
-- **Consistent Naming**: Classes and methods maintain descriptive and consistent naming conventions for easy understanding and maintenance.
+## Suggestions for Copilot
+- **Machine Setup**: Assist in creating configuration and initialization methods for new machinery, including power specifications and automation logic.
+- **Performance Optimization**: Recommend efficient coding practices to manage performance impact from multiple automated processes running simultaneously.
+- **Error Handling**: Provide patterns and techniques for robust error handling, especially with integrating numerous machines and Harmony patches.
+- **Localization Support**: Assist with adding proper localization support for new content to make the mod accessible to a wider audience.
+- **Testing and Debugging**: Generate unit tests and debugging methods specific to the features and functionality of the NR_AutoMachineTool mod.
 
-### XML Integration
-
-- Utilize XML to define machine properties and behaviors within the mod.
-- XML files manage the definitions and settings for each machine type, facilitating ease of configuration changes without modifying the core logic.
-- Ensure XML compatibility with existing game data structures to prevent errors.
-
-### Harmony Patching
-
-- Harmony is employed to modify existing game logic non-destructively, ensuring compatibility with updates and other mods.
-- Implement Harmony patches to extend or override game behaviors to fit the automation mechanics of NR_AutoMachineTool.
-- Ensure that patches do not conflict with other mods by checking method owners and implementation logic.
-
-### Suggestions for Copilot
-
-1. **Code Completion**: Assist with completing class methods that interface with RimWorld's engine, particularly focusing on machine logic.
-2. **Pattern Recognition**: Identify repeating structures or logic to suggest refactoring or abstraction opportunities.
-3. **Translation**: Provide native-level translations or corrections for machine-translated components.
-4. **Error Handling**: Suggest robust error handling techniques, particularly around exceptions that could arise during automation processes.
-5. **Performance Optimization**: Advise on optimizing the existing algorithms, especially those running in frequent intervals like ticks.
-6. **Compatibility Suggestions**: Proactively suggest checks or balances to maintain compatibility with future RimWorld updates or community mods.
-
-By leveraging these instructions, GitHub Copilot can effectively assist in further developing and refining the NR_AutoMachineTool mod, ensuring it's robust, efficient, and user-friendly.
+By following these instructions, developers working on NR_AutoMachineTool (Continued) can leverage GitHub Copilot to improve and extend the mod's capabilities, ensuring a rich and seamless automation experience for players of RimWorld.
 
 ## Project Solution Guidelines
 - Relevant mod XML files are included as Solution Items under the solution folder named XML, these can be read and modified from within the solution.
@@ -48,3 +39,9 @@ By leveraging these instructions, GitHub Copilot can effectively assist in furth
 - When making functional changes in this mod, ensure the documented features stay in sync with implementation; use the in-solution `.github` copy as the primary file.
 - In the solution is also a project called Assembly-CSharp, containing a read-only version of the decompiled game source, for reference and debugging purposes.
 - For any new documentation, update this copilot-instructions.md file rather than creating separate documentation files.
+
+
+## Hard rules (must follow)
+- Do NOT run commands that modify the repo (no git commit, git apply, dotnet format) unless explicitly asked.
+- Prefer minimal reads: read only the smallest code region needed (around the suspicious lines).
+

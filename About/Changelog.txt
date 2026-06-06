@@ -1,5 +1,9 @@
 # Changelog for NRAutoMachineTool
 
+1.6.2 - Fixed tree harvesting, Hydroponic planting, Material Converter ingredient list
+Used DeepL to update translations for ChineseSimplified
+
+
 1.6.1 - Fixed energy for corpses, Harvester for trees and weeds
 Used DeepL to update translations for ChineseSimplified, French, German, Japanese, Russian
 

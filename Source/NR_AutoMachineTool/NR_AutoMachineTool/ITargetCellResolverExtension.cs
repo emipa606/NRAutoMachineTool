@@ -2,13 +2,16 @@ namespace NR_AutoMachineTool;
 
 public static class ITargetCellResolverExtension
 {
-    public static int MaxRange(this ITargetCellResolver r)
+    extension(ITargetCellResolver r)
     {
-        return r.GetRange(r.MaxPowerForRange);
-    }
+        public int MaxRange()
+        {
+            return r.GetRange(r.MaxPowerForRange);
+        }
 
-    public static int MinRange(this ITargetCellResolver r)
-    {
-        return r.GetRange(r.MinPowerForRange);
+        public int MinRange()
+        {
+            return r.GetRange(r.MinPowerForRange);
+        }
     }
 }

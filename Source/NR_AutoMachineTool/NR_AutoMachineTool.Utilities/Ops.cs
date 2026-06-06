@@ -25,95 +25,6 @@ public static class Ops
         return new Just<T>(value);
     }
 
-    public static Option<T> FirstOption<T>(this IEnumerable<T> e)
-    {
-        using var enumerator = e.GetEnumerator();
-        if (enumerator.MoveNext())
-        {
-            return new Just<T>(enumerator.Current);
-        }
-
-        return new Nothing<T>();
-    }
-
-    public static IEnumerable<TResult> SelectMany<TSource, TResult>(this IEnumerable<TSource> source,
-        Func<TSource, Option<TResult>> selector)
-    {
-        return source.SelectMany(e => selector(e).ToList());
-    }
-
-    public static List<T> Append<T>(this List<T> lhs, List<T> rhs)
-    {
-        lhs.AddRange(rhs);
-        return lhs;
-    }
-
-    public static List<T> Append<T>(this List<T> lhs, T rhs)
-    {
-        lhs.Add(rhs);
-        return lhs;
-    }
-
-    public static List<T> Ins<T>(this List<T> lhs, int index, T rhs)
-    {
-        lhs.Insert(index, rhs);
-        return lhs;
-    }
-
-    public static List<T> Head<T>(this List<T> lhs, T rhs)
-    {
-        lhs.Insert(0, rhs);
-        return lhs;
-    }
-
-    public static List<T> Del<T>(this List<T> lhs, T rhs)
-    {
-        lhs.Remove(rhs);
-        return lhs;
-    }
-
-    public static Option<T> ElementAtOption<T>(this List<T> list, int index)
-    {
-        return index >= list.Count ? new Nothing<T>() : Option(list[index]);
-    }
-
-    public static bool EqualValues<T>(this IEnumerable<T> lhs, IEnumerable<T> rhs)
-    {
-        var list = lhs.ToList();
-        var list2 = rhs.ToList();
-        if (list.Count != list2.Count)
-        {
-            return false;
-        }
-
-        for (var i = 0; i < list.Count; i++)
-        {
-            if (!list[i].Equals(list2[i]))
-            {
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    public static void ForEach<T>(this IEnumerable<T> sequence, Action<T> action)
-    {
-        foreach (var item in sequence)
-        {
-            action(item);
-        }
-    }
-
-    public static IEnumerable<T> Peek<T>(this IEnumerable<T> sequence, Action<T> action)
-    {
-        foreach (var item in sequence)
-        {
-            action(item);
-            yield return item;
-        }
-    }
-
     public static Option<T> FindOption<T>(this List<T> sequence, Predicate<T> predicate)
     {
         var num = sequence.FindIndex(predicate);
@@ -357,5 +268,102 @@ public static class Ops
     private static float ConvertEnergyAmount(float marketValue)
     {
         return marketValue * 0.1f;
+    }
+
+    extension<T>(IEnumerable<T> lhs)
+    {
+        public bool EqualValues(IEnumerable<T> rhs)
+        {
+            var list = lhs.ToList();
+            var list2 = rhs.ToList();
+            if (list.Count != list2.Count)
+            {
+                return false;
+            }
+
+            for (var i = 0; i < list.Count; i++)
+            {
+                if (!list[i].Equals(list2[i]))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        public void ForEach(Action<T> action)
+        {
+            foreach (var item in lhs)
+            {
+                action(item);
+            }
+        }
+
+        public IEnumerable<T> Peek(Action<T> action)
+        {
+            foreach (var item in lhs)
+            {
+                action(item);
+                yield return item;
+            }
+        }
+    }
+
+    extension<T>(List<T> lhs)
+    {
+        public List<T> Append(List<T> rhs)
+        {
+            lhs.AddRange(rhs);
+            return lhs;
+        }
+
+        public List<T> Append(T rhs)
+        {
+            lhs.Add(rhs);
+            return lhs;
+        }
+
+        public List<T> Ins(int index, T rhs)
+        {
+            lhs.Insert(index, rhs);
+            return lhs;
+        }
+
+        public List<T> Head(T rhs)
+        {
+            lhs.Insert(0, rhs);
+            return lhs;
+        }
+
+        public List<T> Del(T rhs)
+        {
+            lhs.Remove(rhs);
+            return lhs;
+        }
+
+        public Option<T> ElementAtOption(int index)
+        {
+            return index >= lhs.Count ? new Nothing<T>() : Option(lhs[index]);
+        }
+    }
+
+    extension<T>(IEnumerable<T> e)
+    {
+        public Option<T> FirstOption()
+        {
+            using var enumerator = e.GetEnumerator();
+            if (enumerator.MoveNext())
+            {
+                return new Just<T>(enumerator.Current);
+            }
+
+            return new Nothing<T>();
+        }
+
+        public IEnumerable<TResult> SelectMany<TResult>(Func<T, Option<TResult>> selector)
+        {
+            return e.SelectMany(e1 => selector(e1).ToList());
+        }
     }
 }
